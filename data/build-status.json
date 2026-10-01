@@ -1,0 +1,20 @@
+{
+  "stage": "done",
+  "progress": 100,
+  "message": "Build concluído",
+  "updatedAt": "2026-09-30T23:46:58.917Z",
+  "steps": {
+    "baseqv": "completed",
+    "anchor": "completed",
+    "pharus": "completed",
+    "normalization": "completed",
+    "anchor_matching": "completed",
+    "pharus_matching": "completed",
+    "explicit_anchor_legacy": "completed",
+    "deduplication": "completed",
+    "mecanismos": "completed",
+    "reunioes": "completed",
+    "financial": "completed",
+    "csv_export": "completed"
+  }
+}

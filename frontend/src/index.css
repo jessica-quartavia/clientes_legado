@@ -1,0 +1,29 @@
+:root {
+  --coral: #e85d3a;
+  --coral-soft: #fdeee9;
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --text: #1a2332;
+  --muted: #5c6b7a;
+  --border: #e2e8f0;
+  --shadow: 0 4px 24px rgba(26, 35, 50, 0.06);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}

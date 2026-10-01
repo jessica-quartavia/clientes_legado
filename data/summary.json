@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-09-30T23:46:58.869Z",
+  "financialSchema": {
+    "table": "public.client_financial_data",
+    "relation": "client_financial_data.client_id → clients.id",
+    "columns": [
+      "ultima_renda_mensal",
+      "ultimo_aporte",
+      "reserva_liquidez",
+      "valor_imoveis_quitados",
+      "possui_carro",
+      "cheque_especial",
+      "parcelamento_cartao",
+      "credito_pessoal",
+      "credito_consignado",
+      "observacoes",
+      "updated_at",
+      "created_at",
+      "updated_by",
+      "possui_imovel",
+      "possui_consorcio",
+      "hub_link"
+    ],
+    "multiRowRule": "Se houver mais de um registro por client_id, usa updated_at mais recente; empate → created_at mais recente.",
+    "patrimonioResumoRule": "Não há coluna patrimônio; resumo = reserva_liquidez + valor_imoveis_quitados (finance_patrimonio).",
+    "rendaColumn": "ultima_renda_mensal",
+    "aporteColumn": "ultimo_aporte"
+  },
+  "totals": {
+    "baseqv": 3447,
+    "anchor_cadastro": 1377,
+    "anchor_legado": 94,
+    "pharus_personal_info": 489,
+    "baseqv_found_anchor": 1323,
+    "baseqv_found_pharus": 425,
+    "baseqv_found_both": 19,
+    "baseqv_not_found_either": 1718,
+    "explicit_anchor_legacy": 27,
+    "explicit_already_in_calculated": 0,
+    "explicit_additional": 27,
+    "duplicates_removed": 0,
+    "final_legacy": 1745,
+    "legacy_with_cpf": 901,
+    "legacy_with_email": 1673,
+    "legacy_with_phone": 1679,
+    "legacy_with_mecanismos": 258,
+    "legacy_without_mecanismos": 1487,
+    "legacy_with_reuniao": 382,
+    "legacy_without_reuniao": 1363,
+    "legacy_with_financial": 1510,
+    "legacy_without_financial": 235
+  },
+  "audit": {
+    "generatedAt": "2026-10-01T00:00:43.901Z",
+    "sources": {
+      "anchor": {
+        "schema": "qv_360",
+        "table": "clientes_cadastro",
+        "label": "Anchor",
+        "columns": [
+          "qv_id",
+          "nome_completo",
+          "cpf",
+          "email",
+          "telefone",
+          "airtable_id"
+        ]
+      },
+      "pharus": {
+        "schema": "core",
+        "table": "personal_info",
+        "label": "App Pharus",
+        "columns": [
+          "user_id",
+          "name",
+          "cpf",
+          "phone",
+          "alternative_email"
+        ]
+      }
+    },
+    "totals": {
+      "total_auditado": 1745,
+      "nao_em_nenhum": 1710,
+      "esta_no_anchor": 26,
+      "esta_no_app_pharus": 0,
+      "esta_nos_dois": 0,
+      "ambiguos": 9,
+      "anchor_encontrado": 26,
+      "pharus_encontrado": 0
+    },
+    "matchByCounts": {
+      "CPF": 0,
+      "EMAIL": 0,
+      "TELEFONE": 0,
+      "QV_ID": 0,
+      "MULTI": 27,
+      "NOME_APENAS": 8
+    },
+    "comparisonWithLegacyMatching": {
+      "false_positives_vs_old_found_flags": 0,
+      "false_negatives_vs_old_found_flags": 0,
+      "note": "Falso positivo = found_* antigo true e auditoria não confirma (exceto AMBIGUO). Falso negativo = found_* antigo false e auditoria encontra."
+    },
+    "multiRowRule": "N/A — índices em memória sobre snapshot completo das tabelas fonte."
+  }
+}

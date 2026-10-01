@@ -1,0 +1,16 @@
+{
+  "name": "base-legado",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:legacy": "node scripts/build-legacy-clients.mjs",
+    "audit:legacy": "node scripts/audit-legacy-clients.mjs",
+    "build:all": "npm run build:legacy && npm run audit:legacy",
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7"
+  }
+}
