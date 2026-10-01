@@ -425,6 +425,12 @@ async function main() {
       ? Math.round((totalLegacyActive / totalActiveBaseqv) * 1000) / 10
       : 0;
 
+  const activeBasePopulation = activeClients.map((c) => ({
+    programa: c.programa ?? null,
+    ep: c.engenheiro_patrimonial ?? null,
+    status: c.status ?? null,
+  }));
+
   await setStep('mecanismos', 'completed');
   await setStep('reunioes', 'completed');
   await setStep('financial', 'completed');
@@ -544,6 +550,10 @@ async function main() {
     ),
     fs.writeFile(path.join(DATA_DIR, 'clientes-legado.json'), JSON.stringify(legacyJsonForExport, null, 2)),
     fs.writeFile(path.join(DATA_DIR, 'summary.json'), JSON.stringify(summary, null, 2)),
+    fs.writeFile(
+      path.join(DATA_DIR, 'active-base-population.json'),
+      JSON.stringify(activeBasePopulation),
+    ),
   ]);
 
   await setStep('csv_export', 'completed', {

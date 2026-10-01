@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T17:51:20.183Z",
+  "generatedAt": "2026-10-01T18:23:23.319Z",
   "total_baseqv": 3469,
   "total_active_baseqv": 1610,
   "total_legacy_active": 362,
@@ -70,59 +70,5 @@
     "legacy_without_financial": 35,
     "legacy_with_meeting": 214,
     "percent_active_base_legacy": 22.5
-  },
-  "audit": {
-    "generatedAt": "2026-10-01T17:51:55.134Z",
-    "sources": {
-      "anchor": {
-        "schema": "qv_360",
-        "table": "clientes_cadastro",
-        "label": "Anchor",
-        "columns": [
-          "qv_id",
-          "nome_completo",
-          "cpf",
-          "email",
-          "telefone",
-          "airtable_id"
-        ]
-      },
-      "pharus": {
-        "schema": "core",
-        "table": "personal_info",
-        "label": "App Pharus",
-        "columns": [
-          "user_id",
-          "name",
-          "cpf",
-          "phone",
-          "alternative_email"
-        ]
-      }
-    },
-    "totals": {
-      "total_auditado": 362,
-      "nao_em_nenhum": 337,
-      "esta_no_anchor": 19,
-      "esta_no_app_pharus": 0,
-      "esta_nos_dois": 0,
-      "ambiguos": 6,
-      "anchor_encontrado": 19,
-      "pharus_encontrado": 0
-    },
-    "matchByCounts": {
-      "CPF": 0,
-      "EMAIL": 0,
-      "TELEFONE": 0,
-      "QV_ID": 0,
-      "MULTI": 19,
-      "NOME_APENAS": 6
-    },
-    "comparisonWithLegacyMatching": {
-      "false_positives_vs_old_found_flags": 0,
-      "false_negatives_vs_old_found_flags": 0,
-      "note": "Falso positivo = found_* antigo true e auditoria não confirma (exceto AMBIGUO). Falso negativo = found_* antigo false e auditoria encontra."
-    },
-    "multiRowRule": "N/A — índices em memória sobre snapshot completo das tabelas fonte."
   }
 }

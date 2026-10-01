@@ -59,6 +59,19 @@ export default function Filters({ filters, onChange, programas, eps }) {
             ))}
           </select>
         </label>
+        <label className="filters__field">
+          Com mecanismos
+          <select
+            value={filters.hasMecanismos ?? ''}
+            onChange={(e) => onChange({ hasMecanismos: e.target.value })}
+          >
+            {BOOL_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
     </div>
   );

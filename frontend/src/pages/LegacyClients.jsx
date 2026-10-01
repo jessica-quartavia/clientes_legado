@@ -4,54 +4,32 @@ import Filters from '../components/Filters.jsx';
 import KpiCard from '../components/KpiCard.jsx';
 import LegacyTable, { TABLE_COLUMNS } from '../components/LegacyTable.jsx';
 import { exportCsv, loadDashboardData } from '../data/loader.js';
-import { buildExportColumns, hasMeaningfulFinancialData } from '../lib/financial.js';
+import { buildExportColumns } from '../lib/financial.js';
+import {
+  applyBasePopulationFilters,
+  applyLegacyFilters,
+  computeLegacyMetrics,
+  formatPercentFromMetrics,
+} from '../lib/legacy-filters.js';
 
 const DEFAULT_FILTERS = {
   search: '',
   programa: '',
   ep: '',
+  status: '',
   hasFin: '',
   hasReuniao: '',
+  hasMecanismos: '',
 };
 
-function hasValidFinancial(client) {
-  return hasMeaningfulFinancialData(client.financial);
-}
-
-function hasValidMeeting(client) {
-  return Boolean(client.ultima_reuniao_data);
-}
-
-function matchBoolFilter(value, filter) {
-  if (!filter) return true;
-  const yes = filter === 'yes';
-  return yes ? Boolean(value) : !value;
-}
-
-function applyFilters(clients, filters) {
-  const q = filters.search.trim().toLowerCase();
-  return clients.filter((c) => {
-    if (q) {
-      const hay = [c.nome, c.email, c.telefone, c.mecanismos].filter(Boolean).join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    if (filters.programa && c.programa !== filters.programa) return false;
-    if (filters.ep && c.engenheiro_patrimonial !== filters.ep) return false;
-    if (!matchBoolFilter(hasValidFinancial(c), filters.hasFin)) return false;
-    if (!matchBoolFilter(hasValidMeeting(c), filters.hasReuniao)) return false;
-    return true;
-  });
-}
-
-function formatPercent(numerator, denominator) {
-  if (!denominator || denominator <= 0) return '—';
-  const pct = (numerator / denominator) * 100;
-  return `${pct.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}%`;
+function hasPopulationFilter(filters) {
+  return Boolean(filters.programa || filters.ep || filters.status);
 }
 
 export default function LegacyClients() {
   const [clients, setClients] = useState([]);
   const [summary, setSummary] = useState({});
+  const [activeBasePopulation, setActiveBasePopulation] = useState([]);
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
   const [sortKey, setSortKey] = useState('nome');
   const [sortDir, setSortDir] = useState('asc');
@@ -64,6 +42,7 @@ export default function LegacyClients() {
     const data = await loadDashboardData({ force });
     setClients(data.clients);
     setSummary(data.summary);
+    setActiveBasePopulation(Array.isArray(data.activeBasePopulation) ? data.activeBasePopulation : []);
     setAuditPending(data.auditPending ?? false);
   }, []);
 
@@ -82,26 +61,37 @@ export default function LegacyClients() {
     [clients],
   );
 
-  const filtered = useMemo(() => applyFilters(clients, filters), [clients, filters]);
+  const filteredClients = useMemo(
+    () => applyLegacyFilters(clients, filters),
+    [clients, filters],
+  );
+
+  const filteredActiveBase = useMemo(() => {
+    if (activeBasePopulation.length > 0) {
+      return applyBasePopulationFilters(activeBasePopulation, filters);
+    }
+    if (hasPopulationFilter(filters)) return [];
+    const total = summary.total_active_baseqv ?? summary.totals?.baseqv_active ?? 0;
+    return total > 0 ? Array.from({ length: total }, () => ({})) : [];
+  }, [activeBasePopulation, filters, summary]);
+
+  const activeBasePopulationMissing =
+    activeBasePopulation.length === 0 && hasPopulationFilter(filters);
 
   const heroKpis = useMemo(() => {
-    const totalLegacy = clients.length;
-    const withMechanisms = clients.filter((c) => (c.quantidade_mecanismos ?? 0) > 0).length;
-    const withMeeting = clients.filter((c) => hasValidMeeting(c)).length;
-    const withFinancial = clients.filter((c) => hasValidFinancial(c)).length;
-    const activeBase = summary.total_active_baseqv ?? summary.totals?.baseqv_active ?? 0;
+    const metrics = computeLegacyMetrics(filteredClients, filteredActiveBase);
     return {
-      totalLegacy,
-      withMechanisms,
-      withMeeting,
-      withFinancial,
-      percentLegacy: formatPercent(totalLegacy, activeBase),
+      totalLegacy: metrics.totalLegacy,
+      withMechanisms: metrics.withMechanisms,
+      withMeeting: metrics.withMeeting,
+      withFinancial: metrics.withFinancial,
+      percentLegacy: formatPercentFromMetrics(metrics),
     };
-  }, [clients, summary]);
+  }, [filteredClients, filteredActiveBase]);
 
   const sorted = useMemo(() => {
     const col = TABLE_COLUMNS.find((c) => c.key === sortKey);
-    const copy = [...filtered];
+    const copy = [...filteredClients];
     copy.sort((a, b) => {
       let av = a[sortKey];
       let bv = b[sortKey];
@@ -122,7 +112,7 @@ export default function LegacyClients() {
       return 0;
     });
     return copy;
-  }, [filtered, sortKey, sortDir]);
+  }, [filteredClients, sortKey, sortDir]);
 
   const patchFilter = (patch) => {
     setFilters((f) => ({ ...f, ...patch }));
@@ -161,6 +151,13 @@ export default function LegacyClients() {
         </p>
       ) : null}
 
+      {activeBasePopulationMissing ? (
+        <p className="loading-banner">
+          Percentual por programa/EP requer <code>active-base-population.json</code>. Execute{' '}
+          <code>npm run build:legacy</code>.
+        </p>
+      ) : null}
+
       <section className="kpi-grid kpi-grid--hero" aria-label="Indicadores principais">
         <KpiCard hero icon="◆" label="Quantidade de clientes legado" value={heroKpis.totalLegacy} />
         <KpiCard hero icon="⚙" label="Com mecanismos" value={heroKpis.withMechanisms} />
@@ -186,7 +183,7 @@ export default function LegacyClients() {
           onRowClick={setSelected}
           onExport={handleExport}
           confirmedTotal={clients.length}
-          filteredTotal={filtered.length}
+          filteredTotal={filteredClients.length}
         />
       </section>
 

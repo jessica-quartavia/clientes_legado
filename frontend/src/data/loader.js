@@ -20,6 +20,7 @@ function enrichClientFinancialFields(client) {
 const cache = {
   clients: null,
   summary: null,
+  activeBasePopulation: null,
   buildStatus: null,
   auditStatus: null,
   auditPending: false,
@@ -32,6 +33,7 @@ export async function loadDashboardData({ force = false } = {}) {
     return {
       clients: cache.clients ?? [],
       summary: cache.summary ?? {},
+      activeBasePopulation: cache.activeBasePopulation ?? [],
       buildStatus: cache.buildStatus ?? {},
       auditStatus: cache.auditStatus ?? {},
       auditPending: cache.auditPending ?? false,
@@ -39,16 +41,19 @@ export async function loadDashboardData({ force = false } = {}) {
     };
   }
 
-  const [clientsRes, summaryRes, statusRes, auditSummaryRes, auditStatusRes] = await Promise.all([
-    fetch('/clientes-legado.json'),
-    fetch('/summary.json'),
-    fetch('/build-status.json'),
-    fetch('/audit-summary.json'),
-    fetch('/audit-status.json'),
-  ]);
+  const [clientsRes, summaryRes, activeBaseRes, statusRes, auditSummaryRes, auditStatusRes] =
+    await Promise.all([
+      fetch('/clientes-legado.json'),
+      fetch('/summary.json'),
+      fetch('/active-base-population.json'),
+      fetch('/build-status.json'),
+      fetch('/audit-summary.json'),
+      fetch('/audit-status.json'),
+    ]);
 
   const rawClients = clientsRes.ok ? await clientsRes.json() : [];
   const summary = summaryRes.ok ? await summaryRes.json() : {};
+  const activeBasePopulation = activeBaseRes.ok ? await activeBaseRes.json() : [];
   const buildStatus = statusRes.ok ? await statusRes.json() : {};
   if (auditSummaryRes.ok) {
     summary.audit = await auditSummaryRes.json();
@@ -61,6 +66,7 @@ export async function loadDashboardData({ force = false } = {}) {
   cache.clients = confirmed;
   const auditPending = all.length > 0 && !hasAuditFields;
   cache.summary = summary;
+  cache.activeBasePopulation = Array.isArray(activeBasePopulation) ? activeBasePopulation : [];
   cache.buildStatus = buildStatus;
   cache.auditStatus = auditStatus;
   cache.auditPending = auditPending;
@@ -69,6 +75,7 @@ export async function loadDashboardData({ force = false } = {}) {
   return {
     clients: cache.clients,
     summary: cache.summary,
+    activeBasePopulation: cache.activeBasePopulation,
     buildStatus: cache.buildStatus,
     auditStatus: cache.auditStatus,
     auditPending,
