@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import ClientDrawer from '../components/ClientDrawer.jsx';
 import Filters from '../components/Filters.jsx';
+import KpiCard from '../components/KpiCard.jsx';
 import LegacyTable, { TABLE_COLUMNS } from '../components/LegacyTable.jsx';
 import { exportCsv, loadDashboardData } from '../data/loader.js';
-import { buildExportColumns } from '../lib/financial.js';
+import { buildExportColumns, hasMeaningfulFinancialData } from '../lib/financial.js';
 
 const DEFAULT_FILTERS = {
   search: '',
@@ -14,7 +15,7 @@ const DEFAULT_FILTERS = {
 };
 
 function hasValidFinancial(client) {
-  return Boolean(client.financial);
+  return hasMeaningfulFinancialData(client.financial);
 }
 
 function hasValidMeeting(client) {
@@ -42,8 +43,15 @@ function applyFilters(clients, filters) {
   });
 }
 
+function formatPercent(numerator, denominator) {
+  if (!denominator || denominator <= 0) return '—';
+  const pct = (numerator / denominator) * 100;
+  return `${pct.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })}%`;
+}
+
 export default function LegacyClients() {
   const [clients, setClients] = useState([]);
+  const [summary, setSummary] = useState({});
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
   const [sortKey, setSortKey] = useState('nome');
   const [sortDir, setSortDir] = useState('asc');
@@ -55,6 +63,7 @@ export default function LegacyClients() {
   const refresh = useCallback(async (force = false) => {
     const data = await loadDashboardData({ force });
     setClients(data.clients);
+    setSummary(data.summary);
     setAuditPending(data.auditPending ?? false);
   }, []);
 
@@ -74,6 +83,21 @@ export default function LegacyClients() {
   );
 
   const filtered = useMemo(() => applyFilters(clients, filters), [clients, filters]);
+
+  const heroKpis = useMemo(() => {
+    const totalLegacy = clients.length;
+    const withMechanisms = clients.filter((c) => (c.quantidade_mecanismos ?? 0) > 0).length;
+    const withMeeting = clients.filter((c) => hasValidMeeting(c)).length;
+    const withFinancial = clients.filter((c) => hasValidFinancial(c)).length;
+    const activeBase = summary.total_active_baseqv ?? summary.totals?.baseqv_active ?? 0;
+    return {
+      totalLegacy,
+      withMechanisms,
+      withMeeting,
+      withFinancial,
+      percentLegacy: formatPercent(totalLegacy, activeBase),
+    };
+  }, [clients, summary]);
 
   const sorted = useMemo(() => {
     const col = TABLE_COLUMNS.find((c) => c.key === sortKey);
@@ -124,7 +148,7 @@ export default function LegacyClients() {
         <div>
           <p className="eyebrow">QuartaVia · BASEQV</p>
           <h1>Clientes legado confirmados</h1>
-          <p className="subtitle">Ausentes no Anchor e no App Pharus (auditoria independente)</p>
+          <p className="subtitle">Ativos · ausentes no QV360 e no App Pharus (auditoria)</p>
         </div>
         <button type="button" className="btn btn--primary" onClick={() => refresh(true)}>
           Atualizar dados
@@ -136,6 +160,14 @@ export default function LegacyClients() {
           Dados de auditoria ainda não disponíveis. Execute <code>npm run audit:legacy</code>.
         </p>
       ) : null}
+
+      <section className="kpi-grid kpi-grid--hero" aria-label="Indicadores principais">
+        <KpiCard hero icon="◆" label="Quantidade de clientes legado" value={heroKpis.totalLegacy} />
+        <KpiCard hero icon="⚙" label="Com mecanismos" value={heroKpis.withMechanisms} />
+        <KpiCard hero icon="◷" label="Com reunião" value={heroKpis.withMeeting} />
+        <KpiCard hero icon="◈" label="Com dado financeiro" value={heroKpis.withFinancial} />
+        <KpiCard hero icon="%" label="% da base ativa que é legado" value={heroKpis.percentLegacy} />
+      </section>
 
       <section className="panel panel--table">
         <Filters filters={filters} onChange={patchFilter} programas={programas} eps={eps} />

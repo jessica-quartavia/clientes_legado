@@ -1,5 +1,22 @@
 {
-  "generatedAt": "2026-09-30T23:46:58.869Z",
+  "generatedAt": "2026-10-01T17:51:20.183Z",
+  "total_baseqv": 3469,
+  "total_active_baseqv": 1610,
+  "total_legacy_active": 362,
+  "legacy_with_financial_data": 327,
+  "legacy_with_meeting": 214,
+  "percent_active_base_legacy": 22.5,
+  "legacy_with_mechanisms": 197,
+  "legacy_without_mechanisms": 165,
+  "legacy_without_meeting": 148,
+  "legacy_without_financial_data": 35,
+  "invalid_inactive_legacy_count": 0,
+  "active_filter": {
+    "removed_frozen": 375,
+    "removed_cancellation_effective": 1484,
+    "rule_module": "scripts/lib/client-active.mjs",
+    "rule_notes": "Ativo analítico: status ativo/Ativo, sem congelamento vigente, sem churn/data_churn e sem cancelamento efetivo (distrato assinado/churn_efetivado em cancellations)."
+  },
   "financialSchema": {
     "table": "public.client_financial_data",
     "relation": "client_financial_data.client_id → clients.id",
@@ -27,31 +44,35 @@
     "aporteColumn": "ultimo_aporte"
   },
   "totals": {
-    "baseqv": 3447,
+    "baseqv": 3469,
+    "baseqv_active": 1610,
     "anchor_cadastro": 1377,
     "anchor_legado": 94,
-    "pharus_personal_info": 489,
-    "baseqv_found_anchor": 1323,
-    "baseqv_found_pharus": 425,
-    "baseqv_found_both": 19,
-    "baseqv_not_found_either": 1718,
-    "explicit_anchor_legacy": 27,
+    "pharus_personal_info": 492,
+    "baseqv_found_anchor": 899,
+    "baseqv_found_pharus": 384,
+    "baseqv_found_both": 16,
+    "baseqv_not_found_either": 343,
+    "explicit_anchor_legacy": 19,
     "explicit_already_in_calculated": 0,
-    "explicit_additional": 27,
+    "explicit_additional": 19,
     "duplicates_removed": 0,
-    "final_legacy": 1745,
-    "legacy_with_cpf": 901,
-    "legacy_with_email": 1673,
-    "legacy_with_phone": 1679,
-    "legacy_with_mecanismos": 258,
-    "legacy_without_mecanismos": 1487,
-    "legacy_with_reuniao": 382,
-    "legacy_without_reuniao": 1363,
-    "legacy_with_financial": 1510,
-    "legacy_without_financial": 235
+    "final_legacy": 362,
+    "final_legacy_active": 362,
+    "legacy_with_cpf": 247,
+    "legacy_with_email": 333,
+    "legacy_with_phone": 353,
+    "legacy_with_mecanismos": 197,
+    "legacy_without_mecanismos": 165,
+    "legacy_with_reuniao": 214,
+    "legacy_without_reuniao": 148,
+    "legacy_with_financial": 327,
+    "legacy_without_financial": 35,
+    "legacy_with_meeting": 214,
+    "percent_active_base_legacy": 22.5
   },
   "audit": {
-    "generatedAt": "2026-10-01T00:00:43.901Z",
+    "generatedAt": "2026-10-01T17:51:55.134Z",
     "sources": {
       "anchor": {
         "schema": "qv_360",
@@ -80,13 +101,13 @@
       }
     },
     "totals": {
-      "total_auditado": 1745,
-      "nao_em_nenhum": 1710,
-      "esta_no_anchor": 26,
+      "total_auditado": 362,
+      "nao_em_nenhum": 337,
+      "esta_no_anchor": 19,
       "esta_no_app_pharus": 0,
       "esta_nos_dois": 0,
-      "ambiguos": 9,
-      "anchor_encontrado": 26,
+      "ambiguos": 6,
+      "anchor_encontrado": 19,
       "pharus_encontrado": 0
     },
     "matchByCounts": {
@@ -94,8 +115,8 @@
       "EMAIL": 0,
       "TELEFONE": 0,
       "QV_ID": 0,
-      "MULTI": 27,
-      "NOME_APENAS": 8
+      "MULTI": 19,
+      "NOME_APENAS": 6
     },
     "comparisonWithLegacyMatching": {
       "false_positives_vs_old_found_flags": 0,

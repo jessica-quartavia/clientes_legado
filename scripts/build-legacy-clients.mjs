@@ -19,6 +19,8 @@ import {
   CLIENT_FINANCIAL_COLUMNS,
 } from './lib/financial.mjs';
 import { fetchFinancialByClientIds } from './lib/fetch-financial-batch.mjs';
+import { buildActiveClientSet } from './lib/client-active.mjs';
+import { hasMeaningfulFinancialData } from './lib/financial.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -115,16 +117,26 @@ async function main() {
 
   await setStep('baseqv', 'processing', { stage: 'baseqv', progress: 5, message: 'Carregando BASEQV…' });
 
-  const [clients, clientMeetings, clientMecanismos, mecanismosCatalog, meetingAttendance] =
+  const [clients, cancellations, clientMeetings, clientMecanismos, mecanismosCatalog, meetingAttendance] =
     await Promise.all([
       fetchAllRows(baseqv, 'clients', { orderBy: 'id' }),
+      fetchAllRows(baseqv, 'cancellations', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'client_meetings', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'client_mecanismos', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'mecanismos', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'meeting_attendance', { orderBy: 'id' }),
     ]);
 
-  await setStep('baseqv', 'completed', { progress: 15, message: 'BASEQV carregado' });
+  const {
+    activeClients,
+    evaluationById,
+    stats: activeStats,
+  } = buildActiveClientSet(clients, cancellations);
+
+  await setStep('baseqv', 'completed', {
+    progress: 15,
+    message: `BASEQV: ${activeStats.totalActive} ativos de ${activeStats.totalRaw}`,
+  });
 
   await setStep('anchor', 'processing', { progress: 18, message: 'Carregando Anchor…' });
   const [anchorCadastro, anchorLegado] = await Promise.all([
@@ -177,7 +189,7 @@ async function main() {
   /** @type {Map<string, Record<string, unknown>>} */
   const clientsByCpf = new Map();
 
-  for (const c of clients) {
+  for (const c of activeClients) {
     const qv = normalizeQvId(c.qv_id);
     if (qv && !clientsByQvId.has(qv)) clientsByQvId.set(qv, c);
     const cpf = normalizeCpf(c.cpf ?? c.cpf_digits);
@@ -223,7 +235,7 @@ async function main() {
   /** @type {Map<string, { anchor: ReturnType<typeof matchAnchor>; pharus: ReturnType<typeof matchPharus> }>} */
   const matchByClientId = new Map();
 
-  for (const c of clients) {
+  for (const c of activeClients) {
     const anchorMatch = matchAnchor(c, anchorIndex);
     const pharusMatch = matchPharus(c, pharusIndex);
     matchByClientId.set(c.id, { anchor: anchorMatch, pharus: pharusMatch });
@@ -263,7 +275,8 @@ async function main() {
   for (const row of anchorLegado) {
     const { client, linkType } = resolveBaseqvClientForAnchorLegacy(row, clientsByQvId, clientsByCpf);
     if (client) {
-      explicitLegacyClientIds.add(client.id);
+      const ev = evaluationById.get(client.id);
+      if (ev?.isActiveAnalytical) explicitLegacyClientIds.add(client.id);
     } else {
       unmatchedAnchorLegacy.push({
         anchor_legado_id: row.id,
@@ -280,7 +293,7 @@ async function main() {
 
   /** @type {Set<string>} */
   const legacyClientIds = new Set();
-  for (const c of clients) {
+  for (const c of activeClients) {
     const m = matchByClientId.get(c.id);
     if (m && !m.anchor.found && !m.pharus.found) legacyClientIds.add(c.id);
   }
@@ -345,6 +358,12 @@ async function main() {
     const fin = financialByClient.get(clientId) ?? null;
     const finFlat = flattenFinancial(fin);
     const finSummary = buildFinancialSummary(fin);
+    const activeEval = evaluationById.get(clientId) ?? {
+      isActiveAnalytical: false,
+      activeRuleReason: 'UNKNOWN',
+      cancellationEffective: false,
+      frozen: false,
+    };
 
     legacyRows.push({
       baseqv_client_id: c.id,
@@ -363,6 +382,10 @@ async function main() {
       pharus_match_type: m.pharus.matchType,
       explicit_anchor_legacy: explicit,
       legacy_reason: legacyReason,
+      is_active_analytical: activeEval.isActiveAnalytical,
+      active_rule_reason: activeEval.activeRuleReason,
+      cancellation_effective: activeEval.cancellationEffective,
+      frozen: activeEval.frozen,
       mecanismos: mecNames.join(' | '),
       quantidade_mecanismos: mecNames.length,
       ultima_reuniao_data: lastMeeting?.ultima_reuniao_data ?? null,
@@ -386,6 +409,22 @@ async function main() {
 
   legacyRows.sort((a, b) => String(a.nome).localeCompare(String(b.nome), 'pt-BR'));
 
+  const invalidInactiveLegacyCount = legacyRows.filter((r) => !r.is_active_analytical).length;
+  if (invalidInactiveLegacyCount > 0) {
+    throw new Error(
+      `invalid_inactive_legacy_count=${invalidInactiveLegacyCount}. Geração interrompida: há legado inativo na saída.`,
+    );
+  }
+
+  const totalLegacyActive = legacyRows.length;
+  const legacyWithFinancialData = legacyRows.filter((r) => hasMeaningfulFinancialData(r.financial)).length;
+  const legacyWithMeeting = legacyRows.filter((r) => Boolean(r.ultima_reuniao_data)).length;
+  const totalActiveBaseqv = activeStats.totalActive;
+  const percentActiveBaseLegacy =
+    totalActiveBaseqv > 0
+      ? Math.round((totalLegacyActive / totalActiveBaseqv) * 1000) / 10
+      : 0;
+
   await setStep('mecanismos', 'completed');
   await setStep('reunioes', 'completed');
   await setStep('financial', 'completed');
@@ -406,6 +445,10 @@ async function main() {
     'mecanismos',
     'ultima_reuniao',
     'data_ultima_reuniao',
+    'is_active_analytical',
+    'active_rule_reason',
+    'cancellation_effective',
+    'frozen',
     ...finColumns,
   ];
 
@@ -425,6 +468,24 @@ async function main() {
 
   const summary = {
     generatedAt: new Date().toISOString(),
+    total_baseqv: clients.length,
+    total_active_baseqv: totalActiveBaseqv,
+    total_legacy_active: totalLegacyActive,
+    legacy_with_financial_data: legacyWithFinancialData,
+    legacy_with_meeting: legacyWithMeeting,
+    percent_active_base_legacy: percentActiveBaseLegacy,
+    legacy_with_mechanisms: legacyRows.filter((r) => r.quantidade_mecanismos > 0).length,
+    legacy_without_mechanisms: legacyRows.filter((r) => r.quantidade_mecanismos === 0).length,
+    legacy_without_meeting: legacyRows.filter((r) => !r.ultima_reuniao_data).length,
+    legacy_without_financial_data: legacyRows.filter((r) => !hasMeaningfulFinancialData(r.financial)).length,
+    invalid_inactive_legacy_count: invalidInactiveLegacyCount,
+    active_filter: {
+      removed_frozen: activeStats.removedFrozen,
+      removed_cancellation_effective: activeStats.removedCancellation,
+      rule_module: 'scripts/lib/client-active.mjs',
+      rule_notes:
+        'Ativo analítico: status ativo/Ativo, sem congelamento vigente, sem churn/data_churn e sem cancelamento efetivo (distrato assinado/churn_efetivado em cancellations).',
+    },
     financialSchema: {
       table: 'public.client_financial_data',
       relation: 'client_financial_data.client_id → clients.id',
@@ -438,6 +499,7 @@ async function main() {
     },
     totals: {
       baseqv: clients.length,
+      baseqv_active: totalActiveBaseqv,
       anchor_cadastro: anchorCadastro.length,
       anchor_legado: anchorLegado.length,
       pharus_personal_info: pharusPersonal.length,
@@ -449,7 +511,8 @@ async function main() {
       explicit_already_in_calculated: explicitLegacyClientIds.size - explicitAdditional,
       explicit_additional: explicitAdditional,
       duplicates_removed: 0,
-      final_legacy: legacyRows.length,
+      final_legacy: totalLegacyActive,
+      final_legacy_active: totalLegacyActive,
       legacy_with_cpf: legacyRows.filter((r) => normalizeCpf(r.cpf)).length,
       legacy_with_email: legacyRows.filter((r) => normalizeEmail(r.email)).length,
       legacy_with_phone: legacyRows.filter((r) => normalizePhone(r.telefone)).length,
@@ -457,8 +520,10 @@ async function main() {
       legacy_without_mecanismos: legacyRows.filter((r) => r.quantidade_mecanismos === 0).length,
       legacy_with_reuniao: legacyRows.filter((r) => r.ultima_reuniao_data).length,
       legacy_without_reuniao: legacyRows.filter((r) => !r.ultima_reuniao_data).length,
-      legacy_with_financial: legacyRows.filter((r) => r.financial).length,
-      legacy_without_financial: legacyRows.filter((r) => !r.financial).length,
+      legacy_with_financial: legacyWithFinancialData,
+      legacy_without_financial: legacyRows.filter((r) => !hasMeaningfulFinancialData(r.financial)).length,
+      legacy_with_meeting: legacyWithMeeting,
+      percent_active_base_legacy: percentActiveBaseLegacy,
     },
   };
 
@@ -493,6 +558,12 @@ async function main() {
 CLIENTES LEGADO — RESULTADO
 ==================================================
 
+Total BASEQV (bruto): ${summary.total_baseqv}
+Total BASEQV ativos (regra analítica): ${summary.total_active_baseqv}
+Removidos por congelamento: ${summary.active_filter.removed_frozen}
+Removidos por cancelamento efetivo: ${summary.active_filter.removed_cancellation_effective}
+invalid_inactive_legacy_count: ${summary.invalid_inactive_legacy_count}
+
 Total BASEQV: ${t.baseqv}
 Total Anchor (cadastro): ${t.anchor_cadastro}
 Total Pharus: ${t.pharus_personal_info}
@@ -509,7 +580,8 @@ Legados explícitos Anchor adicionais: ${t.explicit_additional}
 
 Duplicados removidos: ${t.duplicates_removed}
 
-TOTAL FINAL CLIENTES LEGADO: ${t.final_legacy}
+TOTAL FINAL CLIENTES LEGADO ATIVOS: ${summary.total_legacy_active}
+% da base ativa que é legado: ${summary.percent_active_base_legacy}%
 
 Clientes legado com CPF: ${t.legacy_with_cpf}
 Clientes legado com email: ${t.legacy_with_email}

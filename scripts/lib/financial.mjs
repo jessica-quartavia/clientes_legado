@@ -83,3 +83,27 @@ export function buildFinancialSummary(fin) {
 export function financialCsvColumnKeys() {
   return CLIENT_FINANCIAL_COLUMNS.map((c) => `fin_${c}`);
 }
+
+const MEANINGFUL_FINANCIAL_KEYS = [
+  'ultima_renda_mensal',
+  'ultimo_aporte',
+  'reserva_liquidez',
+  'valor_imoveis_quitados',
+  'observacoes',
+  'hub_link',
+];
+
+/** @param {Record<string, unknown> | null | undefined} fin */
+export function hasMeaningfulFinancialData(fin) {
+  if (!fin) return false;
+  for (const key of MEANINGFUL_FINANCIAL_KEYS) {
+    const v = fin[key];
+    if (v == null || v === '') continue;
+    if (typeof v === 'number' && Number.isFinite(v)) return true;
+    if (typeof v === 'string' && v.trim()) return true;
+  }
+  for (const key of ['possui_carro', 'possui_imovel', 'possui_consorcio', 'cheque_especial', 'parcelamento_cartao', 'credito_pessoal', 'credito_consignado']) {
+    if (fin[key] === true) return true;
+  }
+  return false;
+}

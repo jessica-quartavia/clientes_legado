@@ -96,11 +96,7 @@ export default function LegacyTable({
                   <span className="cell-with-copy nowrap">
                     <span>{row.telefone ?? '—'}</span>
                     {row.telefone ? (
-                      <CopyButton
-                        value={row.telefone}
-                        ariaLabel="Copiar telefone"
-                        title="Copiar telefone"
-                      />
+                      <CopyButton value={row.telefone} ariaLabel="Copiar telefone" />
                     ) : null}
                   </span>
                 </td>
@@ -108,7 +104,7 @@ export default function LegacyTable({
                   <span className="cell-with-copy">
                     <span className="cell-email-text">{row.email ?? '—'}</span>
                     {row.email ? (
-                      <CopyButton value={row.email} ariaLabel="Copiar email" title="Copiar email" />
+                      <CopyButton value={row.email} ariaLabel="Copiar email" />
                     ) : null}
                   </span>
                 </td>

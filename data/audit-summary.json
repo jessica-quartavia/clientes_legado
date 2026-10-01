@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T00:00:43.901Z",
+  "generatedAt": "2026-10-01T17:51:55.134Z",
   "sources": {
     "anchor": {
       "schema": "qv_360",
@@ -28,13 +28,13 @@
     }
   },
   "totals": {
-    "total_auditado": 1745,
-    "nao_em_nenhum": 1710,
-    "esta_no_anchor": 26,
+    "total_auditado": 362,
+    "nao_em_nenhum": 337,
+    "esta_no_anchor": 19,
     "esta_no_app_pharus": 0,
     "esta_nos_dois": 0,
-    "ambiguos": 9,
-    "anchor_encontrado": 26,
+    "ambiguos": 6,
+    "anchor_encontrado": 19,
     "pharus_encontrado": 0
   },
   "matchByCounts": {
@@ -42,8 +42,8 @@
     "EMAIL": 0,
     "TELEFONE": 0,
     "QV_ID": 0,
-    "MULTI": 27,
-    "NOME_APENAS": 8
+    "MULTI": 19,
+    "NOME_APENAS": 6
   },
   "comparisonWithLegacyMatching": {
     "false_positives_vs_old_found_flags": 0,
