@@ -5,6 +5,7 @@ import KpiCard from '../components/KpiCard.jsx';
 import LegacyTable, { TABLE_COLUMNS } from '../components/LegacyTable.jsx';
 import { exportCsv, loadDashboardData } from '../data/loader.js';
 import { buildExportColumns } from '../lib/financial.js';
+import { engenheiroPatrimonialValue } from '../lib/ep.js';
 import {
   applyBasePopulationFilters,
   applyLegacyFilters,
@@ -57,7 +58,10 @@ export default function LegacyClients() {
     [clients],
   );
   const eps = useMemo(
-    () => [...new Set(clients.map((c) => c.engenheiro_patrimonial).filter(Boolean))].sort(),
+    () =>
+      [...new Set(clients.map((c) => engenheiroPatrimonialValue(c)).filter(Boolean))].sort((a, b) =>
+        a.localeCompare(b, 'pt-BR'),
+      ),
     [clients],
   );
 

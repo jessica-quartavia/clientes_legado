@@ -11,7 +11,13 @@ import {
   matchPharus,
   resolveBaseqvClientForAnchorLegacy,
 } from './lib/match-index.mjs';
-import { normalizeCpf, normalizeEmail, normalizePhone, normalizeQvId } from './lib/normalize.mjs';
+import {
+  normalizeCpf,
+  normalizeEmail,
+  normalizeEngenheiroPatrimonial,
+  normalizePhone,
+  normalizeQvId,
+} from './lib/normalize.mjs';
 import {
   buildFinancialSummary,
   flattenFinancial,
@@ -365,6 +371,8 @@ async function main() {
       frozen: false,
     };
 
+    const engenheiroPatrimonial = normalizeEngenheiroPatrimonial(c.engenheiro_patrimonial);
+
     legacyRows.push({
       baseqv_client_id: c.id,
       qv_id: c.qv_id,
@@ -374,8 +382,8 @@ async function main() {
       email: c.email,
       programa: c.programa,
       status: c.status,
-      engenheiro_patrimonial: c.engenheiro_patrimonial,
-      ep: c.engenheiro_patrimonial,
+      engenheiro_patrimonial: engenheiroPatrimonial,
+      ep: engenheiroPatrimonial,
       found_anchor: m.anchor.found,
       anchor_match_type: m.anchor.matchType,
       found_pharus: m.pharus.found,
@@ -427,7 +435,7 @@ async function main() {
 
   const activeBasePopulation = activeClients.map((c) => ({
     programa: c.programa ?? null,
-    ep: c.engenheiro_patrimonial ?? null,
+    engenheiro_patrimonial: normalizeEngenheiroPatrimonial(c.engenheiro_patrimonial),
     status: c.status ?? null,
   }));
 
@@ -447,6 +455,7 @@ async function main() {
     'telefone',
     'email',
     'programa',
+    'engenheiro_patrimonial',
     'ep',
     'mecanismos',
     'ultima_reuniao',

@@ -1,3 +1,5 @@
+import { formatEpDisplay } from './ep.js';
+
 /** Labels PT-BR para colunas reais de client_financial_data */
 export const FINANCIAL_FIELD_LABELS = {
   ultima_renda_mensal: 'Renda mensal',
@@ -125,7 +127,8 @@ export function buildExportColumns() {
     { label: 'telefone', get: (r) => r.telefone },
     { label: 'email', get: (r) => r.email },
     { label: 'programa', get: (r) => r.programa },
-    { label: 'ep', get: (r) => r.engenheiro_patrimonial },
+    { label: 'engenheiro_patrimonial', get: (r) => formatEpDisplay(r.engenheiro_patrimonial) },
+    { label: 'ep', get: (r) => formatEpDisplay(r.engenheiro_patrimonial) },
     { label: 'mecanismos', get: (r) => r.mecanismos },
     { label: 'ultima_reuniao', get: (r) => r.ultima_reuniao_nome },
     { label: 'data_ultima_reuniao', get: (r) => r.ultima_reuniao_data },

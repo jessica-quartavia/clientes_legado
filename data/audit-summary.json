@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T18:37:51.368Z",
+  "generatedAt": "2026-10-29T21:02:26.926Z",
   "sources": {
     "anchor": {
       "schema": "qv_360",
@@ -28,12 +28,12 @@
     }
   },
   "totals": {
-    "total_auditado": 362,
-    "nao_em_nenhum": 337,
+    "total_auditado": 343,
+    "nao_em_nenhum": 317,
     "esta_no_anchor": 19,
     "esta_no_app_pharus": 0,
     "esta_nos_dois": 0,
-    "ambiguos": 6,
+    "ambiguos": 7,
     "anchor_encontrado": 19,
     "pharus_encontrado": 0
   },
@@ -43,7 +43,7 @@
     "TELEFONE": 0,
     "QV_ID": 0,
     "MULTI": 19,
-    "NOME_APENAS": 6
+    "NOME_APENAS": 7
   },
   "comparisonWithLegacyMatching": {
     "false_positives_vs_old_found_flags": 0,

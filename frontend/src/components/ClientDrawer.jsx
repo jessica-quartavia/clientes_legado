@@ -1,3 +1,4 @@
+import { formatEpDisplay } from '../lib/ep.js';
 import {
   FINANCIAL_DISPLAY_ORDER,
   FINANCIAL_FIELD_LABELS,
@@ -35,7 +36,7 @@ export default function ClientDrawer({ client, onClose }) {
             <Row label="QV ID" value={client.qv_id} />
             <Row label="Programa" value={client.programa} />
             <Row label="Status" value={client.status} />
-            <Row label="EP" value={client.engenheiro_patrimonial} />
+            <Row label="EP" value={formatEpDisplay(client.engenheiro_patrimonial)} />
           </Section>
 
           <Section title="Mecanismos">

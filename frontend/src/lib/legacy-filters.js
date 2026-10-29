@@ -1,3 +1,4 @@
+import { engenheiroPatrimonialValue } from './ep.js';
 import { hasMeaningfulFinancialData } from './financial.js';
 
 export function hasValidFinancial(client) {
@@ -18,17 +19,12 @@ function matchBoolFilter(value, filter) {
   return yes ? Boolean(value) : !value;
 }
 
-function clientEp(client) {
-  return client.engenheiro_patrimonial ?? client.ep ?? '';
-}
-
 /** Filtros que existem na população BASEQV ativa (numerador e denominador do %). */
 export function applyBasePopulationFilters(activeBaseRows, filters) {
   if (!activeBaseRows?.length) return [];
   return activeBaseRows.filter((row) => {
     if (filters.programa && row.programa !== filters.programa) return false;
-    const ep = row.ep ?? row.engenheiro_patrimonial ?? '';
-    if (filters.ep && ep !== filters.ep) return false;
+    if (filters.ep && engenheiroPatrimonialValue(row) !== filters.ep) return false;
     if (filters.status && row.status !== filters.status) return false;
     return true;
   });
@@ -39,7 +35,7 @@ export function applyLegacyFilters(clients, filters) {
   const q = filters.search?.trim().toLowerCase() ?? '';
   return clients.filter((c) => {
     if (filters.programa && c.programa !== filters.programa) return false;
-    if (filters.ep && clientEp(c) !== filters.ep) return false;
+    if (filters.ep && engenheiroPatrimonialValue(c) !== filters.ep) return false;
     if (filters.status && c.status !== filters.status) return false;
 
     if (q) {

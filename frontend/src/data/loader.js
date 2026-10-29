@@ -1,5 +1,32 @@
+import { engenheiroPatrimonialValue } from '../lib/ep.js';
 import { computePatrimonioResumo } from '../lib/financial.js';
 import { isConfirmedLegacyClient } from '../lib/confirmed-legacy.js';
+
+function canonicalEngenheiroPatrimonial(client) {
+  const v = engenheiroPatrimonialValue(client);
+  return v ?? null;
+}
+
+function enrichClientRecord(client) {
+  const engenheiro_patrimonial = canonicalEngenheiroPatrimonial(client);
+  return enrichClientFinancialFields({
+    ...client,
+    engenheiro_patrimonial,
+    ep: engenheiro_patrimonial,
+  });
+}
+
+function enrichActiveBaseRow(row) {
+  if (!row || typeof row !== 'object') return row;
+  const engenheiro_patrimonial =
+    row.engenheiro_patrimonial !== undefined
+      ? engenheiroPatrimonialValue({ engenheiro_patrimonial: row.engenheiro_patrimonial })
+      : engenheiroPatrimonialValue({ engenheiro_patrimonial: row.ep });
+  return {
+    ...row,
+    engenheiro_patrimonial: engenheiro_patrimonial ?? null,
+  };
+}
 
 function enrichClientFinancialFields(client) {
   if (client.finance_renda != null || client.finance_aporte != null || client.finance_patrimonio != null) {
@@ -60,13 +87,15 @@ export async function loadDashboardData({ force = false } = {}) {
   }
   const auditStatus = auditStatusRes.ok ? await auditStatusRes.json() : {};
 
-  const all = Array.isArray(rawClients) ? rawClients.map(enrichClientFinancialFields) : [];
+  const all = Array.isArray(rawClients) ? rawClients.map(enrichClientRecord) : [];
   const hasAuditFields = all.some((c) => c.auditoria_status != null);
   const confirmed = all.filter(isConfirmedLegacyClient);
   cache.clients = confirmed;
   const auditPending = all.length > 0 && !hasAuditFields;
   cache.summary = summary;
-  cache.activeBasePopulation = Array.isArray(activeBasePopulation) ? activeBasePopulation : [];
+  cache.activeBasePopulation = Array.isArray(activeBasePopulation)
+    ? activeBasePopulation.map(enrichActiveBaseRow)
+    : [];
   cache.buildStatus = buildStatus;
   cache.auditStatus = auditStatus;
   cache.auditPending = auditPending;

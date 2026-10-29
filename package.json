@@ -10,7 +10,7 @@
     "build": "npm run build --prefix frontend"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.49.1",
+    "@supabase/supabase-js": "^2.118.0",
     "dotenv": "^16.4.7"
   }
 }

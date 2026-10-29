@@ -1,3 +1,4 @@
+import { formatEpDisplay } from '../lib/ep.js';
 import { formatCurrencyBRL } from '../lib/financial.js';
 import CopyButton from './CopyButton.jsx';
 
@@ -109,7 +110,7 @@ export default function LegacyTable({
                   </span>
                 </td>
                 <td className="nowrap">{row.programa ?? '—'}</td>
-                <td className="col-ep">{row.engenheiro_patrimonial ?? '—'}</td>
+                <td className="col-ep">{formatEpDisplay(row.engenheiro_patrimonial)}</td>
                 <td className="col-mec">{row.mecanismos || '—'}</td>
                 <td className="col-reuniao">{row.ultima_reuniao_nome ?? '—'}</td>
                 <td className="nowrap">{formatDate(row.ultima_reuniao_data)}</td>

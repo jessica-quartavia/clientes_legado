@@ -16,6 +16,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 02ea3949-d88a-4a8a-8a0a-519072387ff7,,Bruna Amarante Kuhnen,,brunamarante@yahoo.com.br,+55 48 98804-2406,true,email,false,,false
 031ad077-4cd2-485a-a0d1-9e8c9338324f,,Aline Valério de Lima,,alinevalerio1@hotmail.com,5533999661886,false,,false,,true
 03493d05-bf24-4326-bce7-fd29ad2c242b,,Marilda Alves de Morais,04616426899,maqueen3br@yahoo.com.br,+5561999700202,false,,true,cpf,false
+03556ec7-39da-47cf-acb7-54e040c964b5,,Cibele Magalhães Itapary,64491960330,,5598981111919,false,,false,,true
 03925f28-31fb-4356-b49a-95ce6a52741a,a56be5f1-32e9-4302-bae5-731880046a45,Rodolfo Rodrigues Silva Quero,10398369763,rodolfo.med@hotmail.com,22999852945,true,qv_id,false,,false
 039a0028-dde5-4584-b257-6537e2cdc05c,d77ade45-b14a-4f73-bc82-9d153226efc2,Robson Martins Pimentel,35227653895,robson@centrodesonobrasil.com.br,11952313280,true,qv_id,false,,false
 03c2d61f-8ec4-4624-a487-8bb6287eda78,,Carlos Henrique Leão de Faria,95531700725,chleao@gmail.com,+5521979755251,false,,true,cpf,false
@@ -26,7 +27,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 047130e6-0c67-4139-9e2e-7860ab87bf1e,,Leandro Coelho Nardi,25099666850,leandronardi@hotmail.com,11999534783,true,cpf,false,,false
 047b33f7-99c4-4a8a-b7b8-41d933279a05,,Andrei Brilhante Silva Costa,02814054767,andreibrilhante@gmail.com,5548988293646,false,,false,,true
 04811d6e-78c8-497a-b9f0-6eaa637bcc3b,931f15dd-f0a7-45bc-9595-550fae3c366f,Leandro Vilanova Coelho,83485902349,leandro.coelho23@hotmail.com,98999958505,true,qv_id,false,,false
-04a570b8-eb84-4b1f-ab7b-80607b67c096,,João Flávio Magalhães Borges de Carvalho,27843880852,drjoaocarvalho1978@gmail.com,+5511992203345,false,,false,,true
+04a570b8-eb84-4b1f-ab7b-80607b67c096,,João Flávio Magalhães Borges de Carvalho,27843880852,drjoaocarvalho1978@gmail.com,+5511992203345,false,,true,cpf,false
 04a5d00b-7a89-49a7-b1f4-7901c14dfb92,13db5e49-a6fb-4823-bb04-a25b60daa280,Isabela Vasconcelos Vieira Silva,04805979607,isabelavieira916@gmail.com,33988130213,true,qv_id,false,,false
 04ca1304-5d53-43f6-8e3d-6d27ce83507c,,Paulo Roberto Rui Arantes,21325204889,pauloarantes311277@gmail.com,19989306090,true,cpf,false,,false
 04d1a4f5-5e40-47be-94db-4a444ed2a693,6fa8326c-bfb2-418b-a48a-7f6254e545e1,Silas Duarte da Silva,39166520100,silasduarte6@gmail.com,98988778088,true,qv_id,false,,false
@@ -38,7 +39,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 05d2165b-3e90-4881-b9d2-f0b64c07c436,02109bae-f6f9-4cf9-ac65-d65364b716f6,Cíntia Bimbato de Menezes Paiva,22783565854,cintiabimbato24@gmail.com,16997978696,true,qv_id,false,,false
 05db5120-2585-4a1f-a49a-3776af4c7e05,,Vinicius de Castro Alves Sampaio,45649090378,,,false,,true,cpf,false
 05dcdc2d-e82b-4d22-8f38-a61016461e58,700352e0-4eea-483e-aef3-0ccb6fe996d3,Matheus Palaro Canhete,25707840877,mpcanhete@gmail.com,14997064488,true,qv_id,false,,false
-05f4b87e-9fd6-41d5-b10f-77454197ddd4,2028d51c-52af-4f2c-841f-ef254d4ae62a,Cassio Jose Krupinsk,28436384881,ckrupinsk@gmail.com,,true,qv_id,false,,false
 0609244d-61b7-4a50-a2e0-3ae3331ea02d,7457aad0-080a-4ec5-a28b-4f5c8e6aba57,Rodrinei Cristian Braun,02703182910,rodrinei.braun@gmail.com,46999193388,true,qv_id,false,,false
 069af57d-b477-455b-8b87-2729c3f6bfd2,,Mariana Ishibashi Onishi,32695452829,mishibashi2012@gmail.com,11983460995,false,,false,,true
 06fa5954-1d14-4f57-a353-a0a16aff8506,,Evelyn Rebelo dos Santos Figueira,81375433253,evelyn_rebelo@hotmail.com,5592981825638,false,,false,,true
@@ -68,7 +68,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 0a240672-cf97-4e95-b822-d02fc2bfa60a,,Amilcar Ferreira Gerber,98462032091,amilcargerber@gmail.com,+5554999547808,false,,true,cpf,false
 0a578d16-7f13-49dd-8b06-a2ffd8f53bcf,64c32128-efea-457e-8ba8-065fc9dc7e1f,Nayhan Andrade dos Santos,05903018530,nayhan_fsa@hotmail.com,75991711039,true,qv_id,false,,false
 0a8dd81e-ed55-48c5-8b1a-20c7af37e988,,Leopoldo César de Miranda Lima Bisneto,,leopoldocesar.ml@gmail.com,5561995041010,false,,false,,true
-0aad1745-41a9-4076-b414-20f24a16aaf5,a293fee1-a032-4a6e-861b-21998cb8c145,Dora Werneck de Almeida Menezes,12532299703,dorawerneck@hotmail.com,11941612901,true,qv_id,false,,false
 0ae458ab-c016-4110-a1dc-07a7629be9f9,,Thiago Loureiro Torres,05390272781,thiago@tltconsultoria.com,+5511981660227,false,,true,cpf,false
 0b0209c8-8c8a-4c5d-8f0e-503901af0b10,,Wellington da Cruz Terra,91745063668,wterra2000@bol.com.br,5592981540061,false,,false,,true
 0b15e2e9-7b01-4cb9-b45b-02927b81a619,,José Gilmar Gomes Junior,00612592170,jggjunior@gmail.com,0,false,,false,,true
@@ -81,16 +80,18 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 0c06cdf3-b5cc-4d08-ad55-b5bc72c2b7de,,Débora Rachel Pereira Gonçalves,91174929120,diretoria@agroexcelenciamt.com.br,+5566996117095,false,,true,cpf,false
 0c2e269d-ed4c-4faf-bc2f-ec12617136f5,,Agnor Christy,,,5575999883254,false,,false,,true
 0c2e38b5-5808-4cff-b1b9-11db78e26286,,Nelma Martins Marciano,29388155149,nelmamm@uol.com.br,+5567992569455,false,,true,cpf,false
+0c3213db-2cf9-4158-8495-5524966e4d77,,Magela Teodório Melo Fernandes Magela,04607111309,magela_fernandes@hotmail.com,+5581999936868,false,,true,cpf,false
 0c6ec153-3657-490c-bbec-61a10c594741,,Kattson Sales Pereira,93456697520,kattsonksp@yahoo.com.br,71999972691,true,cpf,false,,false
 0c9241a6-6ca9-4e74-8ea1-2ceaa4308f9f,,Benicia Sara Salinas Zambelli,68353863634,bessalinas@yahoo.com.br,33988058352,false,,false,,true
 0d341d4c-d60e-4e6a-acaa-68b714af03e9,,Fernanda Reis Gomes,,fernandarg.cirurgia@yahoo.com.br,5541997829894,false,,false,,true
 0d614495-cbfb-4c86-a7cc-dcb73dc88bd0,,Luis Márcio Olinto Pessoa,70600406172,luis.olintopessoa@gmail.com,+5514998020263,false,,true,cpf,false
 0d73ffa3-ac1f-4638-952e-3d40c6582549,2f8e31e9-5fa6-43d5-bd15-12bec0107888,Dimas César Bragagnolo,80117767034,dimasbragagnolo@gmail.com,45991495626,true,qv_id,false,,false
+0d7f5b70-900e-4b1d-a21a-e827b16423a9,,Bruno Alberto Falcão Pereira,51819139204,drbrunofalcao@gmail.com,+5591984351227,false,,true,cpf,false
 0d9cd0f8-e4b7-4c3c-93de-aafa5ea4cd0e,edddcef2-a7fe-41ff-8a66-2508f200e1e7,Jean Louis Silveira,02690625725,jjean.silveira@gmail.com,21981542222,true,qv_id,false,,false
 0db4d3ec-b274-4eef-b46c-b62d2decbaf2,,Fabiano Gradela Leone,18446242850,fgleone@hotmail.com,5517991142725,false,,false,,true
 0db52489-1bc4-4a00-82e8-ef30d7e5f883,c5a4c244-af8d-400f-9e38-8d17c9d9ef5c,Régis Paraboni,73606952015,regisparaboni@gmail.com,54991045002,true,qv_id,false,,false
 0dbe1e83-afa2-47d1-9c7b-1fd1e54bd918,3c19759f-5568-47ea-a596-bb37745978e9,Hildegardis Angelo Mascaro,11343459761,mascaro.rj@gmail.com,21985447772,true,qv_id,false,,false
-0e3bb371-eed6-4d4b-b241-9db3f61ce960,,Flávia Rossana Moreira Stival Cunha,99182661120,flaviastival@hotmail.com,5562981262023,true,cpf,false,,false
+0e3bb371-eed6-4d4b-b241-9db3f61ce960,,Flávia Rossana Moreira Stival Cunha,99182661120,flaviastival@hotmail.com,5562981262023,true,cpf,true,cpf,false
 0e412b1f-6a16-41bb-8da2-5d432fa1272e,,Kleber Tomé da Silva,15550760843,klebertom@gmail.com,+5511984553662,false,,true,cpf,false
 0e65c03c-001b-463d-b8b3-a3b43fd6e119,,Renata Martins Alonso,28714009897,renalonso@gmail.com,5511998294900,false,,false,,true
 0e8c5461-8d47-496b-96a1-044d46a64491,030921bc-8f7e-49aa-af87-6c82dbea8035,Gisele Menezes Vilela Valente Rodrigues,51246660210,gisele_valente@icloud.com,92999612020,true,qv_id,false,,false
@@ -105,7 +106,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 0f9a6f3e-dedb-4f13-bb03-7fcdab528522,10faa781-d84c-4da8-88b3-31baf5c4997c,Dalynajara Ciarlini Mendes,97925900482,dalynajara98ciarlini@gmail.com,86999227928,true,qv_id,false,,false
 0fad2fe8-2cd7-4a6a-b020-549fc7200270,,Luiz Henrique Boaventura Batista,00985489138,luizhenriqueboaventura@hotmail.com,+5565999061695,false,,true,cpf,false
 0fdcebae-4e25-4e6e-9f5e-65f7b57a6e4a,,Felipe Hiroaki Onituka,38341016800,felipe.onituka@gmail.com,+5511920075777,false,,true,cpf,false
-0fe81446-804a-435f-8390-f6a32acd48ed,,Murilo Franco Rocha Santos,,industrially@hotmail.com,556481106068,false,,false,,true
 104ff582-fbed-4a48-a910-e485bd1b81c0,,Karina de Souza Weinmann,56270887100,karinasw@hotmail.com,5511984735457,false,,false,,true
 10558686-e36e-40f8-ab8f-15cd3fea1349,e398e3ba-e17e-4aea-a658-ee0edb27d237,Leandro dos Santos Nascimento,72648139168,leandro_sn23@hotmail.com,64992648834,true,qv_id,false,,false
 1064e814-a953-4913-931f-8fb75e6c8491,,Edson Oliveira,14073419790,edson@negociosdealtovalor.com,+5528999751103,true,cpf,false,,false
@@ -118,6 +118,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 11a97c1c-68c6-4a11-82bd-73b456ec58cc,d5fa492a-9061-44c1-a958-d906c778d510,Kássio João de Aguiar e Souza,84503629115,kassioja@gmail.com,61981323566,true,qv_id,false,,false
 11df7874-febd-493d-afc0-dcb35701563b,,Rebeca Meirelles de Araújo Assis,03092651502,rebecameirellesassis@gmail.com,5511932087793,true,cpf,false,,false
 11dfa7e1-dae5-43a8-bf12-19ea39398520,a9dcdb18-000f-4893-970d-bf7303a8f3f2,Luiz Filipe Graziano Guerra,16590995877,luizguerra@primelist.com.br,11981089494,true,qv_id,false,,false
+11ed1ed3-46a1-42ea-a16d-1d6519bf3278,,Leonardo de Almeida Barbosa,31624449859,leotrux@gmail.com,+5511983368169,false,,true,cpf,false
 1203b291-f3a1-4ed1-ae72-fe207efb96f8,fde859f5-1f3e-4a8b-898f-b38356e5bcd6,Victor de Oliveira Dantas,01144295459,victorodantas@gmail.com,83993062432,true,qv_id,false,,false
 120f91a9-6acc-4b06-9078-ceeb184bf58b,,Marta Blom Chen Yen,61017078149,blommarta@yahoo.com.br,5561986231972,true,cpf,false,,false
 122b6584-f1d5-484c-9156-d486bafc065b,,Renato Sancho Batista,05641215767,renatosancho@gmail.com,+5521994425679,true,cpf,false,,false
@@ -132,7 +133,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 13fb7d58-1eec-4727-bbe1-5fa8b7ed647c,,Leonardo Costa,22184117846,leocostaminas@gmail.com,+5522988110399,false,,true,cpf,false
 141ef30c-4d04-4f9a-9967-78abbd95402d,,Denisia Yumika Tanaka,25079962852,denisia.tanaka@gmail.com,+5511991322913,false,,true,cpf,false
 14303f3d-f14f-420f-b0a5-4465c8a44a67,,Cristiano Santos da Silva,91917085591,cristiano@guforecords.com,+393409295673,false,,true,cpf,false
-1444a6ff-3b84-400b-b7fb-ab617dc49bee,04542659-bcbd-42aa-8571-e14c54b885b5,Marcos Roberto Mendanha Nogueira,02820052690,marcosmendanha@terra.com.br,38992128880,true,qv_id,false,,false
 1458bd6a-61a7-4036-88af-889984fb9a49,6c4d366f-ce27-4285-aac9-f75d25f7c244,Viviane Piccinini,00266777090,vivianepiccinini82@gmail.com,54991640040,true,qv_id,false,,false
 14609e0d-93ef-484b-92a4-ed647ca2cbd7,932ab2cf-d900-4001-b307-0dc912148854,Ricardo Sérgio Arantes Pereira,90127072187,ricardo@ricardoarantes.com.br,67981335003,true,qv_id,false,,false
 1481612b-df88-4456-a154-0306b4c10343,7e8e12df-b962-4c85-9bef-77c95389e1bb,Bruno Gonçalves Lemos de Carvalho,07332885611,brunodecarvalho@gmail.com,31988025754,true,qv_id,false,,false
@@ -152,12 +152,10 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 167f8765-a8e2-48f2-a6d7-4c6acbdc50ed,,Juliana Karina Grellmann,,dra.julianagrellmann@gmail.com,5555996072458,false,,false,,true
 16816be0-d719-45e8-9ef9-949ff98ebcf5,ee847608-99bc-4dbd-9688-25fd1845be6a,Fabiola da Cunha Bazi,45584648272,fcunhabazi@gmail.com,92988112911,true,qv_id,false,,false
 16a2553b-d699-4f4f-8d2a-91fcc2e38a66,3c9edcf7-e27d-4b9b-a313-8438fc168f64,Gerlane Oliveira do Espírito Santo,89447638449,goespiritosanto@yahoo.com.br,82982037703,true,qv_id,false,,false
-16d3bb3a-c3f2-4f98-95c1-209af5f446b2,7ceeb2d0-6185-4828-bd04-27490b59ce2b,Fátima Regina dos Santos Jaskulski,96232137000,paulorubenswottrich@gmail.com,+5551997919664,true,qv_id,false,,false
 16f3ae3d-ebb7-4e75-998e-afeabd8133a8,,Rogério Faria,94383758649,rogeriovisualize@hotmail.com,5535988637320,false,,false,,true
 1755aa8f-d1f6-409f-9a48-c4f1208cf9fe,,Thaline Carvalho Medeiros Costa,,medeirosthaline@gmail.com,55 86 9955-6785,false,,false,,true
 176f5abb-a8b7-47bf-8d93-70717112e304,,Douglas Hebert Coutinho Januário,82695342268,douglashcj@msn.com,5569984893045,false,,false,,true
 1771598f-f3d1-49a8-94a8-df9c5eda8ab0,8deaed2d-5903-4667-8226-f6600f806777,Thiago Franklin Boy de Sousa,44680102829,thiago.fbs@gmail.com,11964009969,true,qv_id,false,,false
-178a476a-4b5d-4377-bcd1-46696e77bf63,9253e23c-db5d-4f52-904e-cc4ddba28101,Jordânia Amã Monteiro,08931117671,jordania@zenify.com.br,31994681800,true,qv_id,false,,false
 17fef9e1-f4d7-4913-9bc5-07ee3f571692,,Cesar Eduardo da Silva,00585627967,cesar@learn.net.br,+5547999321929,false,,true,cpf,false
 182f9da5-1242-458c-87a5-8ee405c32722,fb0ed803-3c24-4171-bca7-bc1a020bb7d2,André Pinheiro Siqueira,35424637876,andresiq2000@gmail.com,11993130175,true,qv_id,false,,false
 1881da4e-9e3f-4d33-a852-49672818c120,,Massahiro Ono,27554473972,ono_1640@hotmail.com,5566981140407,false,,false,,true
@@ -171,15 +169,17 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 1ab35d73-a95c-4c44-b281-800951ca73a5,,Gabriel Santos Lerbak,12538799740,gs.lerbak@gmail.com,+5521967301761,false,,true,cpf,false
 1acf6f92-5a39-4c15-8c6e-609185f22fb2,8a98250b-6d82-4494-8ba5-21332ead38d4,Joara Letícia Bueno,27813909844,joaraleticia@icloud.com,+5519996056698,true,qv_id,false,,false
 1af66c60-01b8-4c33-ada8-1a416487ddf0,287d3899-4696-4cc9-86c7-6f777454f3ae,Jefferson Giovane Tomazelli,67017010949,costasul03@gmail.com,73991360100,true,qv_id,false,,false
+1b2ec93a-78b3-49e9-a5d3-cb5c1a58bbc6,,João Augusto Furuta Nowak,07223669900,joao.fnowak@hotmail.com,+5565999616462,false,,true,cpf,false
 1b5737cf-9f06-48ef-aeb7-533921707e0f,4efa250e-636b-4866-acdc-0ac0d42bb07d,Carlos D G de Magalhães,03090611643,carlosmagalhaescoach@gmail.com,11993126703,true,qv_id,false,,false
+1b585661-319e-4ad2-bd3c-d74b0afe5b6c,,Pedro Augusto Sampaio de Abreu,81347707549,pedro.abreu@larplasticos.com.br,+5571991945850,false,,true,cpf,false
 1b65c19c-faab-40fe-a535-6767e0d7ac59,,Elizeu Barreira Lemos Júnior,25020919349,elizeu.lemosjr@outlook.com,+5598988169910,false,,true,cpf,false
 1bca0612-25f1-478e-b884-81008ee1bdcf,,Lidice Basalo,,,5551993609191,false,,false,,true
 1be60f43-7dd0-4439-ad48-c6d582199d60,4c84c7b7-2c3f-436a-87c6-2608e3bb937a,Geovanna Pires Ribeiro da Silva,02145025979,geovannapires@gmail.com,11982046864,true,qv_id,false,,false
-1c110611-efa8-463e-b1c0-754d98ec1f5a,,Marcia Tornavoi de Carvalho,10374435863,marciatornavoi@gmail.com,+5511992277515,false,,true,cpf,false
 1c3a3c0a-d0bf-4cf0-b01a-d356fc3355f0,7fd47530-aa1b-45c7-8cde-7f3601b12016,Cleverson Faustino Brandelero,02847489940,c.brandelero@gmail.com,46999720059,true,qv_id,false,,false
 1c4ec3fb-89ab-47dd-b5ba-5f193f6c802e,c9ff5431-e16d-49dd-972c-0b9c0f9e273d,Pedro de Oliveira Nascimento,16773274648,pedronasci17@icloud.com,31999050109,true,qv_id,false,,false
 1c8340ea-f97a-4428-b21d-8801d44de08e,816d9bce-a80b-42f7-884e-447dc0f53051,Luiz Fernando Nascimento Benek,05076774982,benek.luiz@yahoo.com.br,43984513030,true,qv_id,false,,false
-1c9f3a06-cdfe-4357-a3ff-b9f1badb86b4,3857e0af-9a8d-4aff-a29d-71e2ff37f4b4,Ernani Vasconcellos Emiliano dos Santos,11328683788,ernanivesantos@gmail.com,21998541744,true,qv_id,false,,false
+1c9f3a06-cdfe-4357-a3ff-b9f1badb86b4,3857e0af-9a8d-4aff-a29d-71e2ff37f4b4,Ernani Vasconcellos Emiliano dos Santos,11328683788,ernanivesantos@gmail.com,21998541744,true,qv_id,true,cpf,false
+1cae8e57-7ff3-48b0-9ce9-a55cf72bc9e6,,Tiago Paglia,00177246197,tiago__paglia@hotmil.com,+5562982503287,false,,true,cpf,false
 1cd4a3a0-f29f-4259-904a-d105df5daff2,36268880-39eb-413f-b9d2-6d5afb85c79e,Leoricleia Aparecida Teixeira Donadel,71365800997,leoricleiadonadel@gmail.com,41988504793,true,qv_id,false,,false
 1cd83bd1-27c3-444c-927d-3c5ec5327ccc,,Fabio Crestani,00367936984,fmcrestani@hotmail.com,+5547991835755,false,,true,cpf,false
 1d0644e7-8f71-4c0f-9652-fc2786e87286,8ce81a7a-cf66-44ac-b901-ae7483519c26,Fabricia Zeferino Ghisoni,00800319940,fabighizo@hotmail.com,+5548984260130,true,qv_id,false,,false
@@ -199,7 +199,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 20b17745-6a4a-4cbb-b825-b5cf568afadf,,José Luís da Silva Martin Gascón,06606934885,joseluis@gascon.com.br,11991944544,true,cpf,false,,false
 20c0c8a4-b250-4c96-b880-cdebf5022b40,d2567f92-0fb3-44c4-8858-4247259fd9ac,Raimundo Nonato Soares Torres,21742162304,rai.n.s.torres@gmail.com,86988775930,true,qv_id,false,,false
 20c6d869-5f0f-41d5-9e2f-f8648a8bf45c,,Mirna Zandonadi Maia,,mzandonadim@yahoo.com.br,5521985789712,false,,false,,true
-20d8112b-75e6-4362-8584-76f593b5fc8c,,Ivaldo Pereira Rocha,01643536311,ivaldo_pr@hotmail.com,+5598984113451,false,,true,cpf,false
 20eb028f-373f-4a63-a468-57fe9544f214,,Fernando Paranaiba Filgueira,98955292104,fpfilgueira@yahoo.com.br,5564999279779,false,,false,,true
 2109ce45-ea0b-4411-90cf-1f9911a70107,722a1b59-87df-4ef8-a024-26e7c4bc6950,Rodrigo Antunes Pereira,02021429903,rodrigo@superbeton.com.br,47991801409,true,qv_id,false,,false
 217b3a98-65e6-456a-b8a1-55d5ccfbe47a,,Solange de Oliveira Megliorini,32130523889,solange.megliorini@outlook.com,+5519988587745,true,cpf,false,,false
@@ -217,7 +216,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 239736af-aa99-4417-a928-0121561d4bbc,,Thais Troll,30719576881,thaistroll@yahoo.com.br,5511997416592,false,,false,,true
 239e8091-a776-4c2c-9ddf-2c1821f0a91c,,Manoel Antonio de Azevedo Sodré e Wild Veiga,16576714882,mwildveiga@gmail.com,+5519981744305,false,,true,cpf,false
 24043bd3-613d-4fdd-aa9e-220aaabcfa1d,fe4a2a2e-64b8-41f2-abb8-5af4dec99ef3,Sergio Alejandro de La Zerda Gutierrez,23153779864,sergiodelazerda2@gmail.com,11910268232,true,qv_id,false,,false
-2412cd30-4001-4d4f-ad09-edbf468bc620,a625df23-f35c-44e6-88c4-0245640126c8,Alessandra Girotto,90843908149,a.girotto1981@gmail.com,19997123894,true,qv_id,false,,false
 24ac90fb-6478-453d-8a74-af6bd22021a4,1d59b20c-a9bf-4397-b976-58aee7a02671,Moises Gambin,94951080044,moisesgambin@gmail.com,5549984371662,true,qv_id,false,,false
 24df8298-6a52-4b79-885e-0029103fc8b7,3a89811b-f850-41bb-ad4f-be0a548280a4,Plinio Neuls Júnior,76697657200,plinionjr@hotmail.com,91981156858,true,qv_id,false,,false
 24efdf9c-f5f2-4bf8-b4bf-e561a3dddb0f,ccab8a04-2d66-451f-a145-1ab353f17cd5,Jeferson Leandro Kortbein,02731850981,jeffkortbein@gmail.com,+5547991447979,true,qv_id,false,,false
@@ -226,18 +224,18 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 254faf86-fa51-4175-9c9d-7f3b7a441200,27a6726e-4133-43d1-a927-a24cbebad31f,Simone Bitencourt da Silva,17905392856,simonebitencourtpsi@gmail.com,11974800838,true,qv_id,false,,false
 25839f5f-1567-43c3-b22d-bcc0a8727c34,,Fábio Rigueto,29773763803,fabiorigueto@gmail.com,5511981278008,false,,false,,true
 258b535e-7d5e-47b5-a848-a919b74643d7,,Ana Luzia Henrique de Santana,22448957851,ana30santana@yahoo.com.br,+5511975772395,false,,true,cpf,false
+25c4b828-b989-4f41-b458-4dd2a1088e15,,Jakson Funk,03956974921,jakson.funk@yahoo.com.br,+5541996124151,false,,true,cpf,false
 262d4ca5-7d0e-42ed-ab4a-b789dcecc32c,,Victor Henrique Medeiros Loureiro,10692659420,victorhenrique154@gmail.com,83998004954,false,,false,,true
 26472edf-e5dd-46e3-b939-05cdeb80b2a6,,Flavio Azevedo do Nascimento,01553189183,flavioan_med@hotmail.com,+5566984414260,false,,true,cpf,false
 26ce8d1f-70c3-4b06-b4e8-f62f92bfe5fd,33c98594-03c9-473a-81bd-d1ed53fd1351,Thelly Jessie Costa Moreira,74478761272,moreiratjf@gmail.com,93992051494,true,qv_id,false,,false
 2702a39b-9d6b-437f-8113-bf29d97988fd,,Wilson Bernardo Alves,04794084757,suamudancadevida1@gmail.com,+5591986185318,false,,true,cpf,false
 272307b0-caf7-428f-b8de-d4861c23359f,,Breno Pardini Gontijo,02889422640,brenogont@bol.com.br,5519991555568,true,cpf,false,,false
 27383a34-1717-46bc-aba2-b5d7bf71a27a,,Edson Antunes Quaresma Júnior,05467002686,edsontunes@hotmail.com,+5538991345094,false,,true,cpf,false
-274b3732-b6dc-4c18-bb51-c197bf8e2266,7729552c-3d8b-436e-822e-2fde2fb0c106,Leandro Richa Valim,83740643153,leandro.r.valim@gmail.com,61999704005,true,qv_id,false,,false
 27a0956c-3859-4606-8316-66b29269254d,414486c9-9d30-43e2-b7e5-0ad4a34866fa,Artemísia Figueiredo Pessoa,40078698200,pessoamanso@gmail.com,+5592991284386,true,qv_id,false,,false
 27ea6a1c-89f8-4854-9e5e-b39119bb539e,,Marcioni Cardoso Sheffer,49680374068,marcioni@terra.com.br,555199528731,false,,false,,true
 27ee316d-f6c0-4976-83a0-a61a975e8369,,Leo Robert Padilha,45668981991,leoplawyer1@terra.com.br,+5541999949602,false,,true,cpf,false
 28135fa5-86ca-40c8-9db8-d629b17ee8f5,a0b494c1-2c93-41a0-b204-3d8adb7e0267,Elton José Porfirio,31774632802,eltonporfirio39@gmail.com,14997325002,true,qv_id,false,,false
-2830e92a-63d0-46f7-8e9b-3297faefbbd9,,Eduardo Vasconcelos dos Santos Dantas,85640409487,eduardodantas@eduardodantas.adv.br,+5581991621693,false,,false,,true
+2830e92a-63d0-46f7-8e9b-3297faefbbd9,,Eduardo Vasconcelos dos Santos Dantas,85640409487,eduardodantas@eduardodantas.adv.br,+5581991621693,false,,true,cpf,false
 283ce71a-1c97-42a8-8099-778ee08f5d27,a4105d51-8b4a-471c-b70c-ae6a77e6ee4f,Bruna Rachel Futer Charchat,02486216103,bcharchat@gmail.com,11994432015,true,qv_id,false,,false
 284363c4-83d5-4354-a97f-d286baa00475,fd7f6b19-1bed-4a9c-8119-0d45cbebf1cb,Rafael Rodrigues Castillo,44713526878,pastelderafael@gmail.com,11972849403,true,qv_id,false,,false
 284e37ee-9000-4aca-87bb-0abf09ddf2a1,,Jader Lucas de Almeida,24642441808,jader@chameleoncomp.com,5511966273281,false,,false,,true
@@ -246,12 +244,11 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 28d50370-9a22-42bb-b3f6-171a2207f4a1,f4454bd7-4e95-4212-bfc3-7cdd07359c91,Miriam Silvia Schuartz,04201244890,miriam.schuartz@gmail.com,11999859927,true,qv_id,false,,false
 29153165-662f-418d-936e-c490a899ce41,34fce6f7-f784-419d-bf39-25ecc5c6fe84,Elton Oshiro,78214432120,trabalhecomelton@gmail.com,67999390534,true,qv_id,false,,false
 2932a896-c9eb-4cf9-b634-819c45c0af8a,98ad2528-b019-49e9-b2ca-6710013682ff,Rafael Moreira Lopes,81270712004,rafael@lojaeletromoveis.com,53981155443,true,qv_id,false,,false
-294b7c81-2f24-4446-8452-ea212248479b,8b589009-98bc-443d-b6d3-27acf778b414,Luciana Silva,04631043318,luciana.sud30@gmail.com,86988120576,true,qv_id,false,,false
 296ba84f-7b13-407b-9e5b-ca949299b9f6,55eddf9f-e784-4428-8e86-55895da6855b,Daniel Correia Cavalcante,87285150134,dcorreiac@gmail.com,+5561998309890,true,qv_id,false,,false
 29a084ba-f209-486a-bad1-252a0b6a5940,,Carlos Thomas Brasileiro,88099482620,cathbr@terra.com.br,5534991349368,false,,false,,true
 29aba2d2-4dd0-4d98-ba27-4f488ff5177d,75c7f140-935f-478d-b5b5-0b6326f9ab63,Victor Paes Fernandes,08398525762,victorpaes@gmail.com,21982122233,true,qv_id,false,,false
 29db17c4-d2d0-4ffb-b2e8-ea01130494c4,a86ecbdb-a110-4460-80a1-0548ace46599,Plínio Augusto Freitas Silveira,30354374087,pliniosilveira@hotmail.com,47988335900,true,qv_id,true,cpf,false
-29f60209-74fb-41be-84c7-1e3bec37ba0e,,Andrea Felix Pereira Costa,44620160253,andreafpc0212@gmail.com,+5511965976793,false,,false,,true
+29f60209-74fb-41be-84c7-1e3bec37ba0e,,Andrea Felix Pereira Costa,44620160253,andreafpc0212@gmail.com,+5511965976793,false,,true,cpf,false
 29f7a69f-c4a7-40d3-9fd5-77edb6af1d74,5e2fe456-63ba-4960-b7e0-4a0aaef64dbe,Caio Macieira de Almeida Aguilar,03091265501,cmaaguilar@gmail.com,,true,qv_id,false,,false
 2a0d479d-49c6-435c-83f9-3c4cf582feab,,Cesar Polisel,56124872820,cesarpolisel@gmail.com,+5512997701300,false,,false,,true
 2a2f9cbb-994c-4cb3-bd15-fe40e68c4986,b252ba13-8889-45f7-b7b8-a41224946e0b,Nelson Amado da Costa Pinto,96561025768,nelson-amado@hotmail.com,21999660718,true,qv_id,false,,false
@@ -271,8 +268,8 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 2bad94a6-1edd-401c-90c6-b9fbe2ca1064,,Vinicius Gravato Corrêa da Silva,37736838801,viniciusgravato@hotmail.com,+5513997370807,false,,true,cpf,false
 2c00b2a0-640d-4f63-b6ef-e04aa657278b,,Franklin Ubirata Machado,01296643085,ofranklinmachado@gmail.com,+5551998834748,false,,true,cpf,false
 2c13bf8c-4eb0-4712-94d0-c41444844de5,ff7f8122-242d-425b-b38b-03133da5a0e4,Adair José Rufatto,97450545004,arufatto2@yahoo.com.br,54999837491,true,qv_id,false,,false
-2c54c92c-6222-44ff-a598-94f7017351d9,,Cristiana Tavaniello Fortes,02777027803,cristianatavaniello@gmail.com,+5519999032345,false,,true,cpf,false
 2c630650-da9c-40d2-9e8d-80bdb11ff7ff,4c4bd7f1-1fc3-4803-89ed-1f0cd5286e8e,Antonio Ricardo Pessoa Fonseca,91163390615,arpfonseca@uol.com.br,21988521296,true,qv_id,false,,false
+2c95fb36-282c-4a64-909b-85d7f78459ed,,Messias Pereira Cardoso,08594623666,messiaspc@hotmail.com,+5534988784481,false,,true,cpf,false
 2c964b79-16d6-45d6-b79b-7b0b67bd45c6,8cf87994-64ef-4e7e-b193-0d9488516194,Augusto Cézar Mendes Pisco Néri,00510442773,acmpneri@gmail.com,+5521999557938,true,qv_id,false,,false
 2c9a3e73-51e6-4b56-a959-640bc2010ee2,,Rogerio Leite,41588606104,rogerioleite2007@gmail.com,5565992867474,false,,false,,true
 2cc11a41-84d6-49ae-9ddf-18c258674ce6,f8183fc6-fdd5-4458-be13-68fb62f47e4d,Maria Lua Liberato Pereira Castro,10468780424,jorgecastro@reptecnica.com.br,83981375321,true,qv_id,false,,false
@@ -281,7 +278,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 2cf3aa37-976a-4115-8488-d45c4f5b849f,d61fe0bb-8e3a-4295-8c3c-98ce9eee56d4,Douglas Araújo,75621975120,douglasaraujo.sharks@gmail.com,62981343787,true,qv_id,false,,false
 2d032d9a-63aa-492c-ada2-0beac6ccc3b3,,Paulo Fernando de Carvalho Junior,05739848750,paulofcarvalhojr@gmail.com,+5521972589107,false,,true,cpf,false
 2d4af4f9-e0d1-4fad-a743-d71195781eca,,Edson Mitsuo Nishida,26005228838,edmitho@hotmail.com,5511971492223,false,,false,,true
-2d5ade9e-db97-42ac-ab79-38815f581f31,,Fabio Arasanz,14052514840,fabio@arasanz.com.br,+5541999840150,false,,false,,true
+2d5ade9e-db97-42ac-ab79-38815f581f31,,Fabio Arasanz,14052514840,fabio@arasanz.com.br,+5541999840150,false,,true,cpf,false
 2da6cbad-286b-4846-8837-c353345d224b,e3da7227-e566-4070-b1ff-fa1bab48e41f,Ana Paula Lara da Silva,18053395830,aplara3010@gmail.com,11983168326,true,qv_id,true,cpf,false
 2de2e905-0cea-438e-99af-e4a5b0ca90d4,91c6a1a3-8e95-4805-893e-ffcb5d79125c,Daniel Reis Ribeiro Pires,02299695184,danreisribeiro@gmail.com,64993016272,true,qv_id,false,,false
 2de3bfd2-7073-4fea-8615-af4887ae883d,,Luis Filipi Bouyer Bicudo,12515659721,lfbicudo@gmail.com,5521981115773,false,,false,,true
@@ -293,16 +290,14 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 2e8caa3a-874e-444b-ac09-4c419b5c7976,a977153d-88df-4a2b-835a-b6fdcacb25e8,Juliano de Magalhaes,04460114607,julianoglt@gmail.com,31987513459,true,qv_id,false,,false
 2e902005-10e3-45eb-8511-3e55930b33df,dfe4138c-0cde-4577-831d-cc0b03ccfe1c,João Marcos de Souza Corrêa,44331138836,eng.jmscorrea@gmail.com,14997814088,true,qv_id,false,,false
 2eb36cb5-33da-45a4-aba3-45a3de305629,15a3828b-0b11-40b6-99ae-546c20071751,Mica Noda,22099830886,micanoda@gmail.com,+5511999097324,true,qv_id,false,,false
-2ece279d-3da9-4d94-b571-fbbcc1a972c1,aa381089-9f6c-4e37-aaac-5037657d9b93,Marcia Fernanda Menin da Silva,62043137972,marcia.menin@clinilive.com.br,44999785555,true,qv_id,false,,false
 2f02897e-7852-4126-8674-0583e1927709,d878ae1d-28a1-4695-8abf-1f0f8e0a5d1c,Charles Abdom da Fonseca,07612879654,charles@vemserglobal.com.br,31973103003,true,qv_id,false,,false
-2f5d43de-27aa-4664-8cd6-521ad21a43c6,1d035b8c-af36-4bdd-8bc2-cd1bc84f74e0,Edilaine Polli,13412065803,dra.edilainepolli.26@gmail.com,14997126766,true,qv_id,false,,false
 2f6cbde3-5dc8-4bf2-b131-9b22e28214da,cc4e2288-50d1-49b0-ad62-7cdeefb386a4,Herman Luiz Perez Rivero,27569202821,hermanperez@hotmail.com,+5511980579792,true,qv_id,false,,false
 2f94245c-6502-4cb7-9d59-82639a9a8e80,46ea04f8-7909-4192-8a64-f82736c545bc,Fernanda Aretuza Oliveira Barbosa,04612262603,nandaretuza23@hotmail.com,31992880822,true,qv_id,false,,false
 2f9d4a6c-15ae-4c95-91e1-8d8df94f0b66,,Jose Luiz Masini,06042553810,jmasini@me.com,+5511981512255,false,,true,cpf,false
 2fa8e548-3882-4689-9129-a7e3594c82a2,,Lenoir Hoehn,98639510997,lenoirh66@gmail.com,+5549998234240,false,,true,cpf,false
 2fd73e0b-c81d-495a-83c2-9adba4dfeb0e,,Rodrigo Candido de Abreu,29700427897,rabreu1900@gmail.com,5511937000647,false,,false,,true
 300644ea-6218-4fc1-8f7d-3505b00681c5,,Marcelo Martins,33442621812,mnozima@gmail.com,5511981686823,false,,false,,true
-300e79c6-88e7-4932-ab53-26a3eacc0652,,Rômulo Chaves Wanderley Neto,45521840400,romulo@rwca.com.br,+5584999876414,false,,false,,true
+300e79c6-88e7-4932-ab53-26a3eacc0652,,Rômulo Chaves Wanderley Neto,45521840400,romulo@rwca.com.br,+5584999876414,false,,true,cpf,false
 30215bca-9621-4d5f-80bc-8db6fd2c8eab,,Pamela Viana e Silva,09476548606,pamela_mtv@hotmail.com,+5538999262996,false,,true,cpf,false
 302362a5-f038-4bb3-b011-b69c9371533e,,Augusto Eduardo Goncalves Walter,67887414091,augustow51@gmail.com,5541987886118,true,cpf,true,cpf,false
 303307a2-c117-4006-bc4b-0d3dbea34a0e,,Saulo Lourenço Siqueira,05780459746,saulosiqueiramed@gmail.com,21993124949,true,cpf,false,,false
@@ -315,13 +310,12 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 314cf422-9e7c-4088-a49d-698f5689a3db,dcfc0441-9f30-42df-9e97-7b4e85176029,Yuri Duretti Pinho,06137434664,yuriduretti@gmail.com,31994565164,true,qv_id,false,,false
 31a8b23c-fc8d-49d2-bd5f-f710374365f9,5876bd06-253e-40dc-9729-1d0471ded3b0,Magda Pereira Machado,02127228910,magdapereiramiranda46512@gmail.com,43984355610,true,qv_id,false,,false
 31af2c37-4980-4dbf-8ba6-fcccd95165c1,31910cf9-d786-4f48-95bb-3deeae3dfc4a,Marcello Joppert Antunes,03666189709,mja200214@gmail.com,92984111209,true,qv_id,false,,false
+31c1252f-ed41-4326-aaf6-a8ee5987009b,,Luana Fátima da Silva Franca,32833418850,alefranca@gmail.com,+5511947043631,false,,true,cpf,false
 31d2aa6a-e99a-4097-a1e8-c367b14e334d,,Isabela Bezri Pennini,07525704635,isabelapennini@gmail.com,5521997621996,true,cpf,false,,false
 321a459f-dfc7-4d59-b02c-e935c13d020b,71c9f2b3-cca9-4096-89ae-a349f90cb500,Rodrigo Carvalho Turatti,40300586809,roturatti@hotmail.com,11985556306,true,qv_id,false,,false
 329e19dc-07e6-4443-b34f-81089c9a6230,,Jêmede Duarte Valença,03990652451,jemededv@yahoo.com.br,+5581991093415,false,,true,cpf,false
 32e2bac9-af3d-43e0-bd93-8ee5e75b34c9,,Jorge Henrique Pereira Lacerda,42889788822,ojorgeacala@gmail.com,+5517996141842,false,,true,cpf,false
 32ea0411-7dfe-4585-ae82-34022e020196,d0d065bb-27b7-4017-81cf-d6edf53a29e7,Raimundo de Lima Neto,04637008301,netomister@gmail.com,85988713006,true,qv_id,false,,false
-3329bda4-84af-4ea0-8864-0bdf10e54d20,58ac9c8f-90e6-401e-8a43-3543efce3013,Adriana Santana Toro Batista,25381081871,adrianasantanatoro@icloud.com,11985247761,true,qv_id,false,,false
-334409a6-0a6b-4e47-8f26-da57a005c1ad,,Gabriel Barros,03550252307,gabriel@assessoriacrab.com.br,+5585986514449,false,,true,cpf,false
 3349d0b6-8fbe-447f-83ed-dd49eeddf1ee,,Jose Augusto Pinheiro Sperandio,36043079968,sperandio@uel.br,+5543999377727,false,,true,cpf,false
 336996c6-c4b9-42bc-ab66-f34912910e4b,94fc9225-1467-4c7f-95de-79805161c586,Dorival Ricci Junior,80928595900,ricci.jr.drj@gmail.com,+5544991427140,true,qv_id,false,,false
 336f3a64-6a6f-43fc-9e08-b831d9e26be6,1e98b832-dc53-42aa-8953-757b22856778,Dermeval Farias Gomes Filho,93743670500,dermevalfarias@gmail.com,61992984505,true,qv_id,false,,false
@@ -331,6 +325,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 34167265-0061-4443-b631-9e0d60d1229d,,Joalicio de Almeida Honório Junior,76017095404,joaliciojunior@gmail.com,+5583996645000,false,,true,cpf,false
 344b2145-f774-4895-9bf5-3c3b59866a59,4c08dc99-7fdb-4d48-bca4-8c1f31f479be,Rodrigo Pereira de Almeida,32872919805,rodrigo@portofinodecor.com.br,18997322962,true,qv_id,false,,false
 34538219-029b-4bb2-803e-35a096ee06e9,,Márcia Souza da Silveira,42557186287,silveiramarcia589@gmail.com,+5591981359933,false,,true,cpf,false
+349d3bfd-ae4d-4206-8d8d-91e94964ba1d,,Soraya Ferreira da Silva Ribeiro,02221851471,Sorayfs@gmail.com,+5585991171453,false,,true,cpf,false
 34a3aede-572f-418a-9c49-7f077f85d30e,8f75f7ee-1f2f-4405-9917-1518f28e0834,Danielli Bastiani Rodrigues,93310455149,daniellibr@gmail.com,67992348768,true,qv_id,false,,false
 34c386bc-f7b0-4b09-ba21-82eae5286f63,,Thiago Albuquerque Fernandes,06506057483,thiagofernandes.taf@gmail.com,+5581991614491,false,,true,cpf,false
 34d31428-217a-478d-8834-f1a6c349d183,63dfe8c3-7ae8-4eec-8d5d-3e8b1f05b9aa,Denise D'avila Búrigo,06249564900,denised_avila@hotmail.com,48991692619,true,qv_id,false,,false
@@ -378,6 +373,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 3a04144b-d76c-4edb-8c76-e27f1c7f3841,,Bruno Suffredini,01885725540,brunosuffredini@gmail.com,5571997248711,false,,false,,true
 3a14e68b-8438-49c4-84ac-ab2a5332a072,,Ana Paula Flores Marotte,03585861784,anamarotte@gmail.com,+5521994653105,true,cpf,false,,false
 3a569314-7e46-46e8-ba7c-24811d92de91,4af2605c-81d7-4cac-9eae-3d6db150d771,Marina Machado Ferreira Veauvy,39958722801,macmarina@gmail.com,19974204119,true,qv_id,false,,false
+3a6c9237-6e36-4176-839f-d0273cabde31,,Matheus Veloso Lopes,09066175966,drvelosomatheus@hotmail.com,+5541999181053,false,,true,cpf,false
 3ab3f183-d4cf-4eca-8fe2-8fc958d60892,d28053aa-549b-49bf-bd02-bb12eb009405,Fabricio Pimentel Fonseca,00100158099,fpfonsecas@gmail.com,51984006550,true,qv_id,false,,false
 3ac8a377-6353-41f5-801a-0b15b5c9adba,bce4545a-7705-4369-bd19-9d753b475b0e,Felipe Canale Fruet,03896651005,fefofruet@gmail.com,+5554999343139,true,qv_id,false,,false
 3adeb6d2-d648-4430-9c1b-56d714b37dfe,,Annik Iracema Rosa da Silva,22142468861,annik.silva@keepthefuture.com.br,+5511981495873,true,cpf,false,,false
@@ -387,7 +383,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 3b333d53-212e-473d-a85a-7973a338def2,,Marcelo Urio,03327419906,marcelourio@hotmail.com,554791709060,false,,false,,true
 3b593f5f-3392-478d-88a2-e575ea6fc6f1,,Guido Williams Chavez Heredia,70180848143,guidowch@gmail.com,+5599982095251,false,,true,cpf,false
 3b780332-0921-40ab-982d-a5506776df1a,,Luiz Burlamaqui de Mello Neto,75905396604,louisbur@gmail.com,+5531971197555,false,,true,cpf,false
-3b7a8205-7b45-473f-aa73-b01208b2c1da,,Roberto Borovik,21453108866,boroxis@gmail.com,+5593991229643,false,,false,,true
+3b7a8205-7b45-473f-aa73-b01208b2c1da,,Roberto Borovik,21453108866,boroxis@gmail.com,+5593991229643,false,,true,cpf,false
 3b9fe517-110e-410c-a6ac-d8d5509837aa,,Júlio Cesar Silva da Paz,,julio_30paz@hotmail.com,5511985699188,true,email,false,,false
 3bd0cfaa-a3b9-491b-8bc1-2e1eee2250a5,1984b53f-caf6-49f3-b090-53f96079d7e9,Elaine Maria Pick,02280966930,epick2013@gmail.com,+5551992905845,true,qv_id,false,,false
 3bd1f9eb-9e55-4524-9553-53205c630715,,Rafael Quintanilha,21288090889,rafaelquintanilhapt@gmail.com,+5547992331088,false,,true,cpf,false
@@ -413,19 +409,19 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 3e486f5e-40b4-4157-a726-58e117635ca6,6192c497-f929-4475-b4f9-ba0832df2c8c,Bruno Brum Barreto,01224986075,ombrobarreto@gmail.com,+5551996115402,true,qv_id,false,,false
 3e6e15e8-5a06-40e5-96e8-fb1af9864d9c,b8f8d983-0760-41ca-b44a-8542508e33eb,Jair Formigari Neto,34799070835,jformigarin@hotmail.com,,true,qv_id,false,,false
 3e6f20db-3795-487d-a29d-7b0f68a61d05,2c04e74a-3e90-401a-908e-0111c36e94ea,Liana Raquel Pascoal,06035635628,lianapascoal@hotmail.com,61981237252,true,qv_id,false,,false
+3e9a0212-0961-445d-9f42-a6d68790f7ca,,Jefferson Ricardo Kohler,01955255903,jeffkohler77@hotmail.com,+5541998345327,false,,true,cpf,false
 3e9d3fd2-a19a-4a1b-b199-c294197ad555,,Lenuir Kniss,81216726949,lenuirkn@gmail.com,5547991817314,true,cpf,false,,false
 3ea469c1-e7db-4601-b44a-5c08ad3ee42e,,Paulo Fernando Mesquita de Carvalho,75239523649,paulofernando@implanteperio.com.br,5535984278125,false,,false,,true
 3ec83343-a645-463d-8b7a-d71c1844c5f7,,Tatiana Maia Pereira do Nascimento,02546367722,tatiana.maia76@gmail.com,+5521999668260,true,cpf,false,,false
 3edf226e-aadb-456f-9e49-e780197d52d4,,Ricardo Villela Prado,32207320898,rivprado@gmail.com,5516991657147,false,,false,,true
 3f1083bf-ac2e-4d79-bc40-ec6aa31a75be,efd9d23e-5f87-4fe5-8862-842e767346fe,Vinicius Alves Cavalieri,39585316870,vinicavalieri@gmail.com,11967045184,true,qv_id,false,,false
+3f59a54c-ced5-497f-a808-b1376becb624,,Leandro Marin de Oliveira,82373647087,Lemarin.o@gmail.com,+5555981092828,false,,true,cpf,false
 3f7a6689-2f22-4fd0-be10-50617b0e30dd,,Alejandro Lusardo Bo,78224934004,alejandrolusardo@hotmail.com,+5585981460424,false,,true,cpf,false
-3f884101-ecf8-4193-b466-f3897c116303,079a755c-c8a6-4614-ad75-e9988de48bcf,Alice Castor Caparelli,07882590754,alicecastor@hotmail.com,21981393019,true,qv_id,false,,false
 40093152-73a3-4c68-bafd-eda82f05a42d,,Wellington de Oliveira Barros Júnior,07680168784,wbarros@hotmail.com,+5521987262519,false,,true,cpf,false
 40240fa4-1a2c-45dd-b81a-8975cf384b5f,,Elisson Antonio Francelino dos Santos,90771214120,elisson.antonio@yahoo.com.br,5567996960999,true,cpf,false,,false
 4024756e-b0b3-4834-ba22-5ef2cab3977c,c6575943-b7d1-439d-b7ae-8e2d139aac33,Dezemir Humberto Bonesconto,22573813860,geotop.ltd@gmail.com,17997322030,true,qv_id,false,,false
 40498d6c-5d98-4b2e-a8da-2e95ae8ebcbe,,Joel Machado Martins Braga,11608578658,joelmachado11@yahoo.com.br,31971574450,false,,false,,true
 40573f5c-eea5-42ae-b4ed-3de7b2697177,b0775c6e-491a-4678-9111-88d29d824610,Ana Paula Guillera Pereira,89137868772,drapguillera@gmail.com,21990645511,true,qv_id,false,,false
-40638b44-4318-4974-8c89-e7e237552933,e389a757-87d1-4084-a881-2fd745a9d076,Gabriele Dias Oliveira,66839041115,gabriele.oliveira@icloud.com,61998190888,true,qv_id,false,,false
 40718c82-cf41-4931-ac09-44b616fa4954,,Cristiano de Freitas Gomes,01997016796,cfgomes10@terra.com.br,+5511982770800,false,,true,cpf,false
 40da0b4a-ea49-454c-8559-2720a5646453,,Mariana Couto Silva Lemos,,marianacouto_s@hotmail.com,5537999653083,false,,false,,true
 416a1cf1-c4e4-4322-840b-ee194ff8c926,9dd27da5-d67c-457f-bc07-0c4c6a190d68,José Carlos Leite Rodrigues,46757651491,cassia@intercambiojpa.com.br,83993821269,true,qv_id,false,,false
@@ -435,6 +431,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 41ac86ce-cf61-40f5-9b85-3acfb87eadb2,34e7e41b-79de-481a-b9f3-4261a5e00f8d,Marcos Guadrini Gardenal,07585300808,mg@marcosgardenal.com.br,11996385269,true,qv_id,false,,false
 42178ab8-6cd2-4bc7-a79f-bef575c61ac6,eee24c0c-f279-4955-a7bb-936df3ed43dc,Adriana Mostardeiro Salvany,97092800072,asalvany@outlook.com,11972047899,true,qv_id,false,,false
 421de633-162e-4c9a-b027-405c1a75939e,,Claudia Franco Junqueira,28775371880,clojunqueira@hotmail.com,+5516997101015,false,,true,cpf,false
+422f28f9-9639-4ad0-997e-aa26082ed45b,,Anderson Ferreira Alves Costa,02392407150,andersoncost487@gmail.com,+5562982350731,false,,true,cpf,false
 42520ebe-9f89-412c-95c6-e07b4c937675,abaae146-dee1-4ff2-8de8-36648ce13e41,Felipe Tadeu da Silva,26537767822,ftadeusilva@gmail.com,+5512992174020,true,qv_id,false,,false
 4257447b-224a-4619-a4a3-346f7d9ea311,,Wagner Ferreira Nunes,12393040803,wfnunes@hotmail.com,5511989327267,true,cpf,false,,false
 42880dee-8873-471d-bd71-4d876a760a8f,,Leônidas Paulino da Silva,09449403660,leo1.1@hotmail.com,+5533984162801,false,,true,cpf,false
@@ -448,6 +445,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 4363b3c1-c8f6-495c-82dd-67f87c23a007,4cbcbbe0-0942-4198-93c2-5538698820e4,Edson Tadayoshi Honma,02826850903,ehonma@gmail.com,47988054690,true,qv_id,false,,false
 4369493f-2da8-469a-9e17-aa824fb9ded9,86f45fb4-9a30-4107-927a-2b6dbc2d4b98,Pedro Henrique de Mello Zumpano,08397706690,pedro@zumpano.com.br,31993081120,true,qv_id,false,,false
 439016f7-dd62-4778-b1dd-b18d0207db8a,,José Walter de Araújo Neto,61938408349,araujojosewalter@gmail.com,88988283677,false,,false,,true
+43aa0554-2910-4245-a863-0c585f2cb435,,Igor Rodrigo Lins da Silva,09516598714,rlins.igor@gmail.com,+5511998179199,false,,true,cpf,false
 43ea89ad-0793-4809-b49f-8d08038b2ed0,,Allessandro de Luccianno Fanchin,07073962984,allessandrode@gmail.com,+5541997027807,false,,true,cpf,false
 440ff599-bef0-4d52-8356-47e20e24762c,,Elisabete Laurindo de Souza,55176496968,betelaurindo67@gmail.com,+5547999879158,false,,true,cpf,false
 4418f85f-de9d-4b03-879f-6802a7bfa379,,Kleber Queiroz Tobias,72683708653,kleberqt@bol.com.br,+5566999950269,false,,true,cpf,false
@@ -471,7 +469,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 462028cc-c8a2-4441-8c45-7650de080c2e,afae41fc-af5c-4f78-ae97-aca7317035f4,Alexandre Barreto de Souza,87558602734,absouza.es@hotmail.com,21999494014,true,qv_id,false,,false
 4625bee4-eabb-434b-b118-7512e9066607,7d961328-0fe6-46ee-8713-ef5bbf430268,José Carlos Oliveira dos Santos,43048579591,jcoliveira.work@gmail.com,71991338427,true,qv_id,false,,false
 46541a37-dba0-4539-a1cd-8da613076cde,,Ana Paula Andrade e Sousa Medeiros,06166128690,anamedufu8@gmail.com,556499676050,false,,false,,true
-46a5bf41-60fe-47ff-9b53-48976978d879,f4f98a4c-663a-4ef7-a822-c4cacabfe74e,Juliana Lyra Vilela Barbosa,03944309480,julyrabg@gmail.com,5511996324982,true,qv_id,false,,false
 46b09471-b66e-448e-a18a-96c3576e2e92,,Milena de Locco Martins,35703985870,mi.martins@outlook.com,5511988085582,false,,false,,true
 46d70d71-5d94-46e3-90c4-bc10b56f6038,,Caio Sergio Moschetta,13065041472,moschetta@uol.com.br,+5511984867453,false,,true,cpf,false
 46dfc2ae-6904-4436-82ce-eb2562345c39,,Caio Maneschy,00791869202,maneschycaio90@gmail.com,5511943836608,false,,false,,true
@@ -484,7 +481,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 482e8456-a41a-4f8f-b82a-e91d6aaefde3,,Alexandre Reis e Silva,92105580904,doctoralex_br@hotmail.com,+5513981141357,false,,true,cpf,false
 48388a66-38f4-4a00-b47a-518687314b09,befe20a4-5a32-42fd-bb35-bd3b8c48bf9b,Matheus Cavalcanti Pompeu,05791524480,matheus-pompeu@hotmail.com,83988300847,true,qv_id,false,,false
 484d576b-bccd-4204-bd0b-c42c630f0aec,ee6a08fb-40a0-4774-8555-6e6d388b3504,Ana Elisa Campos Diaféria,28736299839,anaelisa.d@montpolo.com.br,11983508410,true,qv_id,false,,false
-489b4d5b-5088-4521-b0bb-c0036ad887dd,522c19df-242b-4441-98ee-0da72db215bc,Guiomara Steinbach,96998440944,guiomara.adv@hotmail.com,61984868811,true,qv_id,false,,false
 48b0cc00-5c29-4aea-b74c-113dfcd2b0cd,7b8a7c26-cce8-42ff-add6-d0b558b982fc,Marcia Cristina Soares Sampaio,10513239758,marflauteando@yahoo.com.br,21974632226,true,qv_id,false,,false
 48b2ba04-3df0-4b4e-a380-b746b6603654,,Thiago Laurino da Silva,04575775924,elizeu.laurino@gmail.com,+5541998396535,false,,false,,true
 48b3a717-5cb5-449e-b003-7c894a2cbb54,5878cd4f-3a64-4e2e-afb9-2e387a1faa6d,Matheus Rezzadori Hunoff,02164273044,matheushunoff@gmail.com,48991414238,true,qv_id,false,,false
@@ -521,7 +517,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 4e384ab8-3be6-4321-89be-da4129868536,9f8bfef4-db07-4166-85a1-7736db325f47,Carlos Miguel Lorente Soler,06760073177,carlosmlorente2014@gmail.com,11996420607,true,qv_id,false,,false
 4eb56b4b-3560-4bfe-96c8-348de2b15c2f,,Maridete de Oliveira Moreira,09887414743,maridete.fisica@gmail.com,+5527999114577,false,,false,,true
 4ecea1fc-1a33-407f-a754-18a001c6687d,,Debora Veridiana Brier Leite,06638442660,deboravbrier@gmail.com,5531983317457,false,,false,,true
-4ee8ae9d-5849-420a-b830-842e7146148c,75cd105b-843c-4770-a578-bdd8ce68d94b,Antonio Marcos Rodrigues de Oliveira,88931145349,marcos110481@hotmail.com,98981468964,true,qv_id,false,,false
 4efce255-c163-40bf-adfb-203e9c02306a,,André Augusto Lemos Vidal de Negreiros,06768664417,andrevidaldenegreiros@gmail.com,5511958608612,true,cpf,false,,false
 4f326d1c-9139-4bb3-9497-124b2278c721,04f34406-5df4-4406-ac64-c2106a3439f3,Ricardo José de Araujo,75887118920,rjaeqa@hotmail.com,+5549999995005,true,qv_id,false,,false
 4f3b3619-06fa-43cd-a545-332d12b64693,,Leticia Roberta Pozzobon,02785514165,pozzobon8@hotmail.com,+5565999471535,false,,true,cpf,false
@@ -568,7 +563,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 559c3145-3bfa-4d3d-bce8-09ecd23daab6,,Romero Candido de Santana,94181756653,romero@distribuidoragama.com.br,5531999687985,false,,false,,true
 55c7afe4-bc1c-4477-83c1-ad7263c030cc,63935d3f-ee6a-415e-8ce8-2736caad3179,Guajara Gazzalle,03091518990,guajaragazzalle@gmail.com,46988207400,true,qv_id,false,,false
 55fbecc2-ed3d-40a7-b7f5-842fbb5f1f57,,Ronnie Braz de Sousa,01777120314,ronniebrazs@gmail.com,86999223636,true,cpf,false,,false
-56049494-a986-404d-934c-eecb704ff47a,,Jose Boralli,10642980870,zeboralli@gmail.com,+5511985373001,false,,false,,true
+56049494-a986-404d-934c-eecb704ff47a,,Jose Boralli,10642980870,zeboralli@gmail.com,+5511985373001,false,,true,cpf,false
 5607a0f9-661a-4367-8eba-95ed157c23ba,f98ee4be-3674-4d4a-9486-850f7e17dc22,Icaro Manoel Passos Menezes,01554569540,icaro_menezes1@hotmail.com,+5574991880733,true,qv_id,false,,false
 560b65a4-b623-4585-9494-9b3dc07fbfb9,ca3501f9-d6f0-4802-ba79-9f4922f141a0,Simone Pires Nunes de Assunção,95454217115,simonepna@gmail.com,62992748586,true,qv_id,false,,false
 5650a0ad-332b-4cd2-8d14-4e89bd695378,82fb1cdd-4a29-4620-be98-e922cd761994,Arcelio da Silva Santana,02165458544,arcelio.cardio@gmail.com,71999424599,true,qv_id,false,,false
@@ -612,6 +607,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 5b4bc2e9-c8be-48d6-8286-fc9a257ff0d7,a6b3db3e-5dd5-4757-aaec-6af14167ad0c,Elisangela Martins Morais,61774642115,elisangelammorais@gmail.com,64999271972,true,qv_id,false,,false
 5bb314ef-72b8-4a44-b0bf-211046cdbab1,,Bruno Barros de Siqueira,08902144763,bruno.bbs@gmail.com,+5521982189955,false,,true,cpf,false
 5bc1d906-5dda-4c97-ab62-91f502b4e1a9,,Ricardo Serra Michelotto,20533577896,serra.ricardo@gmail.com,+5511976612464,false,,true,cpf,false
+5bfa75e4-7699-43cd-ac4f-9dceaab935a6,,Cintia Pimentel Sayd,14888692866,cintiasayd@gmail.com,11983156281,true,cpf,true,cpf,false
 5c04406b-9e9d-48ae-ac3b-a4215d56768b,,Guilherme da Cunha Galvani,,guigalvani@gmail.com,47 9292-5060,false,,false,,true
 5c1d75d4-7e0a-4d5e-b3b7-e7b68d2158f0,,Laura Rodrigues Lopes,,laura_historiadora@hotmail.com,5568999794101,true,email,false,,false
 5c343c25-6f62-42a9-b001-d1620596c71e,,Claudio Gonzaga Cidade,10489248748,claudiocidade@gmail.com,+5521988990159,false,,true,cpf,false
@@ -632,7 +628,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 5ebf7e43-7799-4b30-b85c-9fde7fc6dff2,4ed12408-ed6d-446a-b298-6bd08700fbe4,Rogerio Yasuo Matsuda,29504912869,nefrorym@gmail.com,11964965110,true,qv_id,false,,false
 5ecd9e2f-1cf5-4f71-bfa9-a08d30dde61b,a4a88de7-dfd3-4ba6-ae36-637a1ec32e63,Alexandro Cardoso Costa,93529660610,alexan_card@hotmail.com,98988456520,true,qv_id,false,,false
 5efb7a6f-5664-4b50-b461-c7a5c6149bbb,,Ramon Luiz Canthé Vidinhas Valim,11929038704,ramonvalim03@gmail.com,5521988923633,false,,false,,true
-5f0c014f-717f-48ae-b6d1-ec8f74547890,,William Cunha Brandt,21826980865,williamcbrandt@yahoo.com.br,19981495064,false,,false,,true
 5f115c90-8a1b-4ff4-a38b-25be54af17e1,e52b0703-f3d4-4f61-adad-ede6f7049ae6,Fabiana Rech Bertinetti,56883919104,fabianabertinetti16@gmail.com,66999846121,true,qv_id,false,,false
 5f6bd6b5-e068-449d-9a64-b9b6e7bd2888,,Nádia Andreia Rodrigues Carvalho,00709277156,nadia.ambiental@hotmail.com,+5562999122401,true,cpf,false,,false
 5fc11deb-8ebe-4dff-b2e8-345561627c86,619aeddb-6008-4c27-8e26-7fd297453ac6,Fernando Antônio Fernandes,95673970153,ffernandesosteopata@gmail.com,5562984067266,true,qv_id,false,,false
@@ -643,12 +638,10 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 607f230a-b9e2-4ce3-b873-d292f2cbc028,a9bbe65a-123e-467b-a2fc-c0f801f279c7,Wagner Costa Alves,21855444895,wagnercostaalves@yahoo.com.br,12997860103,true,qv_id,false,,false
 608bd338-13f2-4f50-8612-5b55af956b8d,712a1af8-b395-4cd3-bdf3-0ce3e3ab4cff,Fredd Délio Miranda Martins,01750849127,fredd.adv@gmail.com,62992416888,true,qv_id,false,,false
 60b2b41b-8dbc-42bf-bfb6-131a239edc2b,1775a497-b239-42e4-98f2-69502cd09fb0,Wenicius Antonio da Conceição,02926860137,wenicius_adm@hotmail.com,,true,qv_id,false,,false
-6112d5dc-f564-4cd5-889a-2db83d3152a8,620e0d07-84c8-483f-af5b-ad5cbaebf0a9,Claudio Baptista da Conceição Moreno,17256483856,claudiobcmoreno@hotmail.com,11971187811,true,qv_id,false,,false
 61621a14-6b7a-4c6b-95c2-64a5d9cd1e0f,85687d10-7d37-463b-8f7e-c90f83edd9b3,Juber Pereira de Souza,06556826600,juberps@yahoo.com.br,+5531999851628,true,qv_id,true,cpf,false
 61a4b22a-5f4c-4637-9792-4066a00763e4,0a0903bd-ae72-4397-bd71-8d613f5ef092,Aliny Peres Pereira,33498109855,aliny.peres7@gmail.com,11982660924,true,qv_id,false,,false
 61d6eee1-d7b1-4d7c-9950-bcf342023ce5,,Paolo Henrique Cassano,,paolocassano702@gmail.com,5531985918133,false,,false,,true
 61dcd071-9c6d-45cd-b5fb-7f882719f13a,e77d69bf-3dc3-42d7-992b-7a6becaf3dbe,Silvana Helena Bonin,24928944879,shbonin@uol.com.br,11982837474,true,qv_id,false,,false
-61e8c8ee-4ffb-42a1-b870-031ed2f2bdc6,b89f5031-b395-4b43-a07a-5a892ca29e42,Ticiana Cristina Radiche Leite Oliveira Santos,03448619531,tici.radiche@gmail.com,71982600363,true,qv_id,false,,false
 6203fb91-e3f6-4395-ad78-490fc8b5d7de,fe6f3ad7-c4e0-4d99-bb17-186e3490d022,Ana Maria Lima Ávalos,00562782176,a7.avalos@gmail.com,+5567999536565,true,qv_id,false,,false
 623057f4-0c60-4c55-9a02-7bbda3162cda,,Rosângela Pereira Gomes,,potencialmaximo@gmail.com,5514998525990,false,,false,,true
 6255f7cd-b4dc-4324-8516-aa8ad60983cb,,Jobson Francisco de Araujo Junior,03016709430,jobsonjr@gmail.com,+5582993519390,false,,true,cpf,false
@@ -669,7 +662,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 65214538-9831-4103-8814-7f0debfafac8,,Leonardo Vanzo Starling Soares,,leonardo@peopleinteractive.com.br,+55 21 98898-4291,false,,false,,true
 6535a03d-a874-445f-9e67-0e0f81d4de03,a00b177a-7a7c-4c9d-ab6a-690599a37787,Daniel Nascimento Rocha,10676855709,danielnascirocha@gmail.com,21999214180,true,qv_id,false,,false
 655a8ab5-8384-413a-a65d-a5f7eb0b8188,3f5e8fa1-33d0-44da-8e0a-168faf1a9a76,Sérgio Pimentel Fernandes,12612711732,sergiopimentelmd@gmail.com,21968274306,true,qv_id,false,,false
-657bddaf-b5d3-4cda-9679-663ec309972a,,Mauber Giorgetta,06369084883,distribuidora_arina@hotmail.com,+5512996660010,false,,false,,true
+657bddaf-b5d3-4cda-9679-663ec309972a,,Mauber Giorgetta,06369084883,distribuidora_arina@hotmail.com,+5512996660010,false,,true,cpf,false
 65d51d0c-0a57-48f0-a84b-99907b59359a,,Anderson da Silva Souza,,andss.med@gmail.com,92991282395,false,,false,,true
 65f6d117-5866-4a25-9884-6c5dc58d0c59,0f1015c8-06ff-49ba-96ec-98d7e9cc5e28,Gilvane Marchesi,85560065900,gilvanemarchesi@gmail.com,+5541999292951,true,qv_id,false,,false
 660032f0-f309-422d-8aee-b62d0f1329c1,18896317-57d1-4cf2-877f-37455a46f51a,Égly da Silva Valério Borges,00795416156,egly_s@hotmail.com,94981138160,true,qv_id,false,,false
@@ -701,7 +694,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 697c7b8a-8d0b-4aef-beb5-34f45614a943,,Gilberto Able de Rezende Chaves,10594892791,ablegilberto@gmail.com,+5521999816844,false,,true,cpf,false
 697ecda2-82a4-42a5-a667-3ab38596ff34,824f79ae-8045-408f-b7a8-46aa380c7a70,Ana Paula Cunha,30218814836,ap.cunha.154@gmail.com,16991632022,true,qv_id,false,,false
 6a4b7086-c8b7-4b19-9e54-b5f14ba4bd51,,André Bueno de Oliveira,60953500691,andre.bueno70@hotmail.com,+5519997665398,false,,true,cpf,false
-6b501852-8c89-4d15-96f7-bb751da76874,,Marco Viotti Ceriello,22050631898,marco.ceriello@gmail.com,+5511999706079,false,,false,,true
+6b501852-8c89-4d15-96f7-bb751da76874,,Marco Viotti Ceriello,22050631898,marco.ceriello@gmail.com,+5511999706079,false,,true,cpf,false
 6b5ecacb-6fea-4dcc-8944-89e355d3d3ca,,Marlon de Negro Silva,07373283985,denegroengenharia@gmail.com,+5545999500089,false,,true,cpf,false
 6b6feff6-1bcb-48f9-9b77-eb336d432ecc,4077e5d5-542a-443c-aa83-7abde3e89d9c,Danilo Chiaradia Finamor,03143444622,dfinamor@gmail.com,11997190433,true,qv_id,false,,false
 6b898452-92f6-4999-a275-cc2a0472b0ad,,Fernando do Carmo Cavalcante,30049089803,Cavalcante_fe@hotmail.com,+5511954076652,false,,true,cpf,false
@@ -712,6 +705,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 6bd6b603-6503-4cc6-aa85-c0b2fadceb72,01b2446b-bc87-412e-99b9-6d08bd42b2cf,José Carlos Corrêa da Cunha Filho,06749649424,josecarlos.ccf@gmail.com,84981549292,true,qv_id,false,,false
 6c417503-612b-436f-a94c-ff91a0651f08,,Haylton Bernardes Neto,39339446860,hayltonbneto2@gmail.com,5511973551188,true,cpf,false,,false
 6c51da33-d342-4a05-b607-fab5493c7c80,,Pollyana Cristina,17217623880,pollyana.valize@gmail.com,5534999088090,false,,false,,true
+6c80d389-b1f5-4a6d-8cf0-090f8b096e06,,Paulo Ferdinand Fernandes Lopes Junior,64139441372,paulo_ferdinand@yahoo.com.br,+5586999846686,false,,false,,true
 6c855de5-ea58-43ae-afbd-a4d870f61a85,b80ca72b-5f91-4280-b5e4-f3580916db6a,Robson Marto do Prado,27796068867,robson.m.prado1@gmail.com,11994453070,true,qv_id,false,,false
 6c9e5823-b893-42b3-9b79-e71f1c48052d,da277b40-b540-4523-9be0-c6ff83563014,Bruno Tsanakaliotis Costa,35235998812,bruno_tcosta@hotmail.com,11983761169,true,qv_id,false,,false
 6cab75db-e120-4500-ab6c-fba6c6f03c6f,2a4207d2-fbdd-45a5-bc39-569b72f677df,Olivio Lemos Perreira Neto,00330596160,olivionet@hotmail.com,62998141737,true,qv_id,false,,false
@@ -730,9 +724,11 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 6e5288b3-1fbc-4302-85ed-7a6cb9b915fb,,Aline Neto de Almeida Pereira,00373584130,alinetto82@hotmail.com,+5562999550818,false,,true,cpf,false
 6e60f34e-5033-4ef9-a1aa-7f24fb7c2ccd,,Mario Luis Salvatierra Tames,01115157426,mario.salv@icloud.com,+5596991449554,true,cpf,false,,false
 6e84f967-0933-41dc-bae5-9b8b8ec8bac5,,John Edinson Montano Martínez,06067232774,Jonnet26@hotmail.com,+5521983437531,false,,true,cpf,false
+6ebd0c06-21fe-4506-a981-e5aef06154fd,,Matheus do Espirito Santo e Heronville,11211778673,mesheronville@gmail.com,+5531984920256,false,,true,cpf,false
 6f3e17be-142b-4926-b969-def8ca8de151,26e35317-13bb-4bfc-9e37-6af9e427e4ce,Jamile Condi Breviglieri,91900948249,jamile.breviglieri@hotmail.com,69981251963,true,qv_id,false,,false
 6f538443-626c-46c2-b0fc-c54dc9f054a3,,Luiz Fernando Rigotti,19795068091,rigotti.luiz@gmail.com,+5551998117044,false,,true,cpf,false
 6f8b4236-7cd9-4669-92a3-bc60ea33fd13,,Thais Goldman Fares,38707956894,thais_fares@hotmail.com,5511974556655,true,cpf,false,,false
+6f8f9aff-8a84-4765-9daf-928443e58da8,,Luiz Glaucio Souza da Silva,08305343774,luizglaucio@gmail.com,+5521964144353,false,,true,cpf,false
 6fcce6d9-4056-46c8-bfc4-7fc3a3d24e31,0d8fc362-bd35-4393-a1be-d4b51009bac0,Rogerio de Moraes Rodrigues,57995931204,rogeriodemoraes@gmail.com,96981012129,true,qv_id,false,,false
 7017f37e-98d7-4f40-a0ea-440ca21328a6,d2ac6341-1f55-414e-b7a8-6b98b09de444,Moises Pfaffenseller,90221770097,aml@logycware.com,51985998187,true,qv_id,false,,false
 702a59a8-ad3f-4c2a-8712-fc9276ce45f6,,Mateus Darouych Scaff Pereira,06192064970,mattdsp7@hotmail.com,+5545991270723,false,,true,cpf,false
@@ -770,7 +766,8 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 73f9525b-1491-4f4e-85c5-a88ee9300a24,,Jairo Rodrigues,,,,false,,false,,true
 74487388-4d09-487f-9a00-e5254b644f50,4f3ef8be-8d2e-4fd2-b21b-5159692483d8,Thiago Lara Vasques,92368263187,tlvasques@gmail.com,62994552848,true,qv_id,false,,false
 7472ea7f-64ac-41bf-9617-2e0a601aff83,,Maksimiliano Franco,27517940848,maksifm@yahoo.com,5562981189978,true,cpf,false,,false
-75423ba2-3cc7-4e40-8b3a-0b6cb1ef4159,,Cristian Amaral Pereira,98837516053,mdcristianpereira@gmail.com,+5551999652955,true,cpf,false,,false
+75423ba2-3cc7-4e40-8b3a-0b6cb1ef4159,,Cristian Amaral Pereira,98837516053,mdcristianpereira@gmail.com,+5551999652955,true,cpf,true,cpf,false
+75559947-cd4f-4693-9e1a-ab2da1ee3471,,Carla Krosskaya Calveti Cortez Viana,74496387115,ckcalveti@hotmail.com,+5538992130500,false,,true,cpf,false
 756e6955-2a8d-4c01-ad7f-57b95d605f00,,Johnny de Geus Junior,,danigeus@hotmail.com,5541999536369,false,,false,,true
 75a2940d-f367-49d9-a06d-a23d528037dc,,Mateus Klein,81140606034,mateusklein@hotmail.com,051 99974.0954,false,,true,cpf,false
 75c0bb21-f261-42ef-95f4-6671f1ef3191,,Ricardo Borges e Silva,06508742698,ricardoborges84@hotmail.com,34 999386820,false,,false,,true
@@ -778,18 +775,19 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 75eccdff-771b-4419-9b7c-03b3a056a663,a8df42a4-9cf3-4b64-b55d-21c39bd0b960,Ítalo Dourado de Melo,82305137591,italodouradomelo@gmail.com,77999051718,true,qv_id,false,,false
 75fc614a-6ff1-477d-b757-048b2d5c4c2e,,Francisco Daniel Costa,01174101601,franciscodcosta@yahoo.com.br,+5511983746144,true,cpf,false,,false
 763e189a-c007-4d9a-8a97-2ffbd2a0df2d,,Paulo Ricardo Baroni,11502904802,prbaroni777@gmail.com,+5511981896000,false,,true,cpf,false
-768fa872-fe15-40eb-ae0a-48b337b90bce,a5eb3e6f-0106-4370-97a0-aabea833697d,Sandra Rogeria Zunarelli de Melo,01968008977,sandrazunarelli@gmail.com,41987428357,true,qv_id,false,,false
 770a761a-88fc-4851-8f83-74d44ef852aa,d7a38f8d-bf8a-42d8-b7f0-0b0ab83b090f,Francisco Danilo de Araújo Carvalho,02115685385,franciscodanilo91@gmail.com,89981488549,true,qv_id,false,,false
-77279a88-689b-4553-b549-ca2827ec0729,9582f530-2ab1-4369-b33d-01952096bcb9,Pedro Thiago Figueiredo Alves,11385724706,p.thiago1808@gmail.com,21999272470,true,qv_id,false,,false
+77279a88-689b-4553-b549-ca2827ec0729,9582f530-2ab1-4369-b33d-01952096bcb9,Pedro Thiago Figueiredo Alves,11385724706,p.thiago1808@gmail.com,21999272470,true,qv_id,true,cpf,false
 77296983-4392-4de6-85c4-3579d974f571,,Douglas Covre,12083482727,douglastocco@gmail.com,27 99842-0664,false,,false,,true
 775fb9c0-3f21-4154-9817-4d2acf7c3a32,ce7f2f70-8719-4b80-9982-4f4b60eb6fb2,Hugo Mendes Alencar Furtado,02919644351,hugoaalencar@gmail.com,85999953132,true,qv_id,false,,false
 77f42102-71a2-4477-b584-98265cf90a96,,Júlia Silva Caiado,33730595857,julia@lebeardigital.com,19998624806,false,,true,cpf,false
 7835d9a2-c9dd-44f5-a228-009b486fc27c,,Leandro Pincinato,35450372825,leandropincinato@gmail.com,5511999517105,true,cpf,false,,false
 7837c0de-76b2-48d2-a03b-f46cd1be104b,31c510f2-e7fb-4df5-a39b-34377861e015,Everson Baesso,84010126949,ever.baesso@hotmail.com,46991068080,true,qv_id,false,,false
 788b5195-7342-4d71-ba00-72ebe88a2f83,bc1b6e4d-fd39-4d65-b4ae-a891a855d330,Rodrigo Andrade da Silva,01644362511,rodrigoandrademed@gmail.com,71997237663,true,qv_id,false,,false
+788e3b47-dc96-41fc-bf0a-7adf1b35f8b4,,Andrey Guilherme Fernandes e Almeida,31766654827,andreyguilherme83@gmail.com,+5511969261635,false,,true,cpf,false
 78b7b00c-2c35-4181-a16f-5e29a86d7736,5b0848a9-08a8-46e8-b843-dcee3cfb2ced,Fabrício Warley de Almeida,70917426649,fabricio_wa@hotmail.com,+5533984011414,true,qv_id,false,,false
 78e83b27-2c96-4976-b1eb-0076eb86feef,01e0dc69-f17c-41c6-a11a-02fd07a91e80,Bruno Vieira Salles Buhr,11907211713,sallesbuhr@gmail.com,21992106140,true,qv_id,false,,false
 78ee6128-fa96-4091-a063-05c8840c72b1,,José Julio Fairbanks Barbosa Neto,27282667861,jjfbneto@hotmail.com,5521995264320,false,,false,,true
+7a3d3d18-af6d-40a8-ab0c-3d89b11138c9,,Suyane Maria Paiva Pimenta,04234549355,suyanepaiva.crm@gmail.com,+5585999394854,false,,true,cpf,false
 7a55cf99-131c-4f53-b427-1f159b208554,d661ff8b-edf7-4f12-890f-9ff626afdb13,Lucas Faé Gheller,01005172005,lucasgheller@yahoo.com.br,54999908616,true,qv_id,false,,false
 7a8147f8-4d9a-43af-87a1-362b5da58b2e,,Érico Yudi Hotta Pereira,35971024841,ericoyudi@gmail.com,+5511996034907,false,,true,cpf,false
 7a8d2c40-e39d-486b-ac09-caa708214439,,Haroldo Silveira Heredia Junior,94194645634,haroldo.heredia@gmail.com,5531996361000,false,,true,cpf,false
@@ -801,8 +799,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 7bc4296a-2e6a-4a86-a552-540813f1ce0b,1103a569-7209-480b-a773-b9664a253543,Alyne Pontes Gurgel Botelho,61907227334,alynepgb@gmail.com,+5585987364845,true,qv_id,false,,false
 7bf3c1bd-06a0-49fd-ad33-1eb50cea47ac,ffbc9d6f-be7c-4be7-92b3-e4b04f8a9fa2,Felipe Veloso Zakka,28165932829,felipezakka@gmail.com,12991954321,true,qv_id,false,,false
 7c8e2265-bb56-4ea0-baba-1fc6af7d58fe,,Olivia Queiroz Sampaio,31442327855,greenhouseolivia@gmail.com,+19176874259,false,,true,cpf,false
-7ca5fcca-273d-4b1a-acc6-aa31ff63c5c5,b49cc02f-5732-4c14-9865-3839fab31323,Isadhora Souza Ribeiro Santos,06755083550,isadhora.r14@gmail.com,71991341515,true,qv_id,false,,false
-7cae6fc6-53e9-43c9-a810-2c8b64f01429,,Gédersson Rosato,58561404000,gederson@gmail.com,5569981114339,false,,false,,true
+7ca5fcca-273d-4b1a-acc6-aa31ff63c5c5,b49cc02f-5732-4c14-9865-3839fab31323,Isadhora Souza Ribeiro Santos,06755083550,isadhora.r14@gmail.com,71991341515,true,qv_id,true,cpf,false
 7cf7e046-12fe-48d9-b422-d87c8c4839d2,,Iris Pricilla Ribeiro de Abreu,31937590828,irispri@gmail.com,11979791600,true,cpf,false,,false
 7d03a715-4097-4226-a6e7-6d9d359d6d88,,Gabriel do Vale Alcantara,10990164799,style.mkt@gmail.com,+5521999028874,false,,true,cpf,false
 7d15c6c8-d3cd-45dc-9e63-e1c36380b18a,8947f78b-e92a-49c4-9227-52959f4b65c5,Waltemar Matias de Sousa Filho,01832845346,waltemar_filho@hotmail.com,85999053092,true,qv_id,false,,false
@@ -818,7 +815,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 7f1513e4-a50e-497c-b1b1-7ead28d1e9c4,,Elisangela Reges de Medeiros Miranda,68304374315,elirmedeiros@hotmail.com,+5586981169101,false,,false,,true
 7f533d84-dd16-4df6-b7dd-9516109bc821,,Bruno Brazil de Souza,29398686899,brunobrazildesouza@gmail.com,+5519971497786,true,cpf,false,,false
 7fdad594-16c9-4886-bb61-bdd26d2259c8,96092afa-1bb8-4ed4-8603-9349b3eb648a,Marvin Ueniton Mendes Nunes,05750324303,marvinueniton16@gmail.com,86999439720,true,qv_id,false,,false
-7fec711c-34cf-4fa4-b15e-dbf691322b82,,Daniela Patriani Antonio,15256079875,danipatriani@gmail.com,5561984572701,true,cpf,false,,false
 802e7970-9f0d-4931-9b9a-a53b043d8aef,,Vinicius Vieira Almeida,09228002948,viniciusalmeida.am@gmail.com,+5548991066363,false,,true,cpf,false
 8039ab2a-08a0-4785-9633-678c0e50c7e5,fbe9ad84-bc6c-4a55-aa93-a02cbfda815c,Milton Sant’ana de Freitas Filho,92485120110,miltonsffilho@gmail.com,64992638778,true,qv_id,false,,false
 8064b1ed-5908-4945-9499-c455f3b12d5d,,Patrícia Alves Ribeiro,08529666607,pattypatriciaribeiro7@gmail.com,31 8233-2099,false,,false,,true
@@ -837,17 +833,13 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 817db31c-25c1-402d-9212-b926e3b0c519,da43d68e-6ce4-4a1c-8235-cc63fece7962,Henrique Lopes,19438701877,henrique@grupohzi.com.br,+5511992531787,true,qv_id,false,,false
 820f4f4a-5fc4-4463-8904-f279cd7a3f55,,Carla Filomena Mautone,15260525809,carla@comercialomnia.com.br,+5511988887000,false,,true,cpf,false
 82433712-aef1-4a1b-9fa2-f5aed1053a39,,Alberto Tiziano Dal Ben,22183925850,albertodalben@hotmail.com,5511992656151,false,,false,,true
-82666ad6-8336-457b-9ef7-0f71ab9799a9,3bcf487a-7f45-48e7-b838-594df1219897,Láddyla Bezerra,05893014464,laddybezerra@gmail.com,+55 84 9694-3343,true,qv_id,false,,false
 82abe5fe-aabf-480e-9bcc-341d1771ad6a,,Ricardo Fabiano Zuza Vieira,34356279808,ricardofabiano@gmail.com,+5511996620059,false,,true,cpf,false
 82d00f84-01f7-41c8-9191-f213ab01e5de,,Ademir Barioni,25041684898,barioniademir@gmail.com,+5511976054916,false,,true,cpf,false
 82de34be-613e-4077-9619-f6c874756b5f,,Thiago Pimentel de Moraes,06081987493,thiagomoraes704@gmail.com,+5579991008000,false,,true,cpf,false
-83055fd4-ce31-49e5-a48b-fb7d811be7ff,,Mario Henrique Lott Pacheco,62869230710,mariohlott@yahoo.com.br,5534991440056,false,,false,,true
 8379b7db-4e93-47d8-b4c1-506f2854f140,,Alisson Carlos de Paula Nunes,95947337134,alisson.nunes@gmail.com,48988702263,true,cpf,false,,false
 838a5ae1-31bd-490a-bec3-d30c057d583d,84f6d58b-0e8c-4b75-af2a-450edfd794fb,Jose Adolfo Davoli Nabas,05875249870,adolfonabas@hotmail.com,19981411418,true,qv_id,false,,false
 83a0dd4c-d032-4937-9739-00444ff3d3ac,50fb6112-de50-419e-8bc7-1fd1272a18c6,Luiz Eduardo Fonteles Ritt,97632660500,luizritt@hotmail.com,71987878599,true,qv_id,false,,false
 840a995b-9121-44d0-a574-aaeed11a13d4,a5657fb7-0e5d-4e43-8efd-0d78b3593097,Diego Ribeiro de Aguilar,04353892622,di.raguilar@gmail.com,11981087040,true,qv_id,false,,false
-842dd22b-81e4-4613-b3cb-f6094d9b3c32,,Mariana Fiori,07634856916,mah.fiori@gmail.com,+5561981098001,false,,true,cpf,false
-84481a12-fd61-45c2-9d1d-b376e10e144d,82eacc2d-836b-4047-8fd7-cca818614e7e,Antonio Carlos de Oliveira,07493043833,antonoli@bol.com.br,19997753470,true,qv_id,false,,false
 84b061fe-2519-4c41-ae0b-85de5a92708b,,Anna Carolyne Saraiva Brito Oliveira,64372405391,annaacsb@hotmail.com,5586999499333,false,,false,,true
 85032fca-9b72-43f8-9063-258fde37f0a7,,Anderson Pinheiro e Silva,82859507353,anderson_pinheiro_silva@hotmail.com,+5586999301113,false,,true,cpf,false
 85442300-9e1b-4d07-9642-9bfbd5572dce,,Thelma Nascimento,20086342304,thelmamn@gmail.com,55 86 9981-4241,false,,false,,true
@@ -869,7 +861,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 87f79baf-5398-40f1-9e3b-e44696774960,,Eduardo Macedo de Melo,07126449976,edumacmelo@gmail.com,+5548991953242,false,,true,cpf,false
 881b9ac4-f6c3-4c3e-926e-bb0b679b8e5a,b6e4bf09-4816-4c9e-8b63-165c5f1690ff,Ana Teresa Carvalho Vicentini,07645221836,ana.teresa976@gmail.com,11992340352,true,qv_id,false,,false
 88633a79-2d52-49ca-a97b-fa28e502fbf2,,Erivelto Leal de Oliveira,19366620272,eriveltoleal@gmail.com,92981231731,false,,false,,true
-886dfe23-867d-478f-85c8-bf0507c0a5ac,,Elizabeth Borges Dias,37899317649,beth-bdias@outlook.com,5531986280216,false,,false,,true
 89f03fab-4637-4092-9ea2-edaf98cab864,,Daniel Salgado Karpinski,02309053074,danielsalgadokarpinski@gmail.com,+5554999926112,false,,true,cpf,false
 8a26c175-14a5-44f4-b79a-c29c9e98c9bb,773341f5-dbe1-4914-b2b6-4528f3053c18,Cleber da Silva Sampaio,12755172851,cleber.sampaio@imagem.med.br,21999332792,true,qv_id,false,,false
 8a54ceb0-5b08-4c92-9335-94d15d51ca05,,Rodrigo Pereira de Freitas Santos,,rodrigo.santos@terezasantos.com.br,5531984984336,false,,false,,true
@@ -877,8 +868,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 8a621649-ced3-423e-bba6-3ead2ea17e40,6d2221b0-89dd-4e81-84ef-d89a9a6053d6,Luis Kazuto Kobayashi,12445859808,luisfremar@gmail.com,11996529073,true,qv_id,false,,false
 8a656d59-bd07-47b0-bbd0-7d72a251f234,,Ildemberg de Oliveira,52740331304,,5595981177677,false,,false,,true
 8b070814-0e29-42ea-a123-bd95a8c6f111,,Rosiane de Jesus Costa Ribeiro,28856767368,nane.malu@gmail.com,+5561996777974,false,,true,cpf,false
-8b393b62-737a-487a-8a03-ae26e2446aec,0cd1fb7d-c337-498e-abfa-74b0be268b04,Alessandro Galvanin Santoro,24542826821,santoro.gal@gmail.com,11982711032,true,qv_id,false,,false
-8b45a6bf-6995-4cd8-bcaa-1e0fb2d2812f,,Jonathas Alberto Ribeiro Abdou,30711205833,jonathasabdou@yahoo.com.br,+5511993487652,false,,true,cpf,false
 8b5198bc-18f4-4192-82f1-667f54c221a1,,Eliezer Ceribelli Junior,03695916907,eliezermed@yahoo.com.br,+5544991237893,true,cpf,false,,false
 8b74be55-a106-4143-afab-30a7dc9af749,,Marcelo do Nascimento Pimenta,32630624846,pimentamarcelo@gmail.com,+5511999700107,false,,true,cpf,false
 8b92edb1-52f6-4c1c-a066-878071de2905,,Vander Paulo Ribeiro do Nascimento,02467344770,vander.paulo@gmail.com,+5527999114829,false,,false,,true
@@ -898,7 +887,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 8e95ef09-fe0b-4cbb-ad22-3d5bfd5f8508,,Raimundo Ferreira dos Santos Júnior,83439722104,raimundo.colombo@gmail.com,+5561992285188,false,,true,cpf,false
 8e97579d-01b9-4e96-867d-30f1f8ab5b33,aec9a8ac-a4ca-430e-bb6d-4dc3d5fca11e,Andre Souza dos Santos,04099158900,dreandso.br@gmail.com,41991818196,true,qv_id,false,,false
 8ea1290c-900b-4f76-a56b-549613a4415a,431387ac-05dc-4117-948d-2f331077ec56,Marcos Campos Mancebo,17913050756,mancebo.marcos22@gmail.com,22997634238,true,qv_id,false,,false
-8ea421dc-cf84-4c0d-90a0-fe49b45b9d80,,Marcio Yoshikatsu Medeiros Sakurata,26207636813,msakurata@yahoo.com.br,+5511940448000,false,,true,cpf,false
 8ea47e16-3fb6-4f31-9e5e-273031096847,,Francisco de Assis Vale Junior,02683352301,juninvale2@gmail.com,+5588997132495,true,cpf,false,,false
 8f5832f0-f101-4d57-a6cd-61f901710838,,Rogério de Araújo Assis,77903757253,rogeriocpt@gmail.com,5591984267812,false,,false,,true
 8f66c79c-43a1-4bb5-8b71-8bb81fbd1b46,e9d9b626-3aa9-4756-8c77-82a7a4ab5f76,Marlene Alves de Oliveira,75261430925,marlene@marlenemodas.com.br,44999162173,true,qv_id,false,,false
@@ -910,7 +898,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 908a6b0d-d0a2-4d13-af4c-50c5e055f7db,,Thiago Alves Derrico,21604625864,contato@thiagoderrico.com.br,5512991920000,false,,false,,true
 90b159fe-25db-4702-b784-7ce71efc3d78,7a0b9eb1-875f-409c-9bbb-095c1cc879ae,Liara Nakamura Hirota,36827941825,liara_nhirota@hotmail.com,11953068989,true,qv_id,false,,false
 91196563-f911-42fb-b06e-ac9536e83fd2,aa29215c-310f-47a5-bbdb-e23352e7b8a1,Luciana Maraldi Freire,70878650210,lmaraldi@gmail.com,+5569999791313,true,qv_id,false,,false
-9122505c-3d6e-4c44-afb2-8817bfa7a817,,Giselle Schimidt Ragazzo,22256240894,giselle.ragazzo@gmail.com,+5511982339780,false,,true,cpf,false
 91257ce9-3d49-4ed2-b07e-9b744c905c86,,Daniel Vasconcelos e Beatriz,26841281896,danielcvasconcelos@yahoo.com.br,5522997476171,false,,false,,true
 912ec32a-f85a-4e89-9a33-318c628e1efe,,Maria Aparecida Barbosa Gomes Menezes,39929426515,aparecida.menezes20@gmail.com,5574991591613,false,,false,,true
 91587e18-3ff7-4641-a5ed-ebae5261d46e,,Luciano Passoni,25869073880,luciano_passoni@hotmail.com,5511981877443,false,,false,,true
@@ -939,7 +926,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 9471273b-ab78-42ab-9be3-ed8393576b54,,Lejandre Karol Fortes Meneses,64159124372,lejandre_kfm@hotmail.com,+5515991110813,false,,true,cpf,false
 94915011-901c-4e6f-867b-195c842d3bda,fd6ccc43-1dad-4ef1-8975-0786e351782c,Celio Viana da Silva,05019805637,vianacelio@gmail.com,31992760132,true,qv_id,false,,false
 94b0f06c-c02c-458c-b0e2-6216227cddfe,,Caio Ivo de Almeida,34233174854,caio_ivo@hotmail.com,+5511976192117,false,,true,cpf,false
-94f89eb2-0566-414b-b59e-f6cd75448f04,416c690a-006e-4a84-bed6-0d5f120c9e72,Wanderson Mário Cavalcante Olímpio,02933364310,wandersonolimpio@gmail.com,98981316795,true,qv_id,true,cpf,false
 94fd149e-8d78-4686-b407-a52d59e0f111,b35a62cb-d638-40d2-9e41-ae08bfa93085,Rui Felde,06847245883,ruifelde@gmail.com,43998561116,true,qv_id,false,,false
 9519ce54-aaa7-4fb6-b6ed-3b2de698822e,,Roberto de Paula Correa,15417331856,Robertoadvogado@outlook.com,+5511965640064,false,,false,,true
 951cb145-5fe9-4bd0-a5f7-b5247ddf0713,,Márcio Watermann,61494216000,mrcwatermann@gmail.com,5551981290884,true,cpf,false,,false
@@ -947,6 +933,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 955cdd9b-ce91-405a-bcd9-6acd329e1a5a,cabc6d60-c879-4ea5-b0c5-504e5cc0cfca,Marcos Eduardo Garcia,52435695691,marcoshaskell@gmail.com,12981416354,true,qv_id,false,,false
 95652855-bf12-4ad0-947b-38adfccac1e1,6b36ea55-57d9-4f13-9471-35707c91ed74,Marcel Rene Todesco Weldt,76839923991,marcel@leoclean.com.br,41999762846,true,qv_id,false,,false
 9592fce7-6b0e-4956-b1b8-ca41bba4bbdf,7cd76e14-379d-4ba9-b7d1-55a1686122cd,Ingrid Schwach,28563411870,ischwach@hotmail.com,11981587009,true,qv_id,false,,false
+95c79963-37e7-4a96-9449-cbfe4ef57599,,Fabiano César de Águida,21491222867,dr_aguida@icloud.com,+5561991996110,false,,true,cpf,false
 9605527b-5ed7-432e-9619-b7d55ef608a5,2d38fc11-95ed-405b-a15a-4a3d589e9007,José Roberto Andrade Filho,56726503920,joseroberto@geha.com.br,+5541999576710,true,qv_id,false,,false
 961226e6-8e46-45a8-9666-4a8f0d16888e,255c3f7f-5f3d-4449-83e1-c51f4389528b,Adriano Giuseppe Lecce,07512206801,adrianolecce65@gmail.com,18997518887,true,qv_id,false,,false
 963ca7da-d07e-47f3-9e14-313bfef292e2,3541e298-d72b-44e5-9abf-d53e750408a7,Luiza Aparecida Bueno da Silva,37514762884,luiza.bueno1990@gmail.com,+5521990659013,true,qv_id,false,,false
@@ -959,7 +946,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 96e22e88-a56f-4ee8-b24a-104e72ab019c,,Guilherme Romano,61013854187,,5521971291974,false,,false,,true
 971b37db-fa59-406d-8877-15e8840545d4,37b399bf-66bd-41aa-9ae7-ee18dc5d4026,Annathércia Said Skeff Soares Neiva,82288283300,annatsaid@yahoo.com.br,86994522705,true,qv_id,false,,false
 97278c95-356c-4294-8874-8052a5a69262,,Gabriel Bacagini Guedes,31857650875,gbganest@gmail.com,+5511975130726,false,,true,cpf,false
-972975dc-b0e0-4168-8fc1-f36dd4c971e9,,Luis Kobayashi,,,,false,,false,,true
 9762b28a-7057-4957-8c58-f7db0e2a645f,,Marco Antônio Sobrinho Espindola,69894353134,marcoasespindola@gmail.com,+5567992970349,false,,true,cpf,false
 977fb292-8761-4c14-a47f-9eb585321ed5,,Maria Christina Costa Sousa Camões Ranevsky,62737570700,cranevsky@gmail.com,+5511992710822,false,,true,cpf,false
 97fa111f-6b40-4dca-9264-2566b4779ace,,Merylin Daiana Datsch Cordovil,04603722974,merylindd@icloud.com,+5541996550255,false,,true,cpf,false
@@ -988,12 +974,12 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 9b5f2e89-6822-405a-a154-00c3bc971e1d,9e342611-5201-4dea-8983-046759bb0a4c,Lucieide de Fátima Pereira,48491390197,lucieidepereiramed@gmail.com,94991445444,true,qv_id,false,,false
 9bb3754d-1321-4664-9980-fc53f7bf983d,,Dulcilene Aparecida Roque Martinis,73600857991,dulci.006.pet@gmail.com,+5544999032669,false,,true,cpf,false
 9bbf3993-14c3-46ef-9f91-967a227711cb,,Ângelo Barbosa Lovis,02904121617,2rideanapolis@gmail.com,+5562999120404,true,cpf,false,,false
+9c42c623-3351-4831-9042-72c2ec2df528,,Joir Lima de Oliveira Junior,94157049500,joir.oliveira@gmail.com,+5575991328912,false,,true,cpf,false
 9c63bd2a-2127-406b-84ce-616507205bfb,,Thiago Nicolatti Menin,39536044811,arq.menin@gmail.com,+5511998849694,false,,true,cpf,false
 9cae6388-a687-4834-97fc-d1ee7e855f38,6c8481e3-7be2-489c-a8e6-f6e4fc6c6f21,Matheus Alves do Nascimento,02168688311,matheus.an88@gmail.com,85988299189,true,qv_id,false,,false
 9d366e50-a984-4bf3-a978-d8427f78e731,040f8496-c189-498d-8a14-dafa31f96c37,Fernando Alberto de Melo Porto,07830879770,meloporto@hotmail.com,+5568984021350,true,qv_id,false,,false
 9d5cbe56-ae6f-420a-bba4-afad58e701ba,84c5ff21-ce04-405f-aa80-91ad891593f8,Diego Cesar da Silva,06064203986,silva_diegocesar@hotmail.com,47991013889,true,qv_id,false,,false
 9dc9ec40-3034-459c-9a6c-e41334ee6428,,Henrique Sillman,36546944898,henrique.sillmann@prometal.com.br,5519991929339,false,,false,,true
-9e06aafd-c5c0-4453-817d-61105a112c49,,João de Souza Filho,75132800882,drsouzafilho@hotmail.com,+5511976207462,false,,true,cpf,false
 9e11752e-e834-4817-b579-401f48c41e49,,Fabiano Tenorio Quintiliano França,81562632434,fabiotqf@gmail.com,+5582999992874,false,,true,cpf,false
 9e1b29a3-ccd2-40b2-b926-c7b13499f048,516009aa-1410-4e63-9b7e-5bcef9b61d9e,Rodrigo Augusto de Aguiar Guedes,92015964487,raaguedes@gmail.com,81999766996,true,qv_id,false,,false
 9e38e909-54e7-4e99-a79d-9fa80164f4de,b17026ae-3211-4ee5-828e-b0351d2bc180,Rafael da Conceição Rosário Leite,11520519702,rafa.leite51@gmail.com,22998138999,true,qv_id,false,,false
@@ -1007,7 +993,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 9f06dda7-f8d1-413e-9b65-ed070d183636,89abd8af-b226-489d-9bcc-4de58f5e70e6,Gabriel de Oliveira Rodrigues,34709817871,gabrielrodrigues08@yahoo.com.br,12981678127,true,qv_id,false,,false
 9f3a3c26-4b3b-4143-9a82-bd04417b55e0,,Daniel Alexandre Tavares Archanjo e Silva,10835212769,danielalexandresilva@live.com,+5521980223399,false,,true,cpf,false
 9f4a760a-917a-4535-9eed-3e46e65950fc,,Karyna Bustelo Saab,,karynasaab@hotmail.com,5541992061234,false,,false,,true
-9f4c3480-4652-4bef-a199-c7b7315ee344,,Manoel Estevam de Farias Filho,69939861168,manoel.estevam@mapah.com.br,+5562981010217,false,,true,cpf,false
 9fcad240-a3ab-45a6-bd96-2c48cc537124,,Floriano Soares Moreira de Andrade Filho,08973146890,floriano@handway.com.br,+5511993737345,false,,true,cpf,false
 9fec1933-3720-4449-8aeb-48974650c589,7ba79756-9557-4f6b-8fb3-ceb689417c74,Claudia Del Claro,00349419914,claudiadelclaro@hotmail.com,48999626178,true,qv_id,false,,false
 a0109555-93fd-408d-b059-e8105fac8ac2,47f0bd16-1989-41cc-9cbd-a983c664c691,Guilherme Santos,70596700172,fishguil@gmail.com,61998490110,true,qv_id,false,,false
@@ -1018,8 +1003,6 @@ a0e0d28d-18bf-4369-8603-95784e583ee8,,Joao Mario Estevam da Silva,27135603818,jo
 a1111ac2-9036-4a8a-b259-934de11c6c34,,Omar Alexandre,89722990063,alexandrebertholdi@gmail.com,5555992302615,false,,false,,true
 a12b94ed-e569-429c-adc0-b1fbc1317a49,cda2f95a-7308-4633-8d1c-08d12594583a,Renato Olivato de Oliveira,31124761829,renatoolivato8@gmail.com,+5519997050783,true,qv_id,false,,false
 a17d9c4f-a84f-4a42-8ecd-c632588fc85e,,Simoni Cristina Vieira Felisbino,03972760957,s10vieira1@gmail.com,+5544997733657,false,,true,cpf,false
-a1a7c0c6-972d-4e27-9beb-652f583e4dd4,738fcc5d-3741-4a68-9fa4-4ab26f9490d4,Maiza Novais Pacheco,09801808640,maizanpacheco@gmail.com,+5511962779888,true,qv_id,false,,false
-a1ae443d-66ce-424d-8b70-93812a2f9723,,Kleverson Ferreira Mores,92858830100,kleversonf@gmail.com,+5562994643939,false,,true,cpf,false
 a1d4687a-ef54-4022-a528-30c8eab86bfe,,Afonso Marcius Vaz Lobato,41163443204,afonsolobato@advassociados.com.br,91981160810,true,cpf,false,,false
 a1dbf627-d0d5-41ee-a25e-f344f52cfe83,,Luiz Fernando Nicolodi,,luizfnicolodi@gmail.com,554198658155,false,,false,,true
 a21cfd16-b6fc-461c-9aee-734aa49b73df,,Camilla Sandri de Oliveira Pinto,10797861718,camillasandri.o@gmail.com,,false,,false,,true
@@ -1050,6 +1033,7 @@ a58431e1-d265-4cca-aa84-2f176e2eef33,,Abigail Figueiredo Santana Giansante,74784
 a5a1dec7-0700-4374-a9fe-d7290c7a5eea,f4c0e2e4-f025-4d5c-a4db-da19de86b12b,Maria Carolina Vannucci Salem,31912442809,cavannucci57@hotmail.com,11985794820,true,qv_id,false,,false
 a5a91adf-f0a2-4408-b57e-b85330e9c7e5,,Patricia Lae de Souza,28449496810,patricialae2@gmail.com,5511972054087,false,,false,,true
 a5b03a68-ddef-4373-9f26-b49a0ce9c14e,e4412d5a-ad3d-4b6d-86a1-843073f6de69,Danillo Vaz,74275534204,danillovaz@gmail.com,+5596991670101,true,qv_id,false,,false
+a5f2ad65-6e9a-4d71-adb3-61a29f5e0d8e,,Marcio Alves da Silva Junior,43092127862,marcioa7jr@gmail.com,+5511975405250,false,,true,cpf,false
 a6695ffe-d396-4bce-bdb8-421811dfe81b,,Alexandre Augusto Miranda,80852696191,alexandreaugustomiranda@gmail.com,+5567981110555,false,,false,,true
 a6d87589-c181-4e3a-b170-d6da34e1443a,,Russel de Farias,,rdfarias@gmail.com,5527992790788,false,,false,,true
 a6e07c81-aa43-498b-9c63-a971f7f1d0e5,,Joao Victor Cardoso de Moraes,40946332860,jvictor_card@hotmail.com,5518997589289,true,cpf,false,,false
@@ -1092,7 +1076,6 @@ acf65486-1448-44e1-beb6-13a3f878e08d,eeee7012-ab87-475c-b40c-321617937d26,Rafael
 acf926d9-d3a1-4d45-a304-777ac698b975,,Daniela Guimarães Caporali,32382001860,danicaporali@hotmail.com,+5511976895485,false,,true,cpf,false
 ad1116ed-26e2-4c62-93f1-4d66865c9144,d1ee8e17-debe-4b7b-bb82-8db3f128a83b,Tchiêlo Lisboa Camboim,03592412124,tchielo@gmail.com,+5561992681937,true,qv_id,false,,false
 ad206fc3-4ba3-4e18-9018-6822f8b773ef,d8a2067f-d1de-4009-ad7b-2d30ca665466,Samuel Stalhschmidt,02885898909,sam10med@gmail.com,43996001900,true,qv_id,false,,false
-ad382516-dee3-4ad6-825c-fcf92839e72f,,Pollyanna de Oliveira Santos Alves Vieira,04575049603,pollyanna.vieira@extimaprojects.com,+5531997521710,false,,true,cpf,false
 ad409191-ee4c-4422-bc70-02ac18808736,a4d34712-28d0-4174-9812-b0bb66697e4a,Iata Ialyn Barros Queiroz,02631675347,ialynbarros@hotmail.com,85999109173,true,qv_id,false,,false
 ade94614-826d-4b9c-a564-7c88248159b3,,Éder Fernando de Mello,00033259038,eder@gransonno.com.br,+5549999555151,false,,true,cpf,false
 ae48af30-54b9-450c-944b-52e0d08e2cd6,d956e26f-2a64-43bc-96d2-cf13eca9e7cb,Henrique Moura Leite Bottura,28677495819,henriquebotura@gmail.com,11975472372,true,qv_id,false,,false
@@ -1117,6 +1100,7 @@ b1c942a3-c982-4239-b7fd-9fef55597b82,bdb939ad-8129-4c85-951a-8d8bb562a6dd,José 
 b20557d2-aa88-4a5f-9178-580525dac756,,Guilherme Almeida Francisco,00932375760,guilhemem.almeida@icloud.com,+5561996490436,false,,false,,true
 b20aa591-0d68-413c-b5fa-e00b41579888,db5a6d18-67a0-4cd9-a33b-9cc109a150eb,Jhonathas Aparecido Guimaraes Sucupira,03438257912,jhpgsu@gmail.com,11979623754,true,qv_id,false,,false
 b21c9738-c014-400a-8bbe-2156582d2770,d166562f-377d-40fa-a6c3-1eb392fd7b0e,Fagner de Oliveira Melo,94191956191,fagnermeloms@gmail.com,67992663563,true,qv_id,false,,false
+b262e34c-8d79-4f09-86c5-54cbe0ae2b96,,Mozart Aurélio de Morais Loures,07039765918,mozartloures@hotmail.com,+5545991072159,false,,true,cpf,false
 b28a716c-e1c4-4a31-8fde-8c302c7d5d59,,Cristine Almeida Martins Gomes,01506646727,cristineamgomes@gmail.com,+5521999733339,false,,true,cpf,false
 b3005d0b-4658-4e65-83c0-904d0ab97c73,,Francisco de Carvalho Dantas Terceiro,,dr.francisco_iii@icloud.com,5586981448585,false,,false,,true
 b30cc0bd-88d4-4cd7-a9d2-4c3b76a2d992,,Lucas Oliveira Araujo,05870536740,eng.araujolucas@gmail.com,5522992062821,true,cpf,false,,false
@@ -1142,13 +1126,11 @@ b57c056d-a5e8-4efa-99e0-8b62e782fe7e,,José Renato Barbieri Gallo,22087723850,ze
 b5f18e33-5a32-40e0-ad5e-749fdb727f97,952e5218-9631-413f-9d46-45d640119a45,Yan Victor Fróes Gonçalves,84028246253,yangoncalves@gmail.com,11916209586,true,qv_id,false,,false
 b62fa135-3095-406c-b2ac-58111ec99123,,Elaine Cristina Daniel,25540841816,daniel_elaine_c@cat.com,+5519983121718,false,,true,cpf,false
 b64ab97b-977b-41b1-a86f-f7082bdb5ea0,d94a78ef-1cfe-4e35-b8b2-dbac82969fe6,Anderson Marcio da Silva,02994541696,drandersonmarcio@gmail.com,31992041660,true,qv_id,false,,false
-b6d3caff-8501-4350-b017-38a864d8723c,,Maria Manuela de Andrade e Silva Ramos,81582510210,mmanuelaasr@gmail.com,+5541998473124,false,,true,cpf,false
-b6edd79a-3a67-48cd-9e86-876d6bff8bf1,,Mário César de Oliveira,90271203668,cesar.oliveira@cultura.agr.br,+5534999840838,false,,false,,true
+b6edd79a-3a67-48cd-9e86-876d6bff8bf1,,Mário César de Oliveira,90271203668,cesar.oliveira@cultura.agr.br,+5534999840838,false,,true,cpf,false
 b74c508a-197e-4e85-8c7f-af361202d97c,,Victor Vasconcelos Figueiredo,07123878540,drvictorvfl@gmail.com,5571999327007,true,cpf,false,,false
 b77595b3-1fe5-4a13-a4cd-c601f1590978,ea9a5151-6264-4cfe-8619-c9f983476685,Ronaldo Peixoto Bella,30429514808,ronaldobella@gmail.com,11984440081,true,qv_id,false,,false
 b79174f4-00d7-41f2-9534-ef26ccace60e,5f135ce4-f848-4723-9285-1774f7735a19,Sandra Takaki França,09428047830,drsandrapersonal@gmail.com,19997722808,true,qv_id,false,,false
 b7ebf118-bd75-4161-9ebc-2a6aec9346f2,e3850450-a5ef-4f95-a8ee-de1c89df1020,Humberto Bozi Spindola,89785983234,humberto.bozi.spindola@gmail.com,91981173138,true,qv_id,false,,false
-b835dc0e-f940-4d0d-9dc4-534be2554265,041efd9d-6923-4d3b-965d-0e17588e90d6,Gilberto da Silva Arbia,04213399850,arbia@handphone.com.br,11972064462,true,qv_id,false,,false
 b83c66c8-57ce-4516-bfdd-ecfc46175a88,04599bbb-2065-4cd8-a981-c14444eb29cf,Felipe Sampaio,87885239349,felipesampaio@colegioja.com.br,+5585994019483,true,qv_id,false,,false
 b8e2336a-b2b5-4b86-91d3-8a30a87524de,,Victor Alfredo Mirol,92231721872,victormirol@gmail.com,5511999821047,true,cpf,false,,false
 b9307fb8-d248-4a41-964e-06b5c6795fd8,,Marcelo Kiyoshi Nakayama,11690700866,makinas.nakayama@gmail.com,+5511998234039,false,,true,cpf,false
@@ -1179,7 +1161,6 @@ bd0c0fe6-fce2-442a-b0a1-863db562cda0,,Adriano Antunes,94704970663,adrianoneocare
 bd132da2-c690-4816-9884-2ff9112e9ae6,,Heliaura Naldi Duarte Jimenez,12552261884,heliaura_duarte@hotmail.com,+5511983156706,false,,true,cpf,false
 bd31ce27-cf84-4e6a-a278-e131ce4bab66,,Júlio César Arantes Maciel,,julioarantes@yahoo.com.br,5531992066630,false,,false,,true
 bd7b2c19-ff49-4d94-8ca1-4f1063c7d851,8a6213d5-0a35-4051-9354-3918dcfb5d06,Eliane Kublik de Figueiredo,00809701928,gfmaisatacado@gmail.com,+5566984042740,true,qv_id,false,,false
-bda84e7f-9075-45d8-bda2-ae7ebeca1539,97e5310f-77b0-4268-916a-02cd1039c5a0,Giovana Biasi Locatelli,02640451901,giovanablocatelli@gmail.com,11965857667,true,qv_id,false,,false
 bde4c421-3f96-4abc-a57a-43f94e2a41ec,8b168496-ad83-4719-9783-4ab43464916e,Rodrigo Barbieri,28742887801,robarbieri80@gmail.com,11970370241,true,qv_id,false,,false
 bdebd83b-d1c9-45ef-8995-d900ea5b99ce,286dcb56-d8dd-4156-be47-e618b83beaa2,Mariliza Rodrigues da Silva Luz,27006133840,mariluz.advogadapolitica@gmail.com,12981640007,true,qv_id,false,,false
 be0663fc-ac9d-4ed3-85d8-f0ceb207fe46,b04ffd23-0e0b-44fe-b790-61301456da84,Alexandre Amoedo Amorim,02010144597,amoedoamorim@gmail.com,71988804875,true,qv_id,false,,false
@@ -1203,9 +1184,7 @@ bfc96a2a-aea3-4918-9b76-51f43c8c3511,,Ana Caroline de Arruda Amorim,91414288387,
 bff2a63e-a967-4259-b349-0ec22d07fc09,70e5e567-2c0b-4dba-9519-c02048250824,Thaís Sampaio Murata,35030522832,srtatahs2@gmail.com,11999857897,true,qv_id,false,,false
 c01fcc69-16f3-4406-91b0-7c2cfd2eec89,,Ruth Rodrigues,,ruthconspira@bol.com.br,5521981570605,false,,false,,true
 c0549295-a899-4525-b511-9b6b3a4e1134,19fde371-0336-40e6-91ca-27898fa69ef7,Marcos Santana Borges,12557267848,masantanabo@gmail.com,62996372656,true,qv_id,false,,false
-c06d26e6-e4a8-4939-90db-dc95d32a11b9,e7b5de95-dd1b-456b-922e-5bfb6836f03a,Atilio Carlos Della Bella,06400281878,atiliodellabella@yahoo.com.br,11999744991,true,qv_id,false,,false
 c072642c-2201-4ab9-a8f4-01f080c464ae,,Guilherme Ferreira de Almeida,,guilhermefa10@hotmail.com,5511932924187,false,,false,,true
-c0846bb1-806f-4973-9fd3-48dac42cc3cf,8f64bf35-7248-4368-a1af-62a867913a0a,Thiago Araujo Reis,34118176823,thiaraujo87@gmail.com,11980692012,true,qv_id,false,,false
 c08b694e-9c70-4898-914c-cd94beeca9ba,,Bruno de Almeida Martins,02810789711,bralmeidamartins@gmail.com,+5521988611500,false,,true,cpf,false
 c0923116-9c20-4c28-a936-27633a93e701,0b98c506-eb42-4ece-ac1f-72bae8d383b0,André Felipe de Moura,14346337805,afmoura77@gmail.com,12992093766,true,qv_id,false,,false
 c0ac87bb-2645-44fc-8463-bf033710ba0f,,Bernardo Alleoni,06284668899,balleoni58@gmail.com,+5519984013191,false,,true,cpf,false
@@ -1221,11 +1200,9 @@ c1b744df-5dad-475a-8930-a40f421fc512,,Felix Augusto dos Santos Júnior,,sgtfelix
 c1d27b42-7557-4162-a12e-a40c3d4d53ae,,Gisele C T Krüger,07312448771,giselekruger1@gmail.com,+5527999943005,false,,true,cpf,false
 c1f6e42c-d9de-4721-a79a-b1f24409a4a0,1b9fc888-29b5-43df-922b-1bcfab7a1eb9,Jibse Marchioro,00757069037,jibse_marchioro@yahoo.com.br,55991441592,true,qv_id,false,,false
 c2049ffd-3ddd-4b2e-961c-c2eb16616d8d,cda97bf2-799e-4880-a002-bff3aba34c0b,Karoline Moreira Rios,83353216553,kroline_rios@hotmail.com,75999984223,true,qv_id,false,,false
-c22b7d56-af89-4188-8ea1-c8aea9417a75,17530daf-2311-4f50-a16d-ed40deb4df49,Estevão Amorim Martins,04021629602,engenhariadoaco@gmail.com,5562981155453,true,qv_id,false,,false
 c22e3b6e-5640-4810-ba0d-dfb270cdbeb3,,Rafael Bruno Carneiro Nascimento,,engrafaelbrunocn@gmail.com,+55 86 9929-1727,false,,false,,true
 c2979d7b-1b6e-4678-b505-c5699479a0b8,168249c8-4a31-4780-a697-eaa7d4742d36,Rodrigo Mussiol,80929460006,mussiolrd@gmail.com,54991544249,true,qv_id,false,,false
 c2a2b066-7002-4a60-8af3-7f4f724c9dd7,0072181f-43d6-4b16-83f7-8ef311c18657,André Felipe Gomes Lima,08045523638,andrefglima@gmail.com,31992711921,true,qv_id,false,,false
-c2ad965d-8d3e-48bf-9a2e-0d8e589ead6d,,Ricardo Filipe Romani,,rfromani@gmail.com,552196804-1429,false,,false,,true
 c2caaf8b-a5ad-451f-8375-2b48f70d306c,,Yasmin Allgayer Sobé,06576572980,yasminallgayersobe@gmail.com,+5541997682071,false,,true,cpf,false
 c3058d02-722a-471c-b7da-50ad502e8e47,,Marcus Vinícius Soares Cavalcanti,32608211801,marcus7vinicius@gmail.com,+5511975496979,false,,true,cpf,false
 c3178c50-295e-48b5-9f90-000bdcb96cd6,8a954618-0d62-48d1-8a85-9f3ade96191d,Amanda Destefani Evangelista,72311479172,dra.amandadestefani@gmail.com,+5595991484085,true,qv_id,false,,false
@@ -1245,7 +1222,6 @@ c57b2362-b485-499b-9ed2-b9a518cc1ee5,d17c6a70-4f4c-48df-8d17-d7e9f79a9668,Alexan
 c59e4fae-d7d1-47e3-8376-06e58eafa9e5,dac636cc-f739-479d-a817-e15e1ff90f9e,Lucia Tieko Shiraichi,36881218800,lucia.shiraichi@gmail.com,+5511999107574,true,qv_id,false,,false
 c5a544ff-3ad7-41ec-aa3a-69c71e228170,,Reinaldo Luciano de Medeiros,06007960609,reinaldobhz@hotmail.com,+5531987031619,false,,true,cpf,false
 c5b03699-087d-4ca5-99ad-28687b46f2bf,880b9df9-3ab4-4f27-a31d-0a3dfcfd6f39,Ana Maria de Santana Lopes Dantas,58461418468,dantasanamaria6@gmail.com,83991117306,true,qv_id,false,,false
-c5d01610-694d-4180-8b17-682e2d4e0bd6,,Frederico Fonseca Schuabb,,Fredericofschuabb@gmail.com,21964961990,false,,false,,true
 c5f7534d-660b-4a2d-b61a-d523d33472a0,97f917b0-7c9f-45f7-ba63-96557e9a0657,Karina Daniele Molleta Bastos,05354517923,karinamolleta@gmail.com,67992358545,true,qv_id,false,,false
 c627b36d-6d93-4fd0-9b1a-2ef18723dbf0,3c37e6e3-816f-4af6-9525-50526436b546,Eluan Albuquerque de Lima,83323090268,eluan89@yahoo.com.br,68999944513,true,qv_id,false,,false
 c65b6f34-13d1-4578-8bc3-391d5dd46533,e14a3e8c-93ff-4f81-a77f-b907b2ec5e68,André Breno Menezes Lima,05711060481,drandrebreno@gmail.com,87996608354,true,qv_id,false,,false
@@ -1256,9 +1232,10 @@ c7040b9f-2dc8-48fe-97ef-e6800fce4b70,f6f00112-edab-4975-b9d6-ea001284baad,Sergio
 c7467606-c1d9-4baf-8031-6b59cb40eef9,65a77dc8-3eca-499b-ac33-fcfd9fa21424,Jefferson Isberner de Santana,05291833904,jeffe.santana@gmail.com,48996335280,true,qv_id,false,,false
 c757d34f-b146-4312-ad07-ab1ed46bc104,46110f5f-e59b-4139-b479-a24c772e6525,Gabriela Farias Barbosa,06737503454,gabrielafariasb@hotmail.com,83993882121,true,qv_id,false,,false
 c7648907-7574-4e7a-a0f2-e8311dc78393,,Carlos Alberto de Andrade Peixoto,45655812053,Cpeixoto65@gmail.com,5551996783855,true,cpf,false,,false
+c76a4fbe-2b73-428d-979e-b9117a375384,,Karitas Bicalho de Freitas,70670986100,karitasbf@hotmail.com,+5562981586047,false,,true,cpf,false
 c79e385c-61ef-4230-93da-4a43ddd7b352,,Francisco Marcio Ximenes,78553784304,ximenesfmx@hotmail.com,+5585996702039,false,,true,cpf,false
 c7ae128b-8636-4f0d-acc5-3bdf9368db68,3b63adc0-6b76-47c1-871c-cfd475ef13c1,Fernando Rana Bacaro,34030415814,fbacaro@hotmail.com,11998488722,true,qv_id,false,,false
-c7b6ff1a-9ceb-4587-885d-68904d0803cb,d7621ad8-c498-4661-96a6-3da1d4a9d231,Juliano Mosquera Simões,47514051520,j_msimoes@yahoo.com.br,75998629802,true,qv_id,false,,false
+c7b6ff1a-9ceb-4587-885d-68904d0803cb,d7621ad8-c498-4661-96a6-3da1d4a9d231,Juliano Mosquera Simões,47514051520,j_msimoes@yahoo.com.br,75998629802,true,qv_id,true,cpf,false
 c7c1a45b-d6e4-4178-9c9e-99264df09052,306c820a-3566-43f5-bd9e-5f84c000d682,Andre Correa Veloso,99256533120,andrewinvestbr@gmail.com,+5563999850033,true,qv_id,false,,false
 c7e531a8-1af1-4124-a50d-3ef9fb18c29c,,Jackson Laskoski,,jack@conexti.com.br,5549988131231,false,,false,,true
 c812ad4a-24b7-45d4-ba3f-df5cbe99417f,,Kelen Abreu,,keleng.abreu@gmail.com,5512981345953,false,,false,,true
@@ -1310,7 +1287,6 @@ cfecbf1d-47fa-4670-b218-ba2c5a96f815,82f4f88c-cc40-46b2-b139-d13c1a1e917d,Luiz F
 d0181aef-74ea-42a1-97e6-179cacc6e98a,,Marcelo Elias da Silva,03921536960,vidaalcar@gmail.com,+5541996651367,false,,true,cpf,false
 d02fc067-4383-45ca-b69c-8c8768e61bd8,df8ab1a9-633b-4361-81f5-c2e8d8ada01d,Daniel Melchiades da Silva,80134513053,daniel.nefro@gmail.com,55999778104,true,qv_id,false,,false
 d0415429-46f3-4a18-bd4f-b4b0c4624fd9,,Nadja Helena Martins Saraiva,43047114315,nadja@jwsaraiva.com.br,+5585991498978,false,,true,cpf,false
-d05d7dfa-0438-4c58-8495-56ba4a615b49,,Cláudia Teixeira,,claudiateixeira2020@yahoo.com,5521993998397,false,,false,,true
 d0671050-cb3c-4c2d-bb61-b9bda4744f0c,,Monique Lima da Motta,11233871765,moniquelmotta@hotmail.com,+5521965749491,false,,true,cpf,false
 d0817de1-4c13-4773-8b0d-24d1ef81853d,,Adriana Cristina Soares,00469225394,adrianabarbosamed@gmail.com,5585997366377,false,,false,,true
 d0acfe6f-0dc1-41a9-ab77-9fb7ea9f15cf,,Mauricio Esquivel Denari,11846017807,mauricio@denari.com.br,+5513981283300,false,,true,cpf,false
@@ -1337,7 +1313,6 @@ d388e4da-c927-46f5-ae68-0092ada49762,,Kelson Corte,14508826172,kelsoncorte@yahoo
 d45a87fe-64b3-4007-8dac-5533b6705663,cfac5ab6-a77f-402d-905a-7f90e457caee,Eduardo Barboza Gurtler,14998010840,aegurtler@gmail.com,+5511983037632,true,qv_id,false,,false
 d46b479a-e45e-4d99-835a-8480d8a56482,,Luciana Ferreira Campos Vasconcelos,08627156794,lucianafcvasconcelos@gmail.com,+5521976960050,false,,true,cpf,false
 d4717aed-3828-48f7-b9ae-76d8b2d2703f,493303c8-64f9-4d6e-889d-b1011aaf830c,Jamilla Fontes Teixeira,87550105634,jamilla@dconectelecom.com.br,31983575675,true,qv_id,false,,false
-d47215d4-b42a-451a-87ee-54ab02f89453,,Frances Carlos Lima Madrid,01617499170,francesmadrid2013@gmail.com,+5594992912130,false,,true,cpf,false
 d47a2031-41d9-4487-85ee-cb70909dd850,b9f0f32c-7856-4a57-83b6-85cb3d4d3d64,Rogério Aparecido Martinez,25240104816,rogerioapmartinez@gmail.com,+5517997563656,true,qv_id,false,,false
 d495b081-8c7c-44ef-963a-3559998bf46a,2818acc4-d23e-44e6-944a-4e35902760bc,Germano de Araújo Jatobá Leite,90265653487,gjatobaleite@gmail.com,82988235580,true,qv_id,false,,false
 d50df325-a872-458a-9cf1-4fc26fc7e17a,29427afc-4685-42c3-9f9a-64694a82966f,Paulo Lorran Hnszel,02640164082,lorranhnszel92@gmail.com,+5551999464866,true,qv_id,true,cpf,false
@@ -1357,18 +1332,15 @@ d6a2f4dc-db0c-432b-a5d7-22f7ae9a5961,ce03b1c5-fdcc-4c73-b47a-05b549591683,Iveral
 d6e046e8-2a3f-4d47-832a-9acf32fa2dd5,,Marcelo Lasevitz,76364305091,anamaste77@gmail.com,5551997447373,false,,false,,true
 d702be52-69e8-46df-9a56-635e21a6af43,,Júpiter Newler Lopes,,ijneewler@gmail.com,5598981117175,false,,false,,true
 d710eb0e-3aff-4f6e-a36e-ea5ea0cfd237,b86f12ba-5138-4dac-bcd1-7d248a4700d3,Dhyana Aguiar Cesar Mauricio,78903700163,dhyana.aguiar@gmail.com,+5561991027218,true,qv_id,false,,false
-d745e0a4-fc46-44c7-ad94-07adc563ef08,,Roberto Tolomei,70344825787,tolomei.roberto@gmail.con,+5521999478797,false,,true,cpf,false
 d755d86f-217d-4bc0-a6af-61d501bb29b5,,Renato Tatagiba,,,5521998490399,false,,false,,true
 d75fa08b-5303-4003-bb90-576f4cfc78d2,,Henrique Sampaio,00768694400,hs@henriquesampaio.com,+5511981008080,false,,true,cpf,false
 d77b493e-f9be-4632-a2b3-b717f99edb7c,,Fatima Cristina Ribeiro Freitas Moreno,64874222587,fatimamoreno2002@gmail.com,+5561991768413,false,,true,cpf,false
-d781d885-f3b2-443f-a4fb-0c22db9ea066,,Luiz Fernando Montini,01300076178,montini_montini@hotmail.com,+5541997153693,false,,true,cpf,false
 d7bc9000-c87d-4fc3-ac34-5c7d713a528e,19538d45-902b-437e-b85b-559808ccfa57,Clóvis Roberto de Freitas,30242649068,clovisrobertodefreitas@gmail.com,51985676003,true,qv_id,false,,false
 d7d5bf94-1ee4-4733-b625-6263cf13ef96,22b6c384-5ba3-4c85-89e9-6f82af29c783,Maria Antonieta de Campos Tinôco,13717499220,nittin@me.com,+5592981126600,true,qv_id,false,,false
 d7f1ff71-4633-47e1-abca-9e34c0b9198b,,Adriana Ferreira Lima Brasil,89941365504,adriflbrasil@hotmail.com,5579999853394,false,,false,,true
 d7ff3d2a-ef4d-419c-8ac9-672c58b097cf,,Marco Roberto Nicolau,97501557691,nicolau.omnis@gmail.com,+5532999882194,false,,true,cpf,false
 d81cdc90-7a9e-48f9-b79f-752f39b90966,,Leonardo Garcia de Oliveira,10505414724,Leonardo@engtex.com.br,+5521970080247,false,,true,cpf,false
 d85cb2e8-3738-44ec-84ce-4368a9469a74,ca5c4e91-31dd-4b59-9358-5e3ae4d9cda7,Lissandra Cavalheiro Maioli,95828702068,lissandramaioli@gmail.com,54999826564,true,qv_id,false,,false
-d86cea26-cc07-4885-ad5f-869827b75f20,e6ee7939-2ba4-4141-ba87-1cc93faf8d69,Rodrigo Lara de Sousa,89015312168,rodrigo@loe.com.br,+5561991150739,true,qv_id,false,,false
 d871f98f-7d5c-4853-a645-390945d12020,,João Bruno Nogueira Campos,07154736623,joaobrunobrazil@gmail.com,+5531999199100,false,,true,cpf,false
 d8a41458-3f77-410d-834c-3377840fffe9,,Rannieri Rios Veloso,63215543320,rannieririos@hotmail.com,+5585988140450,false,,true,cpf,false
 d8a9692a-100f-423f-b822-f2167007d56e,3671d752-d9e2-4e9c-b1ec-ff3e8463a644,Carlos Henrique da Silva Cezar,25945617890,carloshenrique.cezar@gmail.com,+5511985001614,true,qv_id,false,,false
@@ -1379,14 +1351,13 @@ d99e44ff-8629-4bf9-9e5e-367b436c7451,,Daniel Porto,,,5571987906899,false,,false,
 d9e4411a-269c-4b27-8ae2-736399983bf7,,Marina Koche Nunes Cerávolo,,marinaknc@gmail.com,5548991236363,false,,false,,true
 da3678d4-2610-49dd-85de-df437333db11,,Bernardo Naoyoshi Nakamura,21666726800,bernardosam@gmail.com,+5511992506316,false,,true,cpf,false
 da428043-eff1-4acc-ad62-7e5788135872,,Francisco Martins,,fhlmartins40@gmail.com,5511977795517,false,,false,,true
-da654803-8229-44c3-b7ce-1c1a1a7cb0a0,,Flávio Ribeiro Dib,07136818885,flaviodib@yahoo.com.br,+5516997616699,false,,false,,true
-da8a8a32-d2e2-4e47-a5ef-8c3e7165280d,,Priscila Laís Bragato Veiga,30842989803,pveiga023@gmail.com,+5561992211697,false,,true,cpf,false
+da654803-8229-44c3-b7ce-1c1a1a7cb0a0,,Flávio Ribeiro Dib,07136818885,flaviodib@yahoo.com.br,+5516997616699,false,,true,cpf,false
 dab024d1-7a80-4820-bce3-b25200dc2988,44f29918-5248-4eb3-8a81-811c7c65d65f,Anderson José Baêta Dutra,13029900630,ajdaudio@hotmail.com,31999974850,true,qv_id,false,,false
 dab22696-76ed-4af7-bc26-789dd6fd917a,,Viviane Fernandes Barros,,vivianefbarros@gmail.com,5521999566212,false,,false,,true
 dae7028d-6d0b-4a96-a356-47d7674430a9,,Fabricio Fernandes Heleno,04500991646,fabriciofheleno@gmail.com,+5531996347391,false,,true,cpf,false
 daf9d18d-8e15-4717-826b-c0ed7db2e5a3,44165dbd-9279-4e50-a561-779344b3cad8,Donizette Fernandes Lima Júnior,99375508153,donizette@canaatelecom.com.br,62984697014,true,qv_id,false,,false
+db1979dc-49e7-48be-b7d1-4c57186518f8,,Fabio Lima da Silva,33978304864,fabiofls007@gmail.com,+5511986179925,false,,false,,true
 db26a9f1-2996-441d-8f9d-cb15df2ed755,,Guilherme Gumz Felicioni,08965454905,guilhermegumz@gmail.com,+5547984429281,false,,true,cpf,false
-db2aa420-713d-4f37-a015-9bce68e9afcb,5449a008-a633-46bf-ad00-74bd9d021e77,Arthur Paz Oliveira Moura,98908367349,arthurpazom@hotmail.com,98991092999,true,qv_id,false,,false
 db49c3f7-a751-472e-9d08-1678c5a66dc3,,Welberley Lima Ribeiro,03746752108,welberley1@hotmail.com,+5566999559774,false,,true,cpf,false
 db5ce923-17a3-4312-8391-50bd4be6d7a5,5759221b-60d8-45c5-a69f-2b824e800963,Carlos Eduardo Lourenço de Andrade,02630462900,carlos.andrade1216@gmail.com,+5548984039399,true,qv_id,false,,false
 dba14861-b13f-4c6e-afc1-048521452dee,,Rodrigo Wegner Willrich,,Rodrigowillrich2008@hotmail.com,+55 47 98916-2506,true,email,false,,false
@@ -1417,7 +1388,6 @@ dfa9781a-b1eb-4fb1-918e-238e15c76cfc,,Bruno Nahorny Ferreira,00884885941,nahorny
 e01f97c9-933e-4097-89fa-1d98cdea9c48,2f9cfab0-908b-47e6-af47-975e32d488e8,Vinicius dos Santos Cruz,02981641590,viniciuscruz.desen@gmail.com,+5579991769418,true,qv_id,false,,false
 e0876ca4-41bc-4fad-b125-80354fb617e1,177ea1df-b18a-4f48-81c7-7a5790a77de0,Paulo Vasconcelos Stefani,25441453826,paulovasconste@gmail.com,+5511992710754,true,qv_id,false,,false
 e0f6df97-b099-4384-9d17-2644666f4dad,,Marcolino Evangelista Barbosa Neto,40590305620,marcolinobarbosa@outlook.com,5538998457200,false,,false,,true
-e14d3263-a816-4560-8353-e3c1a07b59e8,15907c49-7e81-42be-b058-87d46f810b67,Michelle Christine Teles Madeira,00935918108,mimimadeira@gmail.com,61982114994,true,qv_id,false,,false
 e1841715-cb21-4cf6-9466-23f76e8cc316,3f237aed-dadd-49cb-b3c3-3f4ba9ad8ac6,Adriano Gelmini,25529389813,drigelmini@hotmail.com,19997618665,true,qv_id,false,,false
 e1a444df-e733-40d8-883f-69df04acc005,,Aresk Charles de Medeiros Melo,02428200429,aresk@icloud.com,+5581993099074,false,,true,cpf,false
 e236bb7e-0491-4ff7-8562-863733a58954,,Adriana Cristina Braga,05119202616,adrianacbraga27@gmail.com,55 31 9 8613-5446,true,cpf,false,,false
@@ -1429,6 +1399,7 @@ e2b7b624-b1bc-4563-8826-6f10ec4e4a53,,Ruy Cesar Feuerschuette Neto,92152570987,r
 e2bcd15d-c69e-4476-9ab9-6c3f0b530f04,,Monica de Luna Abrantes Loureiro,10127423770,monicaedaniela@hotmail.com,+5592995145313,false,,false,,true
 e2e361fc-bf00-4388-8cc7-7e5a6410d65c,e105712f-8697-49a7-aedc-c9d120204148,Augusto Didier Silva Canto,00885440285,gutodidier@hotmail.com,91981100319,true,qv_id,false,,false
 e310307b-6076-4c49-be2b-9d7bd3f75133,a19782a7-8026-4d43-b445-ca4db79c3ca6,Fabiana Cristina Muniz da Rocha,25249288880,fabianamunizrocha@gmail.com,+5511991307222,true,qv_id,true,cpf,false
+e3472f26-d7e8-4bc1-adda-3f8f1a3ff0cb,,Alexandro Rodrigo Pazotto,39213792883,apazotto@cellproject.com.br,+5519981127333,false,,true,cpf,false
 e38f8299-c11e-48f4-96e0-ef6a7f216ba5,,Jeferson Augusto de Souza,12599142750,jefersonascarvalho@gmail.com,5521983740627,true,cpf,false,,false
 e3c24b4f-39c7-4f2e-86c4-69a99ddee7fd,4c91a797-fefd-4997-a14f-379ca547eac9,Francisco Helço Sales,11632828391,helcosales2@gmail.com,+5585986816328,true,qv_id,false,,false
 e3dfdd10-2ea9-4bc3-ab4a-21e3fa89109f,21c7112d-622d-43a8-917c-db8945e32a82,Thiago Gonçalves Fagundes Borges,81998163172,thiagogfborges@gmail.com,61999816161,true,qv_id,false,,false
@@ -1436,8 +1407,10 @@ e4184363-300e-46d2-a981-ac66c320928b,c05958e8-f4e3-4733-aaf4-84819d6074b7,Telmo 
 e4272e03-54bc-47b4-8bed-145da73b3dc5,988b072d-b5ca-40e7-aa60-9cbff46c5a17,Vanessa Medeiros Bertrand Martins,01652964100,vanessambm90@gmail.com,21999340204,true,qv_id,false,,false
 e437460a-de07-47fd-8bb8-2ae9a7445ec2,,Marcelo Costa Mascaro Nascimento,08558660808,marcelomascaro@mascaro.com.br,+5511996662343,false,,true,cpf,false
 e43a94fb-b486-4f0d-b128-054158408503,921d706e-4a90-4c98-9074-bbdd38918fcb,Danily Andrade Veloso,04319766199,danily.veloso@gmail.com,61991284151,true,qv_id,false,,false
+e43ea287-5363-4bbb-b035-69d2bcb4e8b8,,Leonardo Antônio Fecury Braga,03044924340,leonardofecury@gmail.com,+5598991267084,false,,true,cpf,false
 e45c22e6-45fe-44d5-8463-9cc160fb70d2,,Audi Anastácio Felix,02748071816,audifelix@icloud.com,+5511971961046,false,,true,cpf,false
 e48f9365-35a7-4538-85ba-ac578e5ee5b2,712d2cc4-df7b-40ef-a288-cf315025999d,Ricardo Alexandre de Deus Domingues,89492099187,ricardoaddomingues@hotmail.com,61999687161,true,qv_id,false,,false
+e4b5472a-c71f-418d-ae51-f6ac0ec9be58,,Paula Rios Gomes,13098305762,paulinhaa_90@hotmail.com,+5521986872525,false,,true,cpf,false
 e4eaa887-c0cf-44ba-acd1-7922b2a3d39c,,Antônio Carlos Pires Maciel,20921845634,drtmaciel@gmail.com,5531999892889,false,,false,,true
 e4ef5eac-3581-482e-bed3-a89e1486d5df,bfaa924b-4712-4430-873a-3ba98896225c,José Ricardo Marinheiro Rodrigues,09039197458,rikardopitt@gmail.com,+5583991284385,true,qv_id,false,,false
 e5028d51-46dc-41b5-bbbb-2adf9906d64b,,Astride Rodrigues Linhares Silva,82054029734,astridelinhares13@hotmail.com,+5564992300420,false,,true,cpf,false
@@ -1455,12 +1428,10 @@ e676df00-5b6f-444f-9961-fc22062f485c,,Jeilly Vicentini Ribeiro da Silva,93947950
 e67cb302-5cfe-4373-80ef-b151fb70d47d,871c5bf4-e14f-423b-bc92-3c3dde1e04cd,Carlos Charlone Ferreira de Santana,06867135404,charlonesantana87@outlook.com,82996143377,true,qv_id,false,,false
 e67db110-d70e-454f-ac7f-329dc3687670,c7a0e6ad-4a31-4acc-abe4-8716dc55c27b,Rosinete Santos Taveira,09005462809,roseriachao@hotmail.com,99981430550,true,qv_id,false,,false
 e68056dc-a338-4c73-8a5e-8162c23ccc94,15914ab4-a569-41cd-90f8-95f55c565658,José David Ferreira do Nascimento,64692558334,jdn.adm@gmail.com,85987975362,true,qv_id,false,,false
-e681c5cc-9b01-4498-8c5c-99536a1afe28,29fc1f97-a31e-4ef3-94ca-784ceeabae19,Diogo Cunha Loula,00097064530,diogoloula@gmail.com,74999723350,true,qv_id,false,,false
 e6a77b67-47f4-4024-a9ce-c12d9b90c782,,Nelson Muradian,12625696800,nelson.muradian@gmail.com,5519974115444,false,,false,,true
 e6e3a541-4f3e-4fc3-8e7a-21aab212483c,a80c5a31-7b1d-4ea1-a179-4e42797366a5,Jucimara Dall Agnol,70682763004,jucidall@gmail.com,54999208823,true,qv_id,false,,false
-e79fe8b8-b226-4327-8a01-d81714213c50,0ef53b0c-79d7-4126-99fe-ffa000d263e7,João Paulo Junior,39015840300,joaopaulojunioradvogado@gmail.com,88999561209,true,qv_id,false,,false
 e7a7ca10-be42-462d-a4b5-8a56f5bf8c04,,Tânia Teixeira Barreira,68971524553,comercialadedo@gmail.com,+5561991148837,false,,true,cpf,false
-e7c359cd-8c05-486d-bcf8-76a338b96058,b7dcbf31-46d8-45c1-98b8-91bc9d39cefb,David Dotoli da Silva,01107784131,david.dotoli@hotmail.com,66996461305,true,qv_id,false,,false
+e7c359cd-8c05-486d-bcf8-76a338b96058,b7dcbf31-46d8-45c1-98b8-91bc9d39cefb,David Dotoli da Silva,01107784131,david.dotoli@hotmail.com,66996461305,true,qv_id,true,cpf,false
 e7dd9345-fbb5-4ad1-b5fd-e51d3683193c,,Daniel Carlos de Souza Silva,91324599391,danielc2on@gmail.com,5521995242208,false,,false,,true
 e809b66d-22aa-4d83-8859-d6e801a23cdf,,Daniele Christine Sena de Moura,03196636631,daniele.sena.moura@gmail.com,+5566999059440,false,,true,cpf,false
 e8323e0e-632d-4a28-b8fd-47e9e1507ec3,,Amauri Tadeu Darcadia,91862817804,amauridarca@gmail.com,+5511942458444,false,,true,cpf,false
@@ -1468,8 +1439,7 @@ e83d831e-4fec-47ae-ae15-200881f0f3da,,Fabrício Figueiredo de Alencar,6291743922
 e83fe98f-1b66-48d3-a6a4-9ad2e3ff6750,38cabf60-c4c4-40c5-b021-d3342514ca26,Marcos Ferreira Benchimol,18353118734,benchimol.marcos51@gmail.com,11981377488,true,qv_id,false,,false
 e84fee46-40c6-4a92-b08c-8145059cbb1c,17ab2b07-75c0-48f1-90aa-f4da60c50a67,Alcione Neves Oliveira,00655110690,alci.financas@gmail.com,+5561996663704,true,qv_id,false,,false
 e8569ccd-53b1-45ba-acf2-456eb5bb4b35,0b5ddb71-5401-4567-8dda-ee0971354141,Uyara Domiciano Duarte Santos,00327252308,uy.domiciano@hotmail.com,81997838348,true,qv_id,false,,false
-e86094b8-dba8-4219-9e99-fe1389642ad2,530dbd19-8ab7-4fd4-9237-632bc5fd3c0a,Sergio de Rezende Sespede,02069904997,sergiosespede@hotmail.com,11984576162,true,qv_id,false,,false
-e881e8c7-dcca-4823-87f2-71021193e7a4,61784490-9afa-499d-bbca-5d4aed758205,Carla Caroline Takemoto Dreyer,04879061956,carla_dreyer@hotmail.com,41999229554,true,qv_id,false,,false
+e86094b8-dba8-4219-9e99-fe1389642ad2,530dbd19-8ab7-4fd4-9237-632bc5fd3c0a,Sergio de Rezende Sespede,02069904997,sergiosespede@hotmail.com,11984576162,true,qv_id,true,cpf,false
 e8ba0ac6-2385-44e7-b3a1-aab6317d469d,,Elinara Maria Waldemarca,43307884034,palladioarquitetura@gmail.com,+5551996276767,false,,false,,true
 e8c52128-1e3a-4bc4-a044-51160f7e6a90,,Felipe Gun Kim,40249122839,kim.fgk@gmail.com,5511999999489,false,,false,,true
 e8e333a4-b902-47e5-a8e0-eb31bf0b23cb,,Thayene Thamara Rangel,14130981773,drathayenerangel@gmail.com,5521991355760,true,cpf,false,,false
@@ -1478,6 +1448,7 @@ e8fbbe2a-8d42-4a9e-93fc-37703bee7679,90e602eb-7aad-454c-ac32-caf57045bf69,Kenny 
 e93b1a59-2036-49cf-86e2-03ffd6861c23,,Denise de Oliveira Leal,24606586800,tsuleal@gmail.com,+5519994420370,false,,true,cpf,false
 e9643f9d-6103-4703-85d8-11faabeed343,a32ac20a-b902-46f0-be18-7d1335bad304,Celina Joana Cordeiro,00339657901,celinajcc@gmail.com,47999652529,true,qv_id,false,,false
 e96cd1e7-6fd3-43c5-ae4a-af03558fcb05,,Leonardo Ogawa de Oliveira,37116982809,leonardo.ogawa.oliveira@gmail.com,+5511999338657,false,,true,cpf,false
+e96da059-c84d-4d2e-beac-e32ead3bca83,,Ederson Dias Lopes,04637152682,ederson_lopez@hotmail.com,+5567981276206,false,,true,cpf,false
 e97b3d94-95ef-4355-9b36-6a80a227d432,,William Roberto Macedo,12818396808,william.r.macedo@outlook.com,+5511986962913,false,,true,cpf,false
 e9a63c07-452e-4640-85e1-239f7e098c8f,,Caio Jose Rodrigues,21503274810,cjrodrigues1904@gmail.com,+5511983875225,false,,true,cpf,false
 ea046643-be02-426a-8a0b-8471070db89e,,Fabricio Argolo do Nascimento,09079542784,fabricionn@gmail.com,+5521991031195,false,,true,cpf,false
@@ -1500,7 +1471,6 @@ ec980c0c-e9ef-4083-9a81-47dd771435a1,,Marco Antônio Lia,37506348007,marcolia@te
 ecb01588-3908-4f3f-b287-5a2c83579d2d,,Mahonri Faria Guitti,14972161841,guittimf@yahoo.com.br,5511995159585,true,cpf,false,,false
 ed02a824-f964-4575-befe-992fe2938c00,,Marco Antonio da Silva Prado,38958442840,marco.asprado91@gmail.com,+5512996771454,false,,true,cpf,false
 ed14e668-473e-43a1-818d-207839d7a1c0,cabe0a90-ee03-41e1-b732-30c14823a965,Paulo Victor Barros Costa,01223446263,pv_bc@hotmail.com,+5591993133598,true,qv_id,false,,false
-ed17b568-4f21-4cea-a5e8-46989360359e,,Márcio Henrique Carrera Fernandes,21890296864,mhcfernandes@hotmail.com,12981456090,false,,false,,true
 ed1b50dd-6af0-43bf-a897-03da30f0bf83,66b40bb7-525a-4da6-a523-b6a48ac5a0e4,Mariana Franceschini Brandão,22311049895,marifbrandao@gmail.com,11974037424,true,qv_id,false,,false
 ed358959-e6cf-49b7-a581-15f584121583,6e4cc68d-49d0-4007-9bd4-d436ca6b6204,Juliana Palmieri Carlini Colovatte,16724284830,jupalmiericc@gmail.com,16991353142,true,qv_id,false,,false
 ed3f794f-db10-4e7d-a85e-35d501465423,,Allan Cardoso Inacio de Assis,08156996704,cardoso.acia@pm.me,+5521999855452,false,,true,cpf,false
@@ -1509,6 +1479,7 @@ ed59f476-18ab-4e70-9594-e19ac5793364,,Ana Paula Pereira Pinto,01224108744,paulap
 ed5cb0ef-9a6d-44f3-904c-3f2917912dc8,,José Cláudio Machado,,joseclaudio_machado@hotmail.com,051+982138953,false,,false,,true
 ed6f90c7-ec55-4529-8ae6-f8831f773a5e,,Antonio José Garcia Pinheiro,20670842320,antoniogarcia@directusadvocacia.com,+5598981144890,false,,true,cpf,false
 ed713ff9-05a2-4e3f-a7d4-28d1657a5389,,Renan Sbaraini Delavald,80897193091,renandelavald@gmail.com,+5548991699799,true,cpf,false,,false
+edb160b1-c5d1-4dcf-a1fc-db078aa6f24a,,Josean Ferreira de Carvalho,01554872561,leooficialfsa@gmail.com,+5575999571521,false,,true,cpf,false
 edb661be-bbda-4a24-ba9d-7c251cb18f69,,Gabriel Scarabôtolo Gattás,12908176858,,5511996498505,false,,false,,true
 ee04da9f-62e0-4305-929b-00f7e2070bcf,4b251aef-333e-432b-9abc-58ccbb99b18d,Renan Luiz Bernardello Morassi,40071238883,renanmorassi@gmail.com,15988034025,true,qv_id,false,,false
 ee1ba9d0-19fa-43c7-981c-c534a575db5c,,Victor Torres Pacheco,21906120803,victorpira@hotmail.com,+5519989156969,false,,true,cpf,false
@@ -1523,7 +1494,7 @@ ef19a2bb-f2c0-4062-8609-cf211b75a731,,Ricardo Matter Moreno,78115167053,ricardom
 ef19f6a5-5f42-48f4-ad7a-457e9a1b40ec,,Hildenê de Jesus P S Bastos,19856091349,hildene@clinicapersonalitte.com.br,+5598984138400,false,,false,,true
 ef4e1267-9cb4-475d-989c-d1dae4da8a59,630a56b1-03b7-4fe0-8546-9b55ea9d04a1,Thiago Pugliesi Garcia,33535435897,tpugliesi@gmail.com,17000000000,true,qv_id,false,,false
 efa7986d-5f85-460e-ae52-375143c72e8b,0d1e5d9e-62d4-42a7-80e3-bee48ce8fc78,Francinete Sousa Vidal,08944334315,francinetesv@outlook.com,98984047007,true,qv_id,false,,false
-efc43c89-7563-4db2-b15c-62620cb730ca,,Gustavo Zandona Gabaldo,02779403977,gustavogabaldo@gmail.com,+5546988055238,false,,false,,true
+efc43c89-7563-4db2-b15c-62620cb730ca,,Gustavo Zandona Gabaldo,02779403977,gustavogabaldo@gmail.com,+5546988055238,false,,true,cpf,false
 f0041f8d-3a68-459e-88df-84a35d1ae78b,,Vinicius Pinto de Rezende,64377750178,vprezende@gmail.com,+5563992583991,false,,true,cpf,false
 f01d4ad9-7e75-45bb-bc5b-bb3adc26db2c,b8f8d0ce-3174-407f-9919-850e59b119af,Gustavo Nascimento Silva,11626381763,gustavo.anestesista@gmail.com,32999006102,true,qv_id,false,,false
 f03b6d44-1c32-48e0-819b-497f179ddff3,559bea70-6c5a-4510-aac5-7d6d6273f420,Juliano Rotsen de Melo,02988944679,juliano.rotsen@gmail.com,31982784141,true,qv_id,false,,false
@@ -1556,8 +1527,7 @@ f4a1a7c5-6683-426d-8bc4-5638f3269762,,Luis Fernando Dip,21645273806,luis.dip@me.
 f4b2e7c8-d69d-4642-9869-cd130597f141,,Mark Lima Santos,88960790710,marklimasantos@gmail.com,+5561981112779,false,,true,cpf,false
 f4bc2085-e44e-4cee-9f96-0c289eb91e2b,,Ricardo Dias Gonçalves,05449204493,ricardodg.pessoal@gmail.com,87999068888,true,cpf,false,,false
 f5181076-0487-47e9-8456-851b33599753,,Rinaldi Cardinal de Lima,,rinaldicardinal@hotmail.com,556899831858,false,,false,,true
-f519230c-aaa2-4143-a9e0-14f02dfbbd95,,Tom Robson Gonçalves Ferreira,69790671172,tomrobson10@gmail.com,+5561984051585,false,,true,cpf,false
-f53decbd-a8df-4269-9a6b-24290231dcfc,84be78cd-b545-40dc-8c70-460f43f50385,Maurício Pelegrini,01689230843,mauricio@mpengcivil.com.br,19996045737,true,qv_id,false,,false
+f53decbd-a8df-4269-9a6b-24290231dcfc,84be78cd-b545-40dc-8c70-460f43f50385,Maurício Pelegrini,01689230843,mauricio@mpengcivil.com.br,19996045737,true,qv_id,true,cpf,false
 f57758c1-c929-408a-adf2-a647be170206,,Karina Venturini,06825194801,karina.venturini@sanofi.com,5511970482661,true,cpf,false,,false
 f580f98f-6488-4bfd-ab84-fad19284a758,,Samantha Kassner,14283593893,samantha.kassner@gmail.com,+5511914721003,false,,true,cpf,false
 f5f9af27-1cf0-4c9f-923f-4461a11fed46,,Marcio da Silveira Pereira,66469325734,1marcio.p@gmail.com,+5592984361221,false,,false,,true
@@ -1593,14 +1563,12 @@ fcb65c3a-2d33-4813-8ac9-7d3a6d35f518,,Jaligson Hirtácides Santos de Assis,84707
 fcc2da86-5701-4863-a321-6dd1ef63811a,7cc4dde2-cb55-473a-8eb8-0b2f6a3c7283,Diego Mota Fernandes,06054011600,diegomotafer@hotmail.com,16994244716,true,qv_id,false,,false
 fcc651c0-5e9b-41a8-860e-5da01508d339,,Mauro Mello de Andrade,49909258587,mauro.mandrade@gmail.com,+5575999971110,false,,true,cpf,false
 fcdead87-f9ed-4280-9cea-c2f0e0456ae5,7e1da826-40a2-4f64-8714-6a8af88f7b15,Simone Rocha Ferreira,10153402610,simoneodontorocha@gmail.com,34991289439,true,qv_id,false,,false
-fd025e37-77bf-43fa-b732-8e8b861515d6,,Claudia Peters Heringer da Silva,63713810672,heringerclaudiap@gmail.com,+5531989260585,false,,true,cpf,false
 fd2a3497-ff2a-4240-bdd8-e1032622189b,e98c7b82-b8b6-4135-8f80-97c4a2e827ad,Luciano Martins de Holanda,80558135315,lmholanda2015@gmail.com,11999920773,true,qv_id,false,,false
 fd32e270-ce5e-4984-8ecf-84b551dbae45,4c5ca860-659e-4af9-bb79-7b154606b266,Henrique Rocha David de Sousa,04175571167,henriquedavid.94@gmail.com,62981086122,true,qv_id,false,,false
 fd8a5d2e-9314-4963-bed0-5ddcb19745a1,,Paulo Ricardo da Costa Silva,25636920830,p_ricar@hotmail.com,11994139051,true,cpf,false,,false
 fd9a9988-504f-4579-9669-1f874a2714b4,,Cely Melo Vasconcelos,,celymelov@gmail.com,5511982668726,true,email,false,,false
 fdadbe28-0d49-4490-9dd2-679694784e42,50db2aed-bb5f-4bd9-8be7-cc129a476210,Rafael Pérez Pavón,08579378125,rafael.rprpn90@gmail.com,61982221590,true,qv_id,false,,false
 fde91114-bf59-409c-b6de-ee06993e0807,,Francisco Augusto Santos Souza,,francisco@marecheiaconstrutora.com.br,5571981250825,false,,false,,true
-fdfa36b3-b85d-4208-8cf0-c5a0596a3650,,Gabriele Oliveira Sridev,,gabriele.oliveira@icloud.com,61998190888,true,email,false,,false
 fe125fa0-4510-493f-bf3e-6b55cb682382,,Felipe Santos Carmo,11074089707,Felipecarmo@hotmail.com,27981438801,false,,false,,true
 fe3a66f9-77c2-4c53-a387-18381f22397a,0a16c5aa-983a-4138-9509-c3ff9a8a552b,Leandro da Cunha Etchebest,81348002034,leandrocetchebest@gmail.com,51985792673,true,qv_id,false,,false
 fe7218cd-dbb7-434f-b002-9d31e0115e1d,,Carolina Branco Andreatta,02832952100,dracarolina.otorrino@gmail.com,+5541999406341,false,,true,cpf,false

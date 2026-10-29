@@ -74,6 +74,13 @@ export function normalizeQvId(qvId) {
   return String(qvId).trim();
 }
 
+/** Valor canônico de public.clients.engenheiro_patrimonial (BASEQV). */
+export function normalizeEngenheiroPatrimonial(value) {
+  if (value == null || value === '') return null;
+  const s = String(value).trim();
+  return s || null;
+}
+
 /**
  * @param {{ cpf?: string | null, email?: string | null, phone?: string | null, name?: string | null }} fields
  * @returns {NormalizedIdentity}
