@@ -139,7 +139,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 14be2ff5-17ee-45c9-959f-55856ea46ec8,,Thales Martins Pereira Silva,08957497692,thalesmps@gmail.com,35997314107,true,cpf,false,,false
 15148fee-9a88-474f-ac43-1bf96260d391,82f884d4-8c68-4b90-86df-97b12af49174,Leandro da Silva,28915014898,le2004@gmail.com,11993253353,true,qv_id,false,,false
 15431875-3591-4933-85de-ea80e41ef006,661c92f9-d429-475a-a1e8-d0c4743dc0bf,Maria Elisa Barcellos Teixeira Pierotti,96509708787,elisateixeira@osite.com.br,21992222224,true,qv_id,false,,false
-156ba9dd-2074-4c65-88ff-87e47f296978,af56f4fd-8a96-418a-9980-7d527d230b9d,Carlos Henrique Pedriali Nobrega,01968363955,ch_itapoa@yahoo.com.br,47999151116,true,qv_id,false,,false
 15a1ec16-0202-4613-8501-caee85df1ac2,,Rodrigo Bastos Magalhães Senna,16062204705,rodrigobsenna@gmail.com,+5521995728938,true,cpf,false,,false
 15ced9ea-271c-4295-9321-ea9927e71439,,Lucas Chaves Pérez,02589041780,lucascperez@gmail.com,+5521996157533,false,,true,cpf,false
 15f15983-b8be-404a-9f79-d2bdaf152ad0,3a31ed63-54de-4653-a5f5-60c30ebc7e52,Ana Cristina Horácio de Sá,24765341100,2nanasa.307@gmail.com,61999823787,true,qv_id,false,,false
@@ -461,7 +460,6 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 45687f7d-c4fc-4043-a30a-5089f7d04248,,Thiago Silverio,21891910841,thiag.o@terra.com.br,5511984085253,false,,false,,true
 456942ad-d594-4187-a670-b7f874204fa7,892db52a-62fc-40ba-b6c7-473b8bd5e66c,William Luiz Chisté,08799686724,williamchiste@yahoo.com.br,21971934912,true,qv_id,false,,false
 45940a9d-0cf7-4de6-990d-b1344b3ce1f0,,Márcia Rejane Andrade Marques,03401086499,marcia241201@gmail.com,64999686161,true,cpf,false,,false
-459d3be4-1a51-4562-b2d6-f388fdf6735e,,Gualter Viveiros,19126727315,deatik@deatik.com.br,85991815500,true,cpf,false,,false
 45ba3695-04f0-4981-b579-aba1726eeb94,,Gustavo Cherubini,39336721801,gustavo.cherubini.lima@gmail.com,5517991452810,false,,false,,true
 45f1538d-b15f-4947-8595-875ddf5db8c8,,Manoel Furtado de Lacerda Neto,94330557568,manoel.multvision@gmail.com,+5531988911436,false,,true,cpf,false
 45fed348-e738-445f-a55c-f1bf2614ff14,,Carlos Adalberto Cortez,26920986841,carlos@cbccontabil.com.br,19999325221,false,,false,,true
@@ -950,7 +948,7 @@ baseqv_client_id,qv_id,nome,cpf,email,telefone,found_anchor,anchor_match_type,fo
 977fb292-8761-4c14-a47f-9eb585321ed5,,Maria Christina Costa Sousa Camões Ranevsky,62737570700,cranevsky@gmail.com,+5511992710822,false,,true,cpf,false
 97fa111f-6b40-4dca-9264-2566b4779ace,,Merylin Daiana Datsch Cordovil,04603722974,merylindd@icloud.com,+5541996550255,false,,true,cpf,false
 97fe3dd0-7b8d-414a-905d-b4e86af3be64,,Suzane Elias Santos,84184337104,suzaneelias@hotmail.com,5562981453684,false,,false,,true
-9801b267-b2e8-4d2d-95ab-2aa780d63311,27a282ab-ff0b-4318-adbc-3a4ae765e5c8,André Noronha,35519287899,andre_noronha5@yahoo.com.br,18981560436,true,qv_id,false,,false
+9801b267-b2e8-4d2d-95ab-2aa780d63311,27a282ab-ff0b-4318-adbc-3a4ae765e5c8,André Noronha,35519287899,andre_noronha5@yahoo.com.br,18981560436,true,qv_id,true,cpf,false
 981b4993-2ad1-4edf-b2c8-db1767a268a3,e8615330-dbbc-43e0-8a5e-cdb9df2b8101,Emerson Emerick Tannus Cheim,92683134649,emerickvni@gmail.com,28999855000,true,qv_id,false,,false
 98215e9c-87e6-4806-85d8-d6a91bcb6ea0,,Leonardo de Araújo Nonato,22902116802,eng.nonato@gmail.com,5534998151903,false,,false,,true
 9864441f-4309-49db-bb0a-887bf99b5d9f,,Allan Nascimento de Mello,32982568896,allan@kfnight.com.br,12996110012,false,,false,,true

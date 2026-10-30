@@ -1,3 +1,4 @@
+import { clientMatchesGlobalSearch } from './cpf.js';
 import { engenheiroPatrimonialValue } from './ep.js';
 import { hasMeaningfulFinancialData } from './financial.js';
 
@@ -32,16 +33,13 @@ export function applyBasePopulationFilters(activeBaseRows, filters) {
 
 /** Filtros específicos da visão legado + população + busca global. */
 export function applyLegacyFilters(clients, filters) {
-  const q = filters.search?.trim().toLowerCase() ?? '';
+  const q = filters.search?.trim() ?? '';
   return clients.filter((c) => {
     if (filters.programa && c.programa !== filters.programa) return false;
     if (filters.ep && engenheiroPatrimonialValue(c) !== filters.ep) return false;
     if (filters.status && c.status !== filters.status) return false;
 
-    if (q) {
-      const hay = [c.nome, c.email, c.telefone, c.mecanismos].filter(Boolean).join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
+    if (q && !clientMatchesGlobalSearch(c, q)) return false;
 
     if (!matchBoolFilter(hasValidFinancial(c), filters.hasFin)) return false;
     if (!matchBoolFilter(hasValidMeeting(c), filters.hasReuniao)) return false;

@@ -1,3 +1,4 @@
+import { formatCpfDisplay } from './cpf.js';
 import { formatEpDisplay } from './ep.js';
 
 /** Labels PT-BR para colunas reais de client_financial_data */
@@ -124,6 +125,7 @@ export function hasMeaningfulFinancialData(fin) {
 export function buildExportColumns() {
   const base = [
     { label: 'nome', get: (r) => r.nome },
+    { label: 'cpf', get: (r) => formatCpfDisplay(r.cpf) },
     { label: 'telefone', get: (r) => r.telefone },
     { label: 'email', get: (r) => r.email },
     { label: 'programa', get: (r) => r.programa },

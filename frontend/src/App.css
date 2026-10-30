@@ -327,6 +327,7 @@ table.legacy-table {
 }
 
 .legacy-table .col-nome { width: 180px; }
+.legacy-table .col-cpf { width: 130px; }
 .legacy-table .col-telefone { width: 140px; }
 .legacy-table .col-email { width: 230px; }
 .legacy-table .col-programa { width: 100px; }

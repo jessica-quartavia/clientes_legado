@@ -1,9 +1,11 @@
+import { formatCpfDisplay } from '../lib/cpf.js';
 import { formatEpDisplay } from '../lib/ep.js';
 import { formatCurrencyBRL } from '../lib/financial.js';
 import CopyButton from './CopyButton.jsx';
 
 export const TABLE_COLUMNS = [
   { key: 'nome', label: 'Nome', className: 'col-nome' },
+  { key: 'cpf', label: 'CPF', className: 'col-cpf nowrap' },
   { key: 'telefone', label: 'Telefone', className: 'col-telefone' },
   { key: 'email', label: 'Email', className: 'col-email' },
   { key: 'programa', label: 'Programa', className: 'col-programa nowrap' },
@@ -57,6 +59,7 @@ export default function LegacyTable({
         <table className="legacy-table">
           <colgroup>
             <col className="col-nome" />
+            <col className="col-cpf" />
             <col className="col-telefone" />
             <col className="col-email" />
             <col className="col-programa" />
@@ -93,6 +96,7 @@ export default function LegacyTable({
                 onClick={() => onRowClick(row)}
               >
                 <td className="col-nome">{row.nome}</td>
+                <td className="col-cpf">{formatCpfDisplay(row.cpf)}</td>
                 <td>
                   <span className="cell-with-copy nowrap">
                     <span>{row.telefone ?? '—'}</span>

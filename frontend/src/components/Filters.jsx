@@ -12,7 +12,7 @@ export default function Filters({ filters, onChange, programas, eps }) {
           Busca global
           <input
             type="search"
-            placeholder="Nome, telefone, email, mecanismos…"
+            placeholder="Nome, CPF, telefone, email, mecanismos…"
             value={filters.search}
             onChange={(e) => onChange({ search: e.target.value })}
           />

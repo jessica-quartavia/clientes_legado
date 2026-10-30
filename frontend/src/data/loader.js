@@ -1,3 +1,4 @@
+import { cpfDisplayRaw } from '../lib/cpf.js';
 import { engenheiroPatrimonialValue } from '../lib/ep.js';
 import { computePatrimonioResumo } from '../lib/financial.js';
 import { isConfirmedLegacyClient } from '../lib/confirmed-legacy.js';
@@ -9,8 +10,10 @@ function canonicalEngenheiroPatrimonial(client) {
 
 function enrichClientRecord(client) {
   const engenheiro_patrimonial = canonicalEngenheiroPatrimonial(client);
+  const cpf = cpfDisplayRaw(client);
   return enrichClientFinancialFields({
     ...client,
+    cpf,
     engenheiro_patrimonial,
     ep: engenheiro_patrimonial,
   });

@@ -1,3 +1,4 @@
+import { formatCpfDisplay } from '../lib/cpf.js';
 import { formatEpDisplay } from '../lib/ep.js';
 import {
   FINANCIAL_DISPLAY_ORDER,
@@ -30,7 +31,7 @@ export default function ClientDrawer({ client, onClose }) {
         <div className="drawer__body">
           <Section title="Identificação">
             <Row label="Nome" value={client.nome} />
-            <Row label="CPF" value={client.cpf} />
+            <Row label="CPF" value={formatCpfDisplay(client.cpf)} />
             <Row label="Telefone" value={client.telefone} />
             <Row label="Email" value={client.email} />
             <Row label="QV ID" value={client.qv_id} />

@@ -36,6 +36,23 @@ const DATA_DIR = path.join(ROOT, 'data');
 dotenv.config({ path: path.join(ROOT, '.env') });
 dotenv.config({ path: path.join(ROOT, '.env.local'), override: true });
 
+/** Campos oficiais de public.clients (BASEQV) usados no legado (+ datas para regra ativo analítico). */
+const BASEQV_CLIENT_SELECT = [
+  'id',
+  'qv_id',
+  'name',
+  'cpf',
+  'cpf_digits',
+  'phone',
+  'email',
+  'programa',
+  'status',
+  'engenheiro_patrimonial',
+  'data_congelamento',
+  'data_descongelamento',
+  'data_churn',
+].join(',');
+
 function requireEnv(name) {
   const v = process.env[name];
   if (!v) {
@@ -125,7 +142,7 @@ async function main() {
 
   const [clients, cancellations, clientMeetings, clientMecanismos, mecanismosCatalog, meetingAttendance] =
     await Promise.all([
-      fetchAllRows(baseqv, 'clients', { orderBy: 'id' }),
+      fetchAllRows(baseqv, 'clients', { orderBy: 'id', select: BASEQV_CLIENT_SELECT }),
       fetchAllRows(baseqv, 'cancellations', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'client_meetings', { orderBy: 'id' }),
       fetchAllRows(baseqv, 'client_mecanismos', { orderBy: 'id' }),
@@ -373,11 +390,15 @@ async function main() {
 
     const engenheiroPatrimonial = normalizeEngenheiroPatrimonial(c.engenheiro_patrimonial);
 
+    const cpf = c.cpf ?? null;
+    const cpf_digits = c.cpf_digits ?? normalizeCpf(c.cpf);
+
     legacyRows.push({
       baseqv_client_id: c.id,
       qv_id: c.qv_id,
       nome: c.name,
-      cpf: c.cpf,
+      cpf,
+      cpf_digits,
       telefone: c.phone,
       email: c.email,
       programa: c.programa,
@@ -452,11 +473,12 @@ async function main() {
 
   const legacyCsvColumns = [
     'nome',
+    'cpf',
     'telefone',
     'email',
-    'programa',
     'engenheiro_patrimonial',
     'ep',
+    'programa',
     'mecanismos',
     'ultima_reuniao',
     'data_ultima_reuniao',
